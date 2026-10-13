@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "background":null,
-    "data": {"url": "../data/horror_by_country_year.csv"},
+    "data": {"url": "data/horror_by_country_year.csv"},
     "vconcat": [
       {
         "width": 760,

@@ -4,7 +4,7 @@
     "width": 700,
     "height": 480,
     "padding": {"right": 120},
-    "data": {"url": "../data/genre_counts_by_decade.csv"},
+    "data": {"url": "data/genre_counts_by_decade.csv"},
     "transform": [
       {"filter": "toNumber(substring(datum.decade, 0, 4)) >= 1920"},
       {"fold": ["Action","Adventure","Animation","Comedy","Crime","Documentary","Drama","Family","Fantasy","History","Horror","Music","Mystery","Romance","Science Fiction","TV Movie","Thriller","War","Western"],
