@@ -5,7 +5,7 @@
     
     "width": 400,
     "height": {"step": 34},
-    "data": {"url": "/data/oscars_horror_by_decade.csv"},
+    "data": {"url": "data/oscars_horror_by_decade.csv"},
     "layer": [
       {
         "mark": {"type": "rule", "strokeWidth": 3, "color": "#cfcfcf"},

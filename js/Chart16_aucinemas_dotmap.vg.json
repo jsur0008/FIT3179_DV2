@@ -26,7 +26,7 @@
       },
       {
         "description": "Dots: one circle per cinema. Transparency makes crowded areas look darker.",
-        "data": { "url": "/data/cinemas.csv" },
+        "data": { "url": "data/cinemas.csv" },
         "mark": {
           "type": "circle",
           "size": 100,

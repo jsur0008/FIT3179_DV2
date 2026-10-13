@@ -3,7 +3,7 @@
     "background": null,
     "width": 560,
     "height": 384,
-    "data": {"url": "/data/oscars_horror_milestones.csv"},
+    "data": {"url": "data/oscars_horror_milestones.csv"},
     "transform": [
       {"calculate": "datum.wins > 0 ? 'Won at least one Oscar' : 'Nominated only'", "as": "outcome"}
     ],

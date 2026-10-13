@@ -6,7 +6,7 @@
     "width": 700,
     "height": 340,
     "data": {
-      "url": "/data/horror_ratings.csv",
+      "url": "data/horror_ratings.csv",
       "format": {"parse": {"period_date": "date"}}
     },
     "transform": [
