@@ -16,7 +16,7 @@
       {
         "description": "Base map: outline of Australia (country shape from the world-atlas TopoJSON)",
         "data": {
-          "url": "../data/world-50m.json",
+          "url": "data/world-50m.json",
           "format": { "type": "topojson", "feature": "countries" }
         },
         "transform": [
