@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Why most films have no subgenre",
+      "subtitle": "Share of horror films that have any TMDB keywords, by how many people rated the film.",
+      "anchor": "start", "fontSize": 16, "subtitleFontSize": 12, "subtitleColor": "#555"
+    },
+    "data": {"url": "../data/keyword_coverage.csv"},
+    "width": 520,
+    "height": 200,
+    "mark": {"type": "bar", "color": "#b3122a", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3},
+    "encoding": {
+      "x": {
+        "field": "vote_group", "type": "ordinal", "title": "Number of ratings the film has",
+        "sort": ["No votes", "1-4 votes", "5-19 votes", "20-99 votes", "100-999 votes", "1,000+ votes"],
+        "axis": {"labelAngle": 0, "labelFontSize": 11}
+      },
+      "y": {
+        "field": "share_with_keywords", "type": "quantitative", "title": "Films with keywords",
+        "scale": {"domain": [0, 1]}, "axis": {"format": "%", "gridColor": "#eee", "tickCount": 5}
+      },
+      "tooltip": [
+        {"field": "vote_group", "title": "Ratings"},
+        {"field": "films", "title": "Films", "format": ",.0f"},
+        {"field": "with_keywords", "title": "With keywords", "format": ",.0f"},
+        {"field": "share_with_keywords", "title": "Share", "format": ".0%"}
+      ]
+    },
+    "config": {"view": {"stroke": null}, "axis": {"domain": false, "ticks": false, "labelFontSize": 12, "titleFontSize": 12}, "font": "EB Garamond, Georgia, serif"}
+  }

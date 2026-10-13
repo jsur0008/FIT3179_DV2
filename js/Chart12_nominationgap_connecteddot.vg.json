@@ -1,0 +1,65 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "background": null,
+    
+    "width": 400,
+    "height": {"step": 34},
+    "data": {"url": "../data/oscars_horror_by_decade.csv"},
+    "layer": [
+      {
+        "mark": {"type": "rule", "strokeWidth": 3, "color": "#cfcfcf"},
+        "encoding": {
+          "y": {"field": "decade", "type": "ordinal", "title": null, "sort": "ascending"},
+          "x": {"field": "films_pct", "type": "quantitative"},
+          "x2": {"field": "noms_pct"}
+        }
+      },
+      {
+        "transform": [
+          {"fold": ["films_pct", "noms_pct"], "as": ["measure", "pct"]},
+          {
+            "calculate": "datum.measure === 'films_pct' ? 'Share of all films' : 'Share of Oscar nominations'",
+            "as": "label"
+          }
+        ],
+        "mark": {"type": "point", "filled": true, "size": 150, "opacity": 1},
+        "encoding": {
+          "y": {"field": "decade", "type": "ordinal", "title": null, "sort": "ascending",
+                "axis": {"labelPadding": 14}},
+          "x": {
+            "field": "pct",
+            "type": "quantitative",
+            "title": "Percent (%)",
+            "scale": {"domainMin": 0, "nice": true},
+            "axis": {"grid": true, "gridColor": "#eee"}
+          },
+          "color": {
+            "field": "label",
+            "type": "nominal",
+            "title": null,
+            "scale": {
+              "domain": ["Share of all films", "Share of Oscar nominations"],
+              "range": ["#8c8c8c", "#b3122a"]
+            },
+            "legend": {"orient": "top", "symbolType": "circle"}
+          },
+          "tooltip": [
+            {"field": "decade", "title": "Decade"},
+            {"field": "label", "title": "Measure"},
+            {"field": "pct", "title": "Percent (%)", "format": ".1f"},
+            {"field": "horror_films", "title": "Horror films", "format": ","},
+            {"field": "all_films", "title": "All films", "format": ","},
+            {"field": "horror_noms", "title": "Horror nominations"},
+            {"field": "total_noms", "title": "All nominations", "format": ","},
+            {"field": "horror_wins", "title": "Horror wins"}
+          ]
+        }
+      }
+    ],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"labelFontSize": 12, "titleFontSize": 12, "domain": false, "ticks": false},
+      "font": "Georgia, serif"
+    }
+  }

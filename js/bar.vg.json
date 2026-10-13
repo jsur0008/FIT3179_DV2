@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Horror films made, by decade",
+      "subtitle": "Number of horror films listed on TMDB for each decade.",
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555"
+    },
+    "width": 560,
+    "height": 300,
+    "data": {"url": "../data/genre_counts_by_decade.csv"},
+    "transform": [{"filter": "datum.Horror > 0"}],
+    "layer": [
+      {
+        "mark": {"type": "bar", "color": "#b3122a", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3},
+        "encoding": {
+          "x": {
+            "field": "decade",
+            "type": "ordinal",
+            "title": null,
+            "axis": {"labelAngle": 0, "labelFontSize": 11, "labelOverlap": "parity"}
+          },
+          "y": {
+            "field": "Horror",
+            "type": "quantitative",
+            "title": "Horror films",
+            "axis": {"format": ",.0f", "gridColor": "#eee"}
+          },
+          "tooltip": [
+            {"field": "decade", "title": "Decade"},
+            {"field": "Horror", "title": "Horror films", "format": ",.0f"},
+            {"field": "all_films", "title": "All films", "format": ",.0f"}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "text", "dy": -6, "fontSize": 11, "color": "#333"},
+        "encoding": {
+          "x": {"field": "decade", "type": "ordinal"},
+          "y": {"field": "Horror", "type": "quantitative"},
+          "text": {"field": "Horror", "type": "quantitative", "format": ",.0f"}
+        }
+      }
+    ],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"domain": false, "ticks": false, "labelFontSize": 12, "titleFontSize": 12},
+      "font": "Georgia, serif"
+    }
+  }

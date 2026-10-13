@@ -1,0 +1,43 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "background": null,
+    
+    "width": 420,
+    "height": 470,
+    "data": {"url": "../data/release_months.csv"},
+    "transform": [
+      {"calculate": "(datum.month - 1) * PI / 6", "as": "a0"},
+      {"calculate": "datum.month * PI / 6", "as": "a1"},
+      {"calculate": "(datum.month - 0.5) * PI / 6", "as": "am"}
+    ],
+    "layer": [
+      {
+        "mark": {"type": "arc", "innerRadius": 20, "stroke": "white"},
+        "encoding": {
+          "theta": {"field": "a0", "type": "quantitative", "scale": {"domain": [0, 6.283185], "range": [0, 6.283185]}},
+          "theta2": {"field": "a1"},
+          "radius": {"field": "share", "type": "quantitative", "stack": false, "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+          "color": {"field": "share", "type": "quantitative", "scale": {"scheme": "reds"}, "legend": {"title": "% of releases"}},
+          "tooltip": [
+            {"field": "month_name", "title": "Month"},
+            {"field": "films", "title": "Films"},
+            {"field": "share", "title": "% of releases"}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "text", "radiusOffset": 12, "fontSize": 11},
+        "encoding": {
+          "theta": {"field": "am", "type": "quantitative", "scale": {"domain": [0, 6.283185], "range": [0, 6.283185]}},
+          "radius": {"field": "share", "type": "quantitative", "stack": false, "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+          "text": {"field": "month_name"}
+        }
+      }
+    ],
+    "view": {"stroke": null},
+
+    "config": {"view": {"stroke": null},
+    "font": "Georgia, serif",
+      "facet": {"spacing": 14}}
+  }

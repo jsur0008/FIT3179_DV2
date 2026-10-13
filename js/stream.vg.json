@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "What horror is made of",
+      "subtitle": "Films per year in each subgenre, from TMDB keywords. A film can sit in more than one.",
+      "anchor": "start", "fontSize": 18, "subtitleFontSize": 12, "subtitleColor": "#555"
+    },
+    "data": {"url": "../data/subgenre_by_period.csv"},
+    "transform": [
+      {"filter": "datum.period_start >= 1960 && datum.period_start <= 2025"}
+    ],
+    "width": 700,
+    "height": 320,
+    "mark": {"type": "area", "interpolate": "monotone", "stroke": "white", "strokeWidth": 0.5},
+    "encoding": {
+      "x": {
+        "field": "period_start", "type": "quantitative", "title": null,
+        "scale": {"domain": [1960, 2025], "nice": false},
+        "axis": {"format": "d", "values": [1960, 1970, 1980, 1990, 2000, 2010, 2020], "grid": false, "domain": false, "labelFontSize": 11}
+      },
+      "y": {"aggregate": "sum", "field": "films", "type": "quantitative", "stack": "center", "axis": null},
+      "color": {
+        "field": "subgenre", "type": "nominal", "title": null,
+        "scale": {"range": ["#b3122a", "#1f2a44", "#e07a5f", "#6b7a8f", "#7a1f3d", "#f2b880", "#3d5a80", "#c9a0a8", "#2a6f4e", "#8c5e3c"]},
+        "legend": {"orient": "right", "symbolType": "square", "labelFontSize": 11}
+      },
+      "order": {"aggregate": "sum", "field": "films", "type": "quantitative", "sort": "descending"},
+      "tooltip": [
+        {"field": "subgenre", "title": "Subgenre"},
+        {"field": "period_start", "title": "Year", "format": "d"},
+        {"aggregate": "sum", "field": "films", "title": "Films", "format": ",.0f"}
+      ]
+    },
+    "config": {"view": {"stroke": null}, "font": "EB Garamond, Georgia, serif"}
+  }

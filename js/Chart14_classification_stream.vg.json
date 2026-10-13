@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "background": null,
+    
+    "width": 700,
+    "height": 340,
+    "data": {
+      "url": "../data/horror_ratings.csv",
+      "format": {"parse": {"period_date": "date"}}
+    },
+    "transform": [
+      {
+        "calculate": "indexof(['G','PG','M','MA15+','R18+','RC (refused)'], datum.rating)",
+        "as": "severity"
+      }
+    ],
+    "layer": [
+      {
+        "mark": {"type": "area", "interpolate": "monotone"},
+        "encoding": {
+          "x": {
+            "field": "period_date", "type": "temporal",
+            "axis": {"title": "Start of five-year period", "format": "%Y", "tickCount": 9}
+          },
+          "y": {"field": "films", "type": "quantitative", "stack": "center", "axis": null},
+          "color": {
+            "field": "rating", "type": "nominal",
+            "scale": {
+              "domain": ["G", "PG", "M", "MA15+", "R18+", "RC (refused)"],
+              "range": ["#fde0d2", "#fcbba1", "#fb6a4a", "#de2d26", "#99000d", "#222222"]
+            },
+            "legend": {"title": "Classification"}
+          },
+          "order": {"field": "severity", "type": "quantitative"},
+          "tooltip": [
+            {"field": "period_date", "type": "temporal", "format": "%Y", "title": "Period starting"},
+            {"field": "rating", "title": "Classification"},
+            {"field": "films", "title": "Films"}
+          ]
+        }
+      },
+      {
+        "data": {"values": [{"note": "go"}]},
+        "mark": {
+          "type": "text", "align": "left", "baseline": "top",
+          "fontSize": 12, "lineHeight": 15, "color": "#222222"
+        },
+        "encoding": {
+          "x": {"value": 17},
+          "y": {"value": 8},
+          "text": {"value": ["17 films were refused", "classification (RC) and", "cannot legally be sold or shown", "in Australia (black band)."]}
+        }
+      }
+    ],
+    "config": {"view": {"stroke": null},
+    "font": "Georgia, serif",
+      "facet": {"spacing": 14}}
+  }

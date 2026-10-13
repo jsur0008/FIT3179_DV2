@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "What kind of horror led each decade",
+      "subtitle": "Each cell is that subgenre's share of all subgenre-tagged horror films in the decade. A film can count in more than one subgenre.",
+      "anchor": "start", "fontSize": 18, "subtitleFontSize": 12, "subtitleColor": "#555"
+    },
+    "data": {"url": "../data/subgenre_by_period.csv"},
+    "transform": [
+      {"calculate": "floor(toNumber(datum.period_start) / 10) * 10", "as": "decade"},
+      {"filter": "datum.decade >= 1950"},
+      {"aggregate": [{"op": "sum", "field": "films", "as": "n"}], "groupby": ["decade", "subgenre"]},
+      {"joinaggregate": [{"op": "sum", "field": "n", "as": "total"}], "groupby": ["decade"]},
+      {"calculate": "datum.n / datum.total", "as": "share"}
+    ],
+    "width": 420,
+    "height": 260,
+    "encoding": {
+      "x": {"field": "decade", "type": "ordinal", "title": null, "axis": {"labelAngle": 0, "labelExpr": "datum.value + 's'", "labelFontSize": 11}},
+      "y": {"field": "subgenre", "type": "nominal", "title": null, "sort": {"field": "n", "op": "sum", "order": "descending"}, "axis": {"labelFontSize": 12}}
+    },
+    "layer": [
+      {
+        "mark": {"type": "rect", "stroke": "white", "strokeWidth": 2},
+        "encoding": {"color": {"field": "share", "type": "quantitative", "title": "Share of decade", "scale": {"range": ["#fbe3e6", "#b3122a", "#5c0814"]}, "legend": {"format": "%"}}}
+      },
+      {
+        "mark": {"type": "text", "fontSize": 11},
+        "encoding": {
+          "text": {"field": "share", "type": "quantitative", "format": ".0%"},
+          "color": {"condition": {"test": "datum.share > 0.12", "value": "white"}, "value": "#333"}
+        }
+      }
+    ],
+    "config": {"view": {"stroke": null}, "axis": {"domain": false, "ticks": false}, "font": "EB Garamond, Georgia, serif"}
+  }

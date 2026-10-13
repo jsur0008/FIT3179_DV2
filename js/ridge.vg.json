@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "When each subgenre peaked",
+      "subtitle": "Taller means more films. Every row uses the same scale, so you can compare subgenres directly.",
+      "anchor": "start", "fontSize": 18, "subtitleFontSize": 12, "subtitleColor": "#555"
+    },
+    "data": {"url": "../data/subgenre_by_period.csv"},
+    "transform": [
+      {"filter": "datum.period_start >= 1960 && datum.period_start <= 2025"},
+      {"joinaggregate": [{"op": "argmax", "field": "films", "as": "top"}], "groupby": ["subgenre"]},
+      {"calculate": "datum.top.period_start", "as": "peak_year"}
+    ],
+    "width": 300,
+    "height": 14,
+    "mark": {"type": "area", "interpolate": "monotone", "fillOpacity": 0.9, "stroke": "white", "strokeWidth": 1.2, "clip": false},
+    "encoding": {
+      "x": {
+        "field": "period_start", "type": "quantitative", "title": null,
+        "scale": {"domain": [1960, 2025], "nice": false},
+        "axis": {"format": "d", "values": [1960, 1970, 1980, 1990, 2000, 2010, 2020], "grid": false, "labelFontSize": 11}
+      },
+      "y": {"field": "films", "type": "quantitative", "axis": null, "scale": {"zero": true, "range": [14, -28]}},
+      "fill": {"field": "peak_year", "type": "quantitative", "legend": null, "scale": {"range": ["#f3b8c0", "#b3122a", "#5c0814"]}},
+      "row": {
+        "field": "subgenre", "type": "nominal", "title": null,
+        "sort": {"field": "peak_year", "op": "min"},
+        "header": {"labelAngle": 0, "labelAlign": "left", "labelPadding": 8, "labelFontSize": 12, "labelOrient": "left"}
+      },
+      "tooltip": [
+        {"field": "subgenre", "title": "Subgenre"},
+        {"field": "period_start", "title": "Year", "format": "d"},
+        {"field": "films", "title": "Films", "format": ",.0f"}
+      ]
+    },
+    "spacing": -8,
+    "config": {"view": {"stroke": null}, "facet": {"spacing": -8}, "font": "EB Garamond, Georgia, serif"}
+  }

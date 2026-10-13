@@ -1,0 +1,335 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": {
+        "expr": "'Where horror films come from, ' + decade_sel + 's'"
+      },
+      "subtitle": "Drag the slider to change decade. Click a country to see its story below; click the sea to reset.",
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555"
+    },
+    "params": [
+      {
+        "name": "decade_sel",
+        "value": 2010,
+        "bind": {
+          "input": "range",
+          "min": 1900,
+          "max": 2020,
+          "step": 10,
+          "name": "Decade  "
+        }
+      }
+    ],
+    "data": {
+      "url": "../data/horror_by_country_decade.csv"
+    },
+    "vconcat": [
+      {
+        "width": 640,
+        "height": 300,
+        "projection": {
+          "type": "equalEarth"
+        },
+        "layer": [
+          {
+            "data": {
+              "url": "../data/world-110m.json",
+              "format": {
+                "type": "topojson",
+                "feature": "countries"
+              }
+            },
+            "mark": {
+              "type": "geoshape",
+              "fill": "#ececec",
+              "stroke": "white",
+              "strokeWidth": 0.4
+            }
+          },
+          {
+            "params": [
+              {
+                "name": "country",
+                "select": {
+                  "type": "point",
+                  "fields": [
+                    "id"
+                  ]
+                }
+              }
+            ],
+            "transform": [
+              {
+                "filter": "datum.decade_start == decade_sel"
+              },
+              {
+                "lookup": "id",
+                "from": {
+                  "data": {
+                    "url": "../data/world-110m.json",
+                    "format": {
+                      "type": "topojson",
+                      "feature": "countries"
+                    }
+                  },
+                  "key": "id"
+                },
+                "as": "geo"
+              },
+              {
+                "calculate": "datum.films >= 1000 ? '1,000+' : datum.films >= 200 ? '200–999' : datum.films >= 50 ? '50–199' : datum.films >= 10 ? '10–49' : '1–9'",
+                "as": "bucket"
+              }
+            ],
+            "mark": {
+              "type": "geoshape",
+              "stroke": "white",
+              "strokeWidth": 0.4,
+              "cursor": "pointer"
+            },
+            "encoding": {
+              "shape": {
+                "field": "geo",
+                "type": "geojson"
+              },
+              "color": {
+                "field": "bucket",
+                "type": "ordinal",
+                "title": "Horror films in the decade",
+                "scale": {
+                  "domain": [
+                    "1–9",
+                    "10–49",
+                    "50–199",
+                    "200–999",
+                    "1,000+"
+                  ],
+                  "range": [
+                    "#f6d3d8",
+                    "#eb9ba6",
+                    "#d95b6e",
+                    "#b3122a",
+                    "#6e0a1a"
+                  ]
+                },
+                "legend": {
+                  "orient": "top",
+                  "direction": "horizontal",
+                  "symbolType": "square",
+                  "titleFontSize": 11,
+                  "labelFontSize": 11
+                }
+              },
+              "opacity": {
+                "condition": {
+                  "param": "country",
+                  "value": 1
+                },
+                "value": 0.4
+              },
+              "tooltip": [
+                {
+                  "field": "country",
+                  "title": "Country"
+                },
+                {
+                  "field": "decade_start",
+                  "title": "Decade starting"
+                },
+                {
+                  "field": "films",
+                  "title": "Horror films",
+                  "format": ",.0f"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "width": 640,
+        "height": 170,
+        "transform": [
+          {
+            "filter": {
+              "param": "country"
+            }
+          }
+        ],
+        "layer": [
+          {
+            "transform": [
+              {
+                "aggregate": [
+                  {
+                    "op": "sum",
+                    "field": "films",
+                    "as": "films"
+                  }
+                ],
+                "groupby": [
+                  "decade_start"
+                ]
+              }
+            ],
+            "mark": {
+              "type": "line",
+              "color": "#b3122a",
+              "strokeWidth": 2,
+              "point": {
+                "filled": true,
+                "size": 55,
+                "color": "#b3122a"
+              }
+            },
+            "encoding": {
+              "x": {
+                "field": "decade_start",
+                "type": "ordinal",
+                "title": null,
+                "scale": {
+                  "domain": [
+                    1890,
+                    1900,
+                    1910,
+                    1920,
+                    1930,
+                    1940,
+                    1950,
+                    1960,
+                    1970,
+                    1980,
+                    1990,
+                    2000,
+                    2010,
+                    2020
+                  ]
+                },
+                "axis": {
+                  "labelExpr": "datum.value + 's'",
+                  "labelAngle": 0,
+                  "labelFontSize": 10,
+                  "labelOverlap": "parity"
+                }
+              },
+              "y": {
+                "field": "films",
+                "type": "quantitative",
+                "title": "Horror films",
+                "axis": {
+                  "format": ",.0f",
+                  "gridColor": "#eee"
+                }
+              },
+              "tooltip": [
+                {
+                  "field": "decade_start",
+                  "title": "Decade starting"
+                },
+                {
+                  "field": "films",
+                  "title": "Horror films",
+                  "format": ",.0f"
+                }
+              ]
+            }
+          },
+          {
+            "transform": [
+              {
+                "aggregate": [
+                  {
+                    "op": "sum",
+                    "field": "films",
+                    "as": "films"
+                  }
+                ],
+                "groupby": [
+                  "decade_start"
+                ]
+              },
+              {
+                "filter": "datum.decade_start == decade_sel"
+              }
+            ],
+            "mark": {
+              "type": "point",
+              "size": 260,
+              "filled": false,
+              "stroke": "#222",
+              "strokeWidth": 1.5
+            },
+            "encoding": {
+              "x": {
+                "field": "decade_start",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "films",
+                "type": "quantitative"
+              }
+            }
+          },
+          {
+            "transform": [
+              {
+                "aggregate": [
+                  {
+                    "op": "distinct",
+                    "field": "id",
+                    "as": "n"
+                  },
+                  {
+                    "op": "max",
+                    "field": "country",
+                    "as": "name"
+                  }
+                ]
+              },
+              {
+                "calculate": "datum.n == 1 ? datum.name : 'All countries together'",
+                "as": "label"
+              }
+            ],
+            "mark": {
+              "type": "text",
+              "align": "left",
+              "baseline": "top",
+              "fontWeight": "bold",
+              "fontSize": 13,
+              "color": "#222",
+              "dx": 4,
+              "dy": 2
+            },
+            "encoding": {
+              "x": {
+                "value": 0
+              },
+              "y": {
+                "value": 0
+              },
+              "text": {
+                "field": "label",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "config": {
+      "view": {
+        "stroke": null
+      },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 12,
+        "titleFontSize": 12
+      },
+      "font": "Georgia, serif"
+    }
+  }

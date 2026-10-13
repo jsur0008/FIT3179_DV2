@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Of every 100 films, how many are horror?",
+      "subtitle": "Each grid is one decade of films on TMDB. One red square is roughly one horror film in every 100.",
+      "anchor": "start",
+      "font": "UnifrakturMaguntia, serif",
+      "fontSize": 24,
+      "fontWeight": "normal",
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555"
+    },
+    "data": {"url": "../data/genre_counts_by_decade.csv"},
+    "transform": [
+      {"filter": "datum.all_films > 0"},
+      {"calculate": "max(1, round(100 * datum.Horror / datum.all_films))", "as": "n"},
+      {"calculate": "datum.decade + '  ·  ' + datum.n + ' in 100'", "as": "label"},
+      {"calculate": "sequence(100)", "as": "cells"},
+      {"flatten": ["cells"], "as": ["i"]},
+      {"calculate": "datum.i % 10", "as": "col"},
+      {"calculate": "floor(datum.i / 10)", "as": "row"},
+      {"calculate": "datum.i < datum.n ? 'Horror' : 'Other genres'", "as": "kind"},
+      {"calculate": "round(1000 * datum.Horror / datum.all_films) / 10", "as": "exact_pct"}
+    ],
+    "facet": {
+      "field": "label",
+      "type": "ordinal",
+      "sort": {"field": "decade", "op": "min"},
+      "header": {"title": null, "labelFontSize": 12, "labelFontWeight": "bold", "labelAnchor": "start", "labelPadding": 4}
+    },
+    "columns": 5,
+    "spec": {
+      "width": 100,
+      "height": 100,
+      "mark": {"type": "square", "size": 70, "opacity": 1},
+      "encoding": {
+        "x": {"field": "col", "type": "ordinal", "axis": null, "scale": {"paddingOuter": 0.1}},
+        "y": {"field": "row", "type": "ordinal", "axis": null, "sort": "descending"},
+        "color": {
+          "field": "kind",
+          "type": "nominal",
+          "title": null,
+          "scale": {"domain": ["Horror", "Other genres"], "range": ["#b3122a", "#e3e3e3"]},
+          "legend": {"orient": "top", "symbolType": "square", "labelFontSize": 12}
+        },
+        "tooltip": [
+          {"field": "decade", "title": "Decade"},
+          {"field": "exact_pct", "title": "Horror share (%)", "format": ".1f"},
+          {"field": "Horror", "title": "Horror films", "format": ","},
+          {"field": "all_films", "title": "All films", "format": ","}
+        ]
+      }
+    },
+    "resolve": {"scale": {"x": "shared", "y": "shared"}},
+    "config": {
+      "view": {"stroke": null},
+      "font": "Georgia, serif",
+      "facet": {"spacing": 14}
+    }
+  }

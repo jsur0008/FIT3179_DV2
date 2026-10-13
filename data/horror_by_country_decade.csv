@@ -1,0 +1,727 @@
+id,code,country,decade_start,films
+250,FR,France,1900,33
+392,JP,Japan,1900,18
+840,US,United States,1900,12
+826,GB,United Kingdom,1900,7
+208,DK,Denmark,1900,3
+276,DE,Germany,1900,1
+380,IT,Italy,1900,1
+528,NL,Netherlands,1900,1
+643,RU,Russian Federation,1900,1
+392,JP,Japan,1910,102
+840,US,United States,1910,70
+276,DE,Germany,1910,38
+380,IT,Italy,1910,19
+643,RU,Russian Federation,1910,16
+826,GB,United Kingdom,1910,14
+250,FR,France,1910,13
+208,DK,Denmark,1910,5
+752,SE,Sweden,1910,3
+40,AT,Austria,1910,3
+724,ES,Spain,1910,3
+348,HU,Hungary,1910,2
+124,CA,Canada,1910,1
+156,CN,China,1910,1
+528,NL,Netherlands,1910,1
+203,CZ,Czechia,1910,1
+36,AU,Australia,1910,1
+484,MX,Mexico,1910,1
+840,US,United States,1920,92
+392,JP,Japan,1920,75
+276,DE,Germany,1920,30
+826,GB,United Kingdom,1920,26
+250,FR,France,1920,8
+40,AT,Austria,1920,6
+356,IN,India,1920,5
+208,DK,Denmark,1920,3
+348,HU,Hungary,1920,2
+752,SE,Sweden,1920,2
+643,RU,Russian Federation,1920,2
+246,FI,Finland,1920,2
+410,KR,South Korea,1920,2
+528,NL,Netherlands,1920,1
+36,AU,Australia,1920,1
+203,CZ,Czechia,1920,1
+380,IT,Italy,1920,1
+608,PH,Philippines,1920,1
+156,CN,China,1920,1
+124,CA,Canada,1920,1
+616,PL,Poland,1920,1
+840,US,United States,1930,159
+392,JP,Japan,1930,50
+826,GB,United Kingdom,1930,22
+344,HK,Hong Kong,1930,21
+356,IN,India,1930,10
+156,CN,China,1930,9
+484,MX,Mexico,1930,9
+608,PH,Philippines,1930,8
+276,DE,Germany,1930,7
+250,FR,France,1930,4
+380,IT,Italy,1930,3
+764,TH,Thailand,1930,3
+724,ES,Spain,1930,3
+410,KR,South Korea,1930,2
+348,HU,Hungary,1930,2
+642,RO,Romania,1930,1
+360,ID,Indonesia,1930,1
+818,EG,Egypt,1930,1
+756,CH,Switzerland,1930,1
+36,AU,Australia,1930,1
+586,PK,Pakistan,1930,1
+528,NL,Netherlands,1930,1
+840,US,United States,1940,178
+826,GB,United Kingdom,1940,36
+392,JP,Japan,1940,17
+344,HK,Hong Kong,1940,15
+484,MX,Mexico,1940,9
+156,CN,China,1940,8
+356,IN,India,1940,8
+250,FR,France,1940,8
+32,AR,Argentina,1940,4
+752,SE,Sweden,1940,3
+608,PH,Philippines,1940,3
+724,ES,Spain,1940,3
+276,DE,Germany,1940,3
+152,CL,Chile,1940,3
+764,TH,Thailand,1940,2
+124,CA,Canada,1940,1
+360,ID,Indonesia,1940,1
+756,CH,Switzerland,1940,1
+620,PT,Portugal,1940,1
+246,FI,Finland,1940,1
+818,EG,Egypt,1940,1
+410,KR,South Korea,1940,1
+203,CZ,Czechia,1940,1
+40,AT,Austria,1940,1
+792,TR,Türkiye,1940,1
+840,US,United States,1950,221
+392,JP,Japan,1950,93
+826,GB,United Kingdom,1950,65
+344,HK,Hong Kong,1950,56
+484,MX,Mexico,1950,31
+608,PH,Philippines,1950,15
+356,IN,India,1950,13
+764,TH,Thailand,1950,13
+702,SG,Singapore,1950,10
+250,FR,France,1950,8
+276,DE,Germany,1950,7
+458,MY,Malaysia,1950,7
+724,ES,Spain,1950,5
+32,AR,Argentina,1950,5
+818,EG,Egypt,1950,4
+380,IT,Italy,1950,4
+792,TR,Türkiye,1950,3
+752,SE,Sweden,1950,3
+40,AT,Austria,1950,2
+246,FI,Finland,1950,2
+124,CA,Canada,1950,2
+410,KR,South Korea,1950,2
+76,BR,Brazil,1950,2
+208,DK,Denmark,1950,1
+320,GT,Guatemala,1950,1
+372,IE,Ireland,1950,1
+528,NL,Netherlands,1950,1
+203,CZ,Czechia,1950,1
+170,CO,Colombia,1950,1
+364,IR,Iran,1950,1
+688,RS,Serbia,1950,1
+578,NO,Norway,1950,1
+300,GR,Greece,1950,1
+158,TW,Taiwan,1950,1
+840,US,United States,1960,400
+826,GB,United Kingdom,1960,151
+392,JP,Japan,1960,108
+484,MX,Mexico,1960,103
+380,IT,Italy,1960,70
+344,HK,Hong Kong,1960,70
+724,ES,Spain,1960,63
+356,IN,India,1960,46
+764,TH,Thailand,1960,40
+250,FR,France,1960,38
+276,DE,Germany,1960,35
+608,PH,Philippines,1960,32
+410,KR,South Korea,1960,29
+32,AR,Argentina,1960,11
+364,IR,Iran,1960,11
+203,CZ,Czechia,1960,11
+76,BR,Brazil,1960,10
+616,PL,Poland,1960,10
+158,TW,Taiwan,1960,9
+124,CA,Canada,1960,7
+40,AT,Austria,1960,7
+208,DK,Denmark,1960,6
+688,RS,Serbia,1960,6
+458,MY,Malaysia,1960,6
+36,AU,Australia,1960,5
+752,SE,Sweden,1960,5
+702,SG,Singapore,1960,5
+372,IE,Ireland,1960,4
+56,BE,Belgium,1960,4
+246,FI,Finland,1960,3
+818,EG,Egypt,1960,3
+360,ID,Indonesia,1960,2
+300,GR,Greece,1960,2
+586,PK,Pakistan,1960,2
+862,VE,Venezuela,1960,2
+642,RO,Romania,1960,1
+578,NO,Norway,1960,1
+528,NL,Netherlands,1960,1
+422,LB,Lebanon,1960,1
+792,TR,Türkiye,1960,1
+643,RU,Russian Federation,1960,1
+116,KH,Cambodia,1960,1
+376,IL,Israel,1960,1
+10,AQ,Antarctica,1960,1
+604,PE,Peru,1960,1
+620,PT,Portugal,1960,1
+174,KM,Comoros,1960,1
+840,US,United States,1970,874
+826,GB,United Kingdom,1970,244
+380,IT,Italy,1970,224
+724,ES,Spain,1970,143
+392,JP,Japan,1970,138
+250,FR,France,1970,99
+484,MX,Mexico,1970,72
+158,TW,Taiwan,1970,67
+76,BR,Brazil,1970,66
+276,DE,Germany,1970,63
+344,HK,Hong Kong,1970,63
+764,TH,Thailand,1970,46
+410,KR,South Korea,1970,45
+356,IN,India,1970,39
+124,CA,Canada,1970,38
+608,PH,Philippines,1970,38
+360,ID,Indonesia,1970,32
+36,AU,Australia,1970,21
+688,RS,Serbia,1970,20
+756,CH,Switzerland,1970,14
+616,PL,Poland,1970,13
+32,AR,Argentina,1970,13
+203,CZ,Czechia,1970,12
+792,TR,Türkiye,1970,11
+56,BE,Belgium,1970,11
+620,PT,Portugal,1970,7
+752,SE,Sweden,1970,6
+208,DK,Denmark,1970,5
+40,AT,Austria,1970,5
+643,RU,Russian Federation,1970,5
+174,KM,Comoros,1970,4
+702,SG,Singapore,1970,4
+300,GR,Greece,1970,4
+528,NL,Netherlands,1970,4
+710,ZA,South Africa,1970,3
+372,IE,Ireland,1970,3
+376,IL,Israel,1970,3
+364,IR,Iran,1970,3
+156,CN,China,1970,2
+642,RO,Romania,1970,2
+704,VN,Vietnam,1970,2
+578,NO,Norway,1970,2
+604,PE,Peru,1970,2
+458,MY,Malaysia,1970,2
+862,VE,Venezuela,1970,2
+348,HU,Hungary,1970,2
+116,KH,Cambodia,1970,1
+630,PR,Puerto Rico,1970,1
+818,EG,Egypt,1970,1
+760,SY,Syria,1970,1
+332,HT,Haiti,1970,1
+414,KW,Kuwait,1970,1
+152,CL,Chile,1970,1
+740,SR,Suriname,1970,1
+196,CY,Cyprus,1970,1
+246,FI,Finland,1970,1
+20,AD,Andorra,1970,1
+352,IS,Iceland,1970,1
+170,CO,Colombia,1970,1
+496,MN,Mongolia,1970,1
+840,US,United States,1980,1444
+392,JP,Japan,1980,253
+826,GB,United Kingdom,1980,207
+344,HK,Hong Kong,1980,188
+380,IT,Italy,1980,175
+360,ID,Indonesia,1980,107
+158,TW,Taiwan,1980,105
+124,CA,Canada,1980,104
+484,MX,Mexico,1980,84
+724,ES,Spain,1980,82
+356,IN,India,1980,76
+250,FR,France,1980,75
+764,TH,Thailand,1980,67
+276,DE,Germany,1980,66
+76,BR,Brazil,1980,51
+608,PH,Philippines,1980,50
+36,AU,Australia,1980,49
+410,KR,South Korea,1980,45
+643,RU,Russian Federation,1980,26
+203,CZ,Czechia,1980,22
+156,CN,China,1980,19
+616,PL,Poland,1980,18
+752,SE,Sweden,1980,14
+792,TR,Türkiye,1980,13
+528,NL,Netherlands,1980,12
+688,RS,Serbia,1980,11
+554,NZ,New Zealand,1980,11
+756,CH,Switzerland,1980,9
+372,IE,Ireland,1980,9
+818,EG,Egypt,1980,9
+32,AR,Argentina,1980,8
+300,GR,Greece,1980,8
+170,CO,Colombia,1980,7
+458,MY,Malaysia,1980,7
+620,PT,Portugal,1980,7
+56,BE,Belgium,1980,7
+40,AT,Austria,1980,7
+578,NO,Norway,1980,7
+352,IS,Iceland,1980,6
+710,ZA,South Africa,1980,5
+862,VE,Venezuela,1980,5
+208,DK,Denmark,1980,5
+246,FI,Finland,1980,5
+364,IR,Iran,1980,4
+348,HU,Hungary,1980,2
+50,BD,Bangladesh,1980,2
+586,PK,Pakistan,1980,2
+858,UY,Uruguay,1980,2
+174,KM,Comoros,1980,1
+191,HR,Croatia,1980,1
+192,CU,Cuba,1980,1
+604,PE,Peru,1980,1
+144,LK,Sri Lanka,1980,1
+376,IL,Israel,1980,1
+233,EE,Estonia,1980,1
+408,KP,North Korea,1980,1
+438,LI,Liechtenstein,1980,1
+474,MQ,Martinique,1980,1
+566,NG,Nigeria,1980,1
+100,BG,Bulgaria,1980,1
+840,US,United States,1990,1925
+392,JP,Japan,1990,525
+344,HK,Hong Kong,1990,199
+826,GB,United Kingdom,1990,184
+124,CA,Canada,1990,146
+276,DE,Germany,1990,119
+484,MX,Mexico,1990,108
+356,IN,India,1990,86
+380,IT,Italy,1990,70
+764,TH,Thailand,1990,65
+608,PH,Philippines,1990,55
+76,BR,Brazil,1990,54
+724,ES,Spain,1990,51
+643,RU,Russian Federation,1990,48
+250,FR,France,1990,46
+36,AU,Australia,1990,39
+360,ID,Indonesia,1990,38
+158,TW,Taiwan,1990,34
+32,AR,Argentina,1990,34
+410,KR,South Korea,1990,21
+156,CN,China,1990,19
+208,DK,Denmark,1990,14
+528,NL,Netherlands,1990,13
+804,UA,Ukraine,1990,13
+40,AT,Austria,1990,12
+756,CH,Switzerland,1990,11
+566,NG,Nigeria,1990,11
+554,NZ,New Zealand,1990,10
+203,CZ,Czechia,1990,10
+246,FI,Finland,1990,10
+616,PL,Poland,1990,8
+752,SE,Sweden,1990,7
+300,GR,Greece,1990,7
+818,EG,Egypt,1990,6
+372,IE,Ireland,1990,5
+496,MN,Mongolia,1990,5
+688,RS,Serbia,1990,4
+858,UY,Uruguay,1990,4
+348,HU,Hungary,1990,4
+792,TR,Türkiye,1990,4
+56,BE,Belgium,1990,4
+642,RO,Romania,1990,4
+364,IR,Iran,1990,4
+578,NO,Norway,1990,4
+414,KW,Kuwait,1990,4
+50,BD,Bangladesh,1990,4
+620,PT,Portugal,1990,3
+586,PK,Pakistan,1990,3
+458,MY,Malaysia,1990,2
+862,VE,Venezuela,1990,2
+352,IS,Iceland,1990,2
+705,SI,Slovenia,1990,2
+710,ZA,South Africa,1990,1
+12,DZ,Algeria,1990,1
+112,BY,Belarus,1990,1
+704,VN,Vietnam,1990,1
+428,LV,Latvia,1990,1
+233,EE,Estonia,1990,1
+524,NP,Nepal,1990,1
+702,SG,Singapore,1990,1
+504,MA,Morocco,1990,1
+440,LT,Lithuania,1990,1
+191,HR,Croatia,1990,1
+152,CL,Chile,1990,1
+192,CU,Cuba,1990,1
+807,MK,North Macedonia,1990,1
+170,CO,Colombia,1990,1
+682,SA,Saudi Arabia,1990,1
+840,US,United States,2000,4579
+392,JP,Japan,2000,1067
+124,CA,Canada,2000,384
+826,GB,United Kingdom,2000,341
+276,DE,Germany,2000,263
+724,ES,Spain,2000,160
+344,HK,Hong Kong,2000,146
+380,IT,Italy,2000,139
+356,IN,India,2000,139
+764,TH,Thailand,2000,133
+250,FR,France,2000,130
+32,AR,Argentina,2000,125
+76,BR,Brazil,2000,113
+360,ID,Indonesia,2000,96
+410,KR,South Korea,2000,94
+36,AU,Australia,2000,93
+608,PH,Philippines,2000,73
+484,MX,Mexico,2000,52
+752,SE,Sweden,2000,52
+643,RU,Russian Federation,2000,50
+208,DK,Denmark,2000,38
+372,IE,Ireland,2000,36
+156,CN,China,2000,28
+528,NL,Netherlands,2000,27
+458,MY,Malaysia,2000,27
+578,NO,Norway,2000,25
+792,TR,Türkiye,2000,25
+364,IR,Iran,2000,24
+40,AT,Austria,2000,23
+203,CZ,Czechia,2000,20
+158,TW,Taiwan,2000,19
+554,NZ,New Zealand,2000,18
+756,CH,Switzerland,2000,18
+688,RS,Serbia,2000,17
+246,FI,Finland,2000,17
+56,BE,Belgium,2000,17
+702,SG,Singapore,2000,14
+152,CL,Chile,2000,11
+620,PT,Portugal,2000,11
+642,RO,Romania,2000,11
+566,NG,Nigeria,2000,9
+616,PL,Poland,2000,9
+604,PE,Peru,2000,8
+300,GR,Greece,2000,7
+100,BG,Bulgaria,2000,6
+348,HU,Hungary,2000,6
+705,SI,Slovenia,2000,6
+704,VN,Vietnam,2000,6
+174,KM,Comoros,2000,5
+496,MN,Mongolia,2000,5
+191,HR,Croatia,2000,5
+214,DO,Dominican Republic,2000,5
+462,MV,Maldives,2000,4
+524,NP,Nepal,2000,4
+710,ZA,South Africa,2000,4
+170,CO,Colombia,2000,4
+630,PR,Puerto Rico,2000,4
+376,IL,Israel,2000,3
+414,KW,Kuwait,2000,3
+352,IS,Iceland,2000,3
+442,LU,Luxembourg,2000,3
+804,UA,Ukraine,2000,3
+450,MG,Madagascar,2000,2
+586,PK,Pakistan,2000,2
+388,JM,Jamaica,2000,2
+50,BD,Bangladesh,2000,2
+807,MK,North Macedonia,2000,2
+862,VE,Venezuela,2000,2
+116,KH,Cambodia,2000,2
+233,EE,Estonia,2000,2
+760,SY,Syria,2000,2
+703,SK,Slovakia,2000,2
+231,ET,Ethiopia,2000,2
+818,EG,Egypt,2000,2
+682,SA,Saudi Arabia,2000,2
+504,MA,Morocco,2000,2
+31,AZ,Azerbaijan,2000,2
+144,LK,Sri Lanka,2000,1
+196,CY,Cyprus,2000,1
+470,MT,Malta,2000,1
+716,ZW,Zimbabwe,2000,1
+858,UY,Uruguay,2000,1
+422,LB,Lebanon,2000,1
+112,BY,Belarus,2000,1
+706,SO,Somalia,2000,1
+12,DZ,Algeria,2000,1
+188,CR,Costa Rica,2000,1
+48,BH,Bahrain,2000,1
+218,EC,Ecuador,2000,1
+850,VI,"Virgin Islands, U.S.",2000,1
+398,KZ,Kazakhstan,2000,1
+840,US,United States,2010,10934
+392,JP,Japan,2010,2443
+826,GB,United Kingdom,2010,1279
+124,CA,Canada,2010,789
+724,ES,Spain,2010,537
+76,BR,Brazil,2010,444
+156,CN,China,2010,344
+250,FR,France,2010,321
+360,ID,Indonesia,2010,321
+276,DE,Germany,2010,318
+356,IN,India,2010,317
+36,AU,Australia,2010,267
+380,IT,Italy,2010,233
+484,MX,Mexico,2010,189
+792,TR,Türkiye,2010,162
+32,AR,Argentina,2010,158
+410,KR,South Korea,2010,153
+608,PH,Philippines,2010,150
+643,RU,Russian Federation,2010,142
+764,TH,Thailand,2010,141
+458,MY,Malaysia,2010,135
+372,IE,Ireland,2010,127
+620,PT,Portugal,2010,105
+752,SE,Sweden,2010,101
+578,NO,Norway,2010,80
+208,DK,Denmark,2010,78
+528,NL,Netherlands,2010,73
+344,HK,Hong Kong,2010,72
+40,AT,Austria,2010,61
+246,FI,Finland,2010,54
+554,NZ,New Zealand,2010,41
+364,IR,Iran,2010,39
+630,PR,Puerto Rico,2010,34
+702,SG,Singapore,2010,34
+756,CH,Switzerland,2010,32
+604,PE,Peru,2010,32
+616,PL,Poland,2010,29
+56,BE,Belgium,2010,29
+704,VN,Vietnam,2010,28
+804,UA,Ukraine,2010,27
+158,TW,Taiwan,2010,27
+688,RS,Serbia,2010,25
+376,IL,Israel,2010,24
+348,HU,Hungary,2010,19
+710,ZA,South Africa,2010,19
+104,MM,Myanmar,2010,19
+496,MN,Mongolia,2010,18
+116,KH,Cambodia,2010,18
+191,HR,Croatia,2010,16
+233,EE,Estonia,2010,16
+300,GR,Greece,2010,16
+152,CL,Chile,2010,16
+203,CZ,Czechia,2010,16
+398,KZ,Kazakhstan,2010,15
+784,AE,United Arab Emirates,2010,15
+50,BD,Bangladesh,2010,14
+170,CO,Colombia,2010,13
+31,AZ,Azerbaijan,2010,11
+112,BY,Belarus,2010,11
+682,SA,Saudi Arabia,2010,11
+414,KW,Kuwait,2010,10
+524,NP,Nepal,2010,10
+352,IS,Iceland,2010,10
+705,SI,Slovenia,2010,9
+818,EG,Egypt,2010,8
+144,LK,Sri Lanka,2010,8
+807,MK,North Macedonia,2010,7
+100,BG,Bulgaria,2010,7
+703,SK,Slovakia,2010,7
+862,VE,Venezuela,2010,7
+642,RO,Romania,2010,7
+440,LT,Lithuania,2010,6
+68,BO,Bolivia,2010,6
+48,BH,Bahrain,2010,5
+428,LV,Latvia,2010,5
+470,MT,Malta,2010,5
+214,DO,Dominican Republic,2010,4
+320,GT,Guatemala,2010,4
+600,PY,Paraguay,2010,4
+418,LA,Laos,2010,4
+858,UY,Uruguay,2010,4
+8,AL,Albania,2010,4
+462,MV,Maldives,2010,3
+70,BA,Bosnia and Herzegovina,2010,3
+174,KM,Comoros,2010,3
+566,NG,Nigeria,2010,3
+586,PK,Pakistan,2010,3
+218,EC,Ecuador,2010,3
+504,MA,Morocco,2010,2
+204,BJ,Benin,2010,2
+686,SN,Senegal,2010,2
+188,CR,Costa Rica,2010,2
+304,GL,Greenland,2010,2
+4,AF,Afghanistan,2010,2
+728,SS,South Sudan,2010,2
+417,KG,Kyrgyzstan,2010,2
+234,FO,Faroe Islands,2010,2
+12,DZ,Algeria,2010,2
+222,SV,El Salvador,2010,2
+591,PA,Panama,2010,2
+192,CU,Cuba,2010,2
+340,HN,Honduras,2010,2
+776,TO,Tonga,2010,1
+499,ME,Montenegro,2010,1
+28,AG,Antigua and Barbuda,2010,1
+226,GQ,Equatorial Guinea,2010,1
+634,QA,Qatar,2010,1
+584,MH,Marshall Islands,2010,1
+512,OM,Oman,2010,1
+51,AM,Armenia,2010,1
+268,GE,Georgia,2010,1
+384,CI,Côte d'Ivoire,2010,1
+422,LB,Lebanon,2010,1
+694,SL,Sierra Leone,2010,1
+388,JM,Jamaica,2010,1
+24,AO,Angola,2010,1
+196,CY,Cyprus,2010,1
+288,GH,Ghana,2010,1
+638,RE,Réunion,2010,1
+788,TN,Tunisia,2010,1
+894,ZM,Zambia,2010,1
+312,GP,Guadeloupe,2010,1
+120,CM,Cameroon,2010,1
+64,BT,Bhutan,2010,1
+442,LU,Luxembourg,2010,1
+678,ST,Sao Tome and Principe,2010,1
+840,US,United States,2020,14057
+826,GB,United Kingdom,2020,1924
+76,BR,Brazil,2020,1235
+124,CA,Canada,2020,1143
+392,JP,Japan,2020,1014
+724,ES,Spain,2020,951
+250,FR,France,2020,724
+360,ID,Indonesia,2020,598
+484,MX,Mexico,2020,564
+356,IN,India,2020,521
+36,AU,Australia,2020,495
+380,IT,Italy,2020,434
+32,AR,Argentina,2020,413
+276,DE,Germany,2020,363
+792,TR,Türkiye,2020,330
+410,KR,South Korea,2020,263
+156,CN,China,2020,261
+764,TH,Thailand,2020,222
+608,PH,Philippines,2020,214
+458,MY,Malaysia,2020,197
+620,PT,Portugal,2020,191
+372,IE,Ireland,2020,173
+752,SE,Sweden,2020,155
+643,RU,Russian Federation,2020,141
+116,KH,Cambodia,2020,129
+528,NL,Netherlands,2020,129
+554,NZ,New Zealand,2020,112
+578,NO,Norway,2020,94
+56,BE,Belgium,2020,92
+208,DK,Denmark,2020,82
+246,FI,Finland,2020,81
+152,CL,Chile,2020,80
+616,PL,Poland,2020,79
+158,TW,Taiwan,2020,70
+170,CO,Colombia,2020,70
+40,AT,Austria,2020,61
+704,VN,Vietnam,2020,60
+300,GR,Greece,2020,58
+364,IR,Iran,2020,57
+604,PE,Peru,2020,49
+344,HK,Hong Kong,2020,46
+688,RS,Serbia,2020,43
+710,ZA,South Africa,2020,40
+756,CH,Switzerland,2020,38
+702,SG,Singapore,2020,38
+804,UA,Ukraine,2020,37
+348,HU,Hungary,2020,37
+398,KZ,Kazakhstan,2020,34
+858,UY,Uruguay,2020,34
+50,BD,Bangladesh,2020,33
+496,MN,Mongolia,2020,32
+203,CZ,Czechia,2020,31
+642,RO,Romania,2020,29
+376,IL,Israel,2020,29
+862,VE,Venezuela,2020,28
+233,EE,Estonia,2020,28
+191,HR,Croatia,2020,27
+104,MM,Myanmar,2020,24
+100,BG,Bulgaria,2020,24
+214,DO,Dominican Republic,2020,24
+682,SA,Saudi Arabia,2020,23
+818,EG,Egypt,2020,23
+586,PK,Pakistan,2020,21
+630,PR,Puerto Rico,2020,20
+352,IS,Iceland,2020,20
+524,NP,Nepal,2020,20
+428,LV,Latvia,2020,19
+112,BY,Belarus,2020,18
+144,LK,Sri Lanka,2020,17
+218,EC,Ecuador,2020,16
+417,KG,Kyrgyzstan,2020,16
+705,SI,Slovenia,2020,14
+188,CR,Costa Rica,2020,14
+566,NG,Nigeria,2020,13
+31,AZ,Azerbaijan,2020,12
+784,AE,United Arab Emirates,2020,12
+440,LT,Lithuania,2020,12
+470,MT,Malta,2020,12
+196,CY,Cyprus,2020,12
+600,PY,Paraguay,2020,12
+591,PA,Panama,2020,9
+70,BA,Bosnia and Herzegovina,2020,8
+414,KW,Kuwait,2020,8
+64,BT,Bhutan,2020,8
+268,GE,Georgia,2020,7
+504,MA,Morocco,2020,7
+807,MK,North Macedonia,2020,6
+788,TN,Tunisia,2020,6
+422,LB,Lebanon,2020,6
+51,AM,Armenia,2020,6
+340,HN,Honduras,2020,5
+703,SK,Slovakia,2020,5
+442,LU,Luxembourg,2020,5
+462,MV,Maldives,2020,5
+12,DZ,Algeria,2020,4
+8,AL,Albania,2020,4
+48,BH,Bahrain,2020,4
+800,UG,Uganda,2020,4
+192,CU,Cuba,2020,4
+368,IQ,Iraq,2020,4
+404,KE,Kenya,2020,4
+320,GT,Guatemala,2020,4
+686,SN,Senegal,2020,4
+68,BO,Bolivia,2020,3
+450,MG,Madagascar,2020,3
+20,AD,Andorra,2020,3
+292,GI,Gibraltar,2020,3
+499,ME,Montenegro,2020,3
+418,LA,Laos,2020,3
+434,LY,Libya,2020,2
+316,GU,Guam,2020,2
+234,FO,Faroe Islands,2020,2
+120,CM,Cameroon,2020,2
+304,GL,Greenland,2020,2
+780,TT,Trinidad and Tobago,2020,2
+222,SV,El Salvador,2020,2
+275,PS,"Palestine, State of",2020,2
+716,ZW,Zimbabwe,2020,1
+854,BF,Burkina Faso,2020,1
+96,BN,Brunei Darussalam,2020,1
+512,OM,Oman,2020,1
+388,JM,Jamaica,2020,1
+308,GD,Grenada,2020,1
+694,SL,Sierra Leone,2020,1
+438,LI,Liechtenstein,2020,1
+834,TZ,Tanzania,2020,1
+498,MD,Moldova,2020,1
+850,VI,"Virgin Islands, U.S.",2020,1
+242,FJ,Fiji,2020,1
+312,GP,Guadeloupe,2020,1
+178,CG,Congo,2020,1
+72,BW,Botswana,2020,1
+84,BZ,Belize,2020,1
+740,SR,Suriname,2020,1
+16,AS,American Samoa,2020,1
+474,MQ,Martinique,2020,1
+558,NI,Nicaragua,2020,1
+288,GH,Ghana,2020,1
+478,MR,Mauritania,2020,1
+646,RW,Rwanda,2020,1
+408,KP,North Korea,2020,1
+634,QA,Qatar,2020,1
+52,BB,Barbados,2020,1
+232,ER,Eritrea,2020,1
+638,RE,Réunion,2020,1

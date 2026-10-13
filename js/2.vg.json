@@ -1,0 +1,452 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Set here, shot there",
+      "subtitle": "Each curve links where a horror film's story is set to where it was filmed. Thicker curves mean more films.",
+      "anchor": "middle",
+      "fontSize": 15,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555"
+    },
+    "params": [
+      {
+        "name": "decade_sel",
+        "value": 0,
+        "bind": {
+          "input": "select",
+          "options": [
+            0,
+            1980,
+            1990,
+            2000,
+            2010,
+            2020
+          ],
+          "labels": [
+            "All decades",
+            "1980s",
+            "1990s",
+            "2000s",
+            "2010s",
+            "2020s"
+          ],
+          "name": "Decade  "
+        }
+      },
+      {
+        "name": "min_films",
+        "value": 2,
+        "bind": {
+          "input": "range",
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "name": "Show routes with at least this many films  "
+        }
+      }
+    ],
+    "width": 700,
+    "height": 380,
+    "view": {
+      "stroke": "#cfcfcf"
+    },
+    "projection": {
+      "type": "naturalEarth1"
+    },
+    "layer": [
+      {
+        "data": {
+          "sphere": true
+        },
+        "mark": {
+          "type": "geoshape",
+          "fill": "#99cbe6"
+        }
+      },
+      {
+        "data": {
+          "graticule": {
+            "step": [
+              30,
+              30
+            ]
+          }
+        },
+        "mark": {
+          "type": "geoshape",
+          "fill": null,
+          "stroke": "#ffffff",
+          "strokeOpacity": 0.45,
+          "strokeWidth": 0.6
+        }
+      },
+      {
+        "data": {
+          "url": "../data/world-110m.json",
+          "format": {
+            "type": "topojson",
+            "feature": "countries"
+          }
+        },
+        "mark": {
+          "type": "geoshape",
+          "fill": "#d3d3d3",
+          "stroke": "white",
+          "strokeWidth": 0.5
+        }
+      },
+      {
+        "data": {
+          "url": "../data/horror_connections.json"
+        },
+        "transform": [
+          {
+            "filter": "(decade_sel == 0 || datum.decade_start == decade_sel) && datum.films >= min_films"
+          }
+        ],
+        "mark": {
+          "type": "geoshape",
+          "fill": null,
+          "stroke": "#b3122a",
+          "strokeOpacity": 0.45,
+          "strokeCap": "round"
+        },
+        "encoding": {
+          "shape": {
+            "field": "geo",
+            "type": "geojson"
+          },
+          "strokeWidth": {
+            "field": "films",
+            "type": "quantitative",
+            "scale": {
+              "type": "sqrt",
+              "range": [
+                0.8,
+                5
+              ]
+            },
+            "legend": null
+          },
+          "tooltip": [
+            {
+              "field": "set_in",
+              "title": "Story set in"
+            },
+            {
+              "field": "filmed_in",
+              "title": "Filmed in"
+            },
+            {
+              "field": "films",
+              "title": "Films"
+            },
+            {
+              "field": "example",
+              "title": "For example"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "url": "../data/horror_connections.json"
+        },
+        "transform": [
+          {
+            "filter": "(decade_sel == 0 || datum.decade_start == decade_sel) && datum.films >= min_films"
+          },
+          {
+            "aggregate": [
+              {
+                "op": "sum",
+                "field": "films",
+                "as": "films"
+              }
+            ],
+            "groupby": [
+              "set_in",
+              "set_in_country",
+              "set_lon",
+              "set_lat"
+            ]
+          },
+          {
+            "calculate": "'Story set here'",
+            "as": "role"
+          }
+        ],
+        "mark": {
+          "type": "circle",
+          "stroke": "white",
+          "strokeWidth": 0.8,
+          "opacity": 0.9
+        },
+        "encoding": {
+          "longitude": {
+            "field": "set_lon",
+            "type": "quantitative"
+          },
+          "latitude": {
+            "field": "set_lat",
+            "type": "quantitative"
+          },
+          "size": {
+            "field": "films",
+            "type": "quantitative",
+            "title": "Films (routes)",
+            "scale": {
+              "type": "sqrt",
+              "domain": [
+                0,
+                100
+              ],
+              "range": [
+                0,
+                520
+              ]
+            },
+            "legend": {
+              "orient": "right",
+              "values": [
+                5,
+                25,
+                50,
+                100
+              ],
+              "symbolFillColor": "#999",
+              "titleFontSize": 12,
+              "labelFontSize": 11
+            }
+          },
+          "color": {
+            "field": "role",
+            "type": "nominal",
+            "title": null,
+            "scale": {
+              "domain": [
+                "Story set here",
+                "Filmed here"
+              ],
+              "range": [
+                "#1f2a44",
+                "#b3122a"
+              ]
+            },
+            "legend": {
+              "orient": "right",
+              "symbolType": "circle",
+              "labelFontSize": 12
+            }
+          },
+          "order": {
+            "field": "films",
+            "type": "quantitative",
+            "sort": "descending"
+          },
+          "tooltip": [
+            {
+              "field": "set_in",
+              "title": "Place"
+            },
+            {
+              "field": "set_in_country",
+              "title": "Country"
+            },
+            {
+              "field": "role",
+              "title": "Role"
+            },
+            {
+              "field": "films",
+              "title": "Films",
+              "format": ",.0f"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "url": "../data/horror_connections.json"
+        },
+        "transform": [
+          {
+            "filter": "(decade_sel == 0 || datum.decade_start == decade_sel) && datum.films >= min_films"
+          },
+          {
+            "aggregate": [
+              {
+                "op": "sum",
+                "field": "films",
+                "as": "films"
+              }
+            ],
+            "groupby": [
+              "filmed_in",
+              "filmed_in_country",
+              "shot_lon",
+              "shot_lat"
+            ]
+          },
+          {
+            "calculate": "'Filmed here'",
+            "as": "role"
+          }
+        ],
+        "mark": {
+          "type": "circle",
+          "stroke": "white",
+          "strokeWidth": 0.8,
+          "opacity": 0.9
+        },
+        "encoding": {
+          "longitude": {
+            "field": "shot_lon",
+            "type": "quantitative"
+          },
+          "latitude": {
+            "field": "shot_lat",
+            "type": "quantitative"
+          },
+          "size": {
+            "field": "films",
+            "type": "quantitative",
+            "title": "Films (routes)",
+            "scale": {
+              "type": "sqrt",
+              "domain": [
+                0,
+                100
+              ],
+              "range": [
+                0,
+                520
+              ]
+            },
+            "legend": {
+              "orient": "right",
+              "values": [
+                5,
+                25,
+                50,
+                100
+              ],
+              "symbolFillColor": "#999",
+              "titleFontSize": 12,
+              "labelFontSize": 11
+            }
+          },
+          "color": {
+            "field": "role",
+            "type": "nominal",
+            "title": null,
+            "scale": {
+              "domain": [
+                "Story set here",
+                "Filmed here"
+              ],
+              "range": [
+                "#1f2a44",
+                "#b3122a"
+              ]
+            },
+            "legend": {
+              "orient": "right",
+              "symbolType": "circle",
+              "labelFontSize": 12
+            }
+          },
+          "order": {
+            "field": "films",
+            "type": "quantitative",
+            "sort": "descending"
+          },
+          "tooltip": [
+            {
+              "field": "filmed_in",
+              "title": "Place"
+            },
+            {
+              "field": "filmed_in_country",
+              "title": "Country"
+            },
+            {
+              "field": "role",
+              "title": "Role"
+            },
+            {
+              "field": "films",
+              "title": "Films",
+              "format": ",.0f"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "url": "../data/horror_connections.json"
+        },
+        "transform": [
+          {
+            "filter": "(decade_sel == 0 || datum.decade_start == decade_sel) && datum.films >= min_films"
+          },
+          {
+            "aggregate": [
+              {
+                "op": "sum",
+                "field": "films",
+                "as": "films"
+              }
+            ],
+            "groupby": [
+              "set_in_country",
+              "filmed_in_country"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "max",
+                "field": "films",
+                "as": "top"
+              }
+            ]
+          },
+          {
+            "filter": "datum.films == datum.top"
+          },
+          {
+            "calculate": "'Most common route: set in ' + datum.set_in_country + ', filmed in ' + datum.filmed_in_country + ' (' + datum.films + ' films)'",
+            "as": "label"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "bottom",
+          "fontStyle": "italic",
+          "fontSize": 12,
+          "color": "#1f2a44",
+          "dx": 12
+        },
+        "encoding": {
+          "x": {
+            "value": 0
+          },
+          "y": {
+            "value": 366
+          },
+          "text": {
+            "field": "label",
+            "type": "nominal"
+          }
+        }
+      }
+    ],
+    "config": {
+      "view": {
+        "stroke": null
+      },
+      "font": "Georgia, serif"
+    }
+  }

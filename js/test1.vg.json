@@ -1,0 +1,63 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Horror films the Academy has nominated",
+      "subtitle": "Each lollipop is one film; the height is how many Oscar nominations it received.",
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555"
+    },
+    "width": 560,
+    "height": 260,
+    "data": {"url": "../data/oscars_horror_milestones.csv"},
+    "transform": [
+      {"calculate": "datum.wins > 0 ? 'Won at least one Oscar' : 'Nominated only'", "as": "outcome"}
+    ],
+    "layer": [
+      {
+        "mark": {"type": "rule", "color": "#cfcfcf", "strokeWidth": 2},
+        "encoding": {
+          "x": {"field": "year", "type": "quantitative", "title": null, "scale": {"zero": false, "padding": 26},
+                "axis": {"format": "d", "grid": false, "tickMinStep": 10, "labelPadding": 6}},
+          "y": {"field": "nominations", "type": "quantitative", "title": "Oscar nominations",
+                "axis": {"tickMinStep": 1, "gridColor": "#eee"}},
+          "y2": {"datum": 0}
+        }
+      },
+      {
+        "mark": {"type": "point", "filled": true, "size": 110, "opacity": 1},
+        "encoding": {
+          "x": {"field": "year", "type": "quantitative"},
+          "y": {"field": "nominations", "type": "quantitative"},
+          "color": {
+            "field": "outcome",
+            "type": "nominal",
+            "title": null,
+            "scale": {"domain": ["Won at least one Oscar", "Nominated only"], "range": ["#b3122a", "#8c8c8c"]},
+            "legend": {"orient": "top", "symbolType": "circle"}
+          },
+          "tooltip": [
+            {"field": "title", "title": "Film"},
+            {"field": "year", "title": "Year", "format": "d"},
+            {"field": "nominations", "title": "Nominations"},
+            {"field": "wins", "title": "Wins"}
+          ]
+        }
+      },
+      {
+        "transform": [{"filter": "datum.nominations >= 6 || datum.wins >= 2"}],
+        "mark": {"type": "text", "align": "center", "dy": -13, "fontSize": 11, "color": "#333"},
+        "encoding": {
+          "x": {"field": "year", "type": "quantitative"},
+          "y": {"field": "nominations", "type": "quantitative"},
+          "text": {"field": "title"}
+        }
+      }
+    ],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"labelFontSize": 12, "titleFontSize": 12, "domain": false, "ticks": false},
+      "font": "Garamond"
+    }
+  }

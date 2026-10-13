@@ -1,0 +1,213 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "Zoomable map of Australian cinemas over a state boundary base layer.",
+    "autosize": {"type": "fit-x", "contains": "padding"},
+    "padding": 0,
+    "background": "#f4f6f8",
+  
+    "signals": [
+      {
+        "name": "width",
+        "init": "isFinite(containerSize()[0]) ? containerSize()[0] : 800",
+        "on": [
+          {
+            "events": "window:resize",
+            "update": "isFinite(containerSize()[0]) ? containerSize()[0] : 800"
+          }
+        ]
+      },
+      {
+        "name": "height",
+        "update": "round(width * 0.9)"
+      },
+  
+      {
+        "description": "One mouse-wheel step: zoom factor plus the cursor position it is anchored to.",
+        "name": "zoom",
+        "value": null,
+        "on": [
+          {
+            "events": {"type": "wheel", "consume": true},
+            "update": "{k: clamp(pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), width * 0.9 / view.scale, width * 60 / view.scale), x: x(), y: y()}"
+          }
+        ]
+      },
+  
+      {
+        "description": "Current map position (tx, ty = where the projection centre sits on screen) and zoom (scale).",
+        "name": "view",
+        "init": "{tx: width / 2, ty: width * 0.45, scale: width * 1.25}",
+        "on": [
+          {
+            "events": {"signal": "zoom"},
+            "update": "{tx: zoom.x - (zoom.x - view.tx) * zoom.k, ty: zoom.y - (zoom.y - view.ty) * zoom.k, scale: view.scale * zoom.k}"
+          },
+          {
+            "events": "[mousedown, window:mouseup] > window:mousemove",
+            "update": "{tx: view.tx + event.movementX, ty: view.ty + event.movementY, scale: view.scale}"
+          },
+          {
+            "events": "dblclick",
+            "update": "{tx: width / 2, ty: width * 0.45, scale: width * 1.25}"
+          },
+          {
+            "events": {"signal": "width"},
+            "update": "{tx: width / 2, ty: width * 0.45, scale: width * 1.25}"
+          }
+        ]
+      },
+  
+      {
+        "description": "Cinema dots grow gently as you zoom in.",
+        "name": "dotSize",
+        "update": "28 * pow(view.scale / (width * 1.25), 0.4)"
+      }
+    ],
+  
+    "data": [
+      {
+        "name": "states",
+        "url": "../data/states.geojson",
+        "format": {"type": "json", "property": "features"}
+      },
+      {
+        "name": "cinemas",
+        "url": "../data/cinemas.csv",
+        "format": {"type": "csv", "parse": {"lat": "number", "lon": "number"}}
+      },
+      {
+        "name": "stateLabels",
+        "values": [
+          {"label": "WA",  "lon": 122.5, "lat": -26.0},
+          {"label": "NT",  "lon": 133.3, "lat": -19.5},
+          {"label": "SA",  "lon": 135.2, "lat": -30.3},
+          {"label": "QLD", "lon": 144.2, "lat": -22.5},
+          {"label": "NSW", "lon": 146.4, "lat": -32.3},
+          {"label": "VIC", "lon": 144.3, "lat": -36.9},
+          {"label": "TAS", "lon": 146.6, "lat": -42.1}
+        ]
+      }
+    ],
+  
+    "projections": [
+      {
+        "description": "Albers equal-area conic centred on Australia.",
+        "name": "projection",
+        "type": "conicEqualArea",
+        "rotate": [-132, 0, 0],
+        "center": [0, -27],
+        "parallels": [-18, -36],
+        "scale": {"signal": "view.scale"},
+        "translate": [{"signal": "view.tx"}, {"signal": "view.ty"}]
+      }
+    ],
+  
+    "marks": [
+      {
+        "description": "Sea",
+        "type": "rect",
+        "interactive": false,
+        "encode": {
+          "update": {
+            "x": {"value": 0},
+            "y": {"value": 0},
+            "width": {"signal": "width"},
+            "height": {"signal": "height"},
+            "fill": {"value": "#e6edf3"}
+          }
+        }
+      },
+  
+      {
+        "description": "Base layer: one shape per state or territory",
+        "type": "shape",
+        "from": {"data": "states"},
+        "clip": true,
+        "encode": {
+          "enter": {
+            "stroke": {"value": "#ffffff"},
+            "strokeWidth": {"value": 1.2},
+            "strokeJoin": {"value": "round"},
+            "cursor": {"value": "grab"}
+          },
+          "update": {
+            "fill": {"value": "#d6dce3"},
+            "tooltip": {
+              "signal": "datum.properties.STATE_NAME || datum.properties.STE_NAME21 || datum.properties.STE_NAME16 || datum.properties.name || datum.properties.NAME"
+            }
+          },
+          "hover": {
+            "fill": {"value": "#c3ccd6"}
+          }
+        },
+        "transform": [{"type": "geoshape", "projection": "projection"}]
+      },
+  
+      {
+        "description": "State abbreviations",
+        "type": "text",
+        "from": {"data": "stateLabels"},
+        "clip": true,
+        "interactive": false,
+        "encode": {
+          "enter": {
+            "text": {"field": "label"},
+            "align": {"value": "center"},
+            "baseline": {"value": "middle"},
+            "fill": {"value": "#7b8794"},
+            "font": {"value": "Source Sans 3, sans-serif"},
+            "fontSize": {"value": 12},
+            "fontWeight": {"value": "bold"}
+          }
+        },
+        "transform": [
+          {"type": "geopoint", "projection": "projection", "fields": ["lon", "lat"]}
+        ]
+      },
+  
+      {
+        "description": "One dot per cinema",
+        "type": "symbol",
+        "from": {"data": "cinemas"},
+        "clip": true,
+        "encode": {
+          "enter": {
+            "fill": {"value": "#b3123a"},
+            "fillOpacity": {"value": 0.8},
+            "stroke": {"value": "#ffffff"},
+            "strokeWidth": {"value": 0.6}
+          },
+          "update": {
+            "size": {"signal": "dotSize"},
+            "tooltip": {
+              "signal": "{title: datum.name, 'Data source': datum.source}"
+            }
+          },
+          "hover": {
+            "fillOpacity": {"value": 1},
+            "strokeWidth": {"value": 1.5}
+          }
+        },
+        "transform": [
+          {"type": "geopoint", "projection": "projection", "fields": ["lon", "lat"]}
+        ]
+      },
+  
+      {
+        "description": "How-to hint",
+        "type": "text",
+        "interactive": false,
+        "encode": {
+          "update": {
+            "x": {"value": 12},
+            "y": {"signal": "height - 12"},
+            "text": {"value": "Scroll to zoom, drag to pan, double-click to reset"},
+            "fill": {"value": "#5b6673"},
+            "font": {"value": "Source Sans 3, sans-serif"},
+            "fontSize": {"value": 12},
+            "baseline": {"value": "bottom"}
+          }
+        }
+      }
+    ]
+  }

@@ -1,0 +1,79 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Most horror films have barely been rated",
+      "subtitle": "Top: how many films fall into each group by number of people who rated them. Bottom: how those rated films scored.",
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555"
+    },
+    "data": {"url": "../data/votes_vs_rating.csv"},
+    "vconcat": [
+      {
+        "width": 520,
+        "height": 150,
+        "mark": {"type": "bar", "color": "#b3122a", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3},
+        "encoding": {
+          "x": {
+            "field": "vote_group",
+            "type": "ordinal",
+            "title": null,
+            "sort": ["No votes", "1-4 votes", "5-19 votes", "20-99 votes", "100-999 votes", "1,000+ votes"],
+            "axis": {"labelAngle": 0, "labelFontSize": 11}
+          },
+          "y": {
+            "aggregate": "sum",
+            "field": "films",
+            "type": "quantitative",
+            "title": "Horror films",
+            "axis": {"format": ",.0f", "gridColor": "#eee"}
+          },
+          "tooltip": [
+            {"field": "vote_group", "title": "Votes"},
+            {"aggregate": "sum", "field": "films", "title": "Horror films", "format": ",.0f"}
+          ]
+        }
+      },
+      {
+        "width": 520,
+        "height": 230,
+        "transform": [{"filter": "datum.rating_band !== null && datum.rating_band !== ''"}],
+        "mark": {"type": "rect", "stroke": "white", "strokeWidth": 2},
+        "encoding": {
+          "x": {
+            "field": "vote_group",
+            "type": "ordinal",
+            "title": "Number of ratings the film has",
+            "sort": ["No votes", "1-4 votes", "5-19 votes", "20-99 votes", "100-999 votes", "1,000+ votes"],
+            "scale": {"domain": ["No votes", "1-4 votes", "5-19 votes", "20-99 votes", "100-999 votes", "1,000+ votes"]},
+            "axis": {"labelAngle": 0, "labelFontSize": 11}
+          },
+          "y": {
+            "field": "rating_band",
+            "type": "ordinal",
+            "title": "Average rating (out of 10)",
+            "sort": "descending",
+            "axis": {"labelExpr": "datum.value + '–' + (datum.value + 1)"}
+          },
+          "color": {
+            "field": "films",
+            "type": "quantitative",
+            "title": "Films",
+            "scale": {"type": "sqrt", "range": ["#f6dadd", "#b3122a"]},
+            "legend": {"format": ",.0f"}
+          },
+          "tooltip": [
+            {"field": "vote_group", "title": "Votes"},
+            {"field": "rating_band", "title": "Rating band (from)"},
+            {"field": "films", "title": "Films", "format": ",.0f"}
+          ]
+        }
+      }
+    ],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"domain": false, "ticks": false, "labelFontSize": 12, "titleFontSize": 12},
+      "font": "Georgia, serif"
+    }
+  }

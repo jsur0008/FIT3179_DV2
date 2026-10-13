@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Rise of Horror</title>
+  <style>
+    @font-face {
+      font-family: "UnifrakturMaguntia";
+      src: url("font/UnifrakturMaguntia-Regular.ttf") format("truetype");
+    }
+    @font-face {
+      font-family: "EB Garamond";
+      src: url("font/EBGaramond-VariableFont_wght.ttf") format("truetype");
+      font-weight: 400 800;
+    }
+    body { font-family: "EB Garamond", Georgia, serif; font-size: 18px; max-width: 1500px; margin: -10px 20px; padding: 24px; line-height: 1.6; background-color: rgb(255, 255, 255);}
+    h1 { font-family: "UnifrakturMaguntia", serif; font-weight: normal; font-size: 2.8rem; }
+    .chart { margin: 32px 10px; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+  <h1>The Rise of Horror</h1>
+  <p>Story text here.</p>
+  <div id="waffle" class="chart"></div>
+  <div id="map" class="chart"></div>
+  <div id="bar" class="chart"></div>
+
+  <script>
+    Promise.all([
+      document.fonts.load('28px "UnifrakturMaguntia"'),
+      document.fonts.load('16px "EB Garamond"')
+    ]).then(() => {
+      vegaEmbed('#waffle', 'js/waffle.vg.json', {actions: false});
+      vegaEmbed('#map', 'js/3.vg.json', {actions: false});
+      vegaEmbed('#bar', 'js/bar.vg.json', {actions: false});
+    });
+  </script>
+</body>
+</html>

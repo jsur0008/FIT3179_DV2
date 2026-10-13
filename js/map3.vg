@@ -1,0 +1,122 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Bin map: number of cinemas in each 1-degree (about 100 km) square across Australia.",
+    "width": 800,
+    "height": 720,
+    "projection": {
+      "type": "conicEqualArea",
+      "parallels": [-18, -36],
+      "rotate": [-134, 0, 0],
+      "center": [0, -27],
+      "scale": 1150,
+      "translate": [400, 360]
+    },
+    "layer": [
+      {
+        "description": "Base map: outline of Australia (country shape from the world-atlas TopoJSON)",
+        "data": {
+          "url": "../data/world-50m.json",
+          "format": { "type": "topojson", "feature": "countries" }
+        },
+        "transform": [
+          { "filter": "datum.properties.name === 'Australia'" }
+        ],
+        "mark": { "type": "geoshape", "fill": "#ece9e4", "stroke": "#c9c4bb", "strokeWidth": 0.6 }
+      },
+      {
+        "description": "Bins: count cinemas inside each 1-degree square and draw the square as a polygon",
+        "data": { "url": "../data/cinemas.csv" },
+        "transform": [
+          { "calculate": "floor(datum.lon / 1) * 1", "as": "lon0" },
+          { "calculate": "floor(datum.lat / 1) * 1", "as": "lat0" },
+          {
+            "aggregate": [{ "op": "count", "as": "n" }],
+            "groupby": ["lon0", "lat0"]
+          },
+          {
+            "calculate": "{type: 'Polygon', coordinates: [[[datum.lon0, datum.lat0], [datum.lon0, datum.lat0 + 1], [datum.lon0 + 1, datum.lat0 + 1], [datum.lon0 + 1, datum.lat0], [datum.lon0, datum.lat0]]]}",
+            "as": "cell"
+          },
+          {
+            "calculate": "datum.n == 1 ? '1' : datum.n < 5 ? '2–4' : datum.n < 10 ? '5–9' : datum.n < 25 ? '10–24' : '25 or more'",
+            "as": "band"
+          }
+        ],
+        "mark": { "type": "geoshape", "stroke": "white", "strokeWidth": 0.6, "opacity": 0.92 },
+        "encoding": {
+          "shape": { "field": "cell", "type": "geojson" },
+          "color": {
+            "field": "band",
+            "type": "ordinal",
+            "scale": {
+              "domain": ["1", "2–4", "5–9", "10–24", "25 or more"],
+              "range": ["#fee5d9", "#fcae91", "#fb6a4a", "#de2d26", "#a50f15"]
+            },
+            "legend": {
+              "title": "Cinemas per square",
+              "orient": "bottom-left",
+              "symbolType": "square",
+              "symbolSize": 220,
+              "padding": 8,
+              "fillColor": "white",
+              "cornerRadius": 4,
+              "labelFontSize": 12,
+              "titleFontSize": 12
+            }
+          },
+          "tooltip": [
+            { "field": "n", "type": "quantitative", "title": "Cinemas in this square" }
+          ]
+        }
+      },
+      {
+        "description": "City labels placed to the right of the point",
+        "data": {
+          "values": [
+            { "city": "Sydney", "lat": -33.87, "lon": 151.21 },
+            { "city": "Brisbane", "lat": -27.47, "lon": 153.03 },
+            { "city": "Hobart", "lat": -42.88, "lon": 147.33 }
+          ]
+        },
+        "mark": { "type": "text", "align": "left", "dx": 10, "fontSize": 12, "fontWeight": "bold", "color": "#333333" },
+        "encoding": {
+          "longitude": { "field": "lon", "type": "quantitative" },
+          "latitude": { "field": "lat", "type": "quantitative" },
+          "text": { "field": "city" }
+        }
+      },
+      {
+        "description": "City labels placed to the left of the point",
+        "data": {
+          "values": [
+            { "city": "Perth", "lat": -31.95, "lon": 115.86 },
+            { "city": "Adelaide", "lat": -34.93, "lon": 138.6 },
+            { "city": "Darwin", "lat": -12.46, "lon": 130.84 }
+          ]
+        },
+        "mark": { "type": "text", "align": "right", "dx": -10, "fontSize": 12, "fontWeight": "bold", "color": "#333333" },
+        "encoding": {
+          "longitude": { "field": "lon", "type": "quantitative" },
+          "latitude": { "field": "lat", "type": "quantitative" },
+          "text": { "field": "city" }
+        }
+      },
+      {
+        "description": "City label placed below the point",
+        "data": {
+          "values": [
+            { "city": "Melbourne", "lat": -37.81, "lon": 144.96 }
+          ]
+        },
+        "mark": { "type": "text", "align": "center", "dy": 22, "fontSize": 12, "fontWeight": "bold", "color": "#333333" },
+        "encoding": {
+          "longitude": { "field": "lon", "type": "quantitative" },
+          "latitude": { "field": "lat", "type": "quantitative" },
+          "text": { "field": "city" }
+        }
+      }
+    ],
+    "config": {
+      "view": { "stroke": null }
+    }
+  }

@@ -1,0 +1,1071 @@
+name,taxonomy,state,confidence,lat,lon
+Orana Cinemas Geraldton,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9885503369569778,-28.77564735,114.60659803
+Dongara Drive-In,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8037973046302795,-29.265773,114.926213
+12D Extreme Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9411313962936402,-33.652241,115.345893
+Orana Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8312652572989464,-33.65210535,115.34449224
+Film Harvest Geographe,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8588782548904419,-33.651821,115.344372
+Grand Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9618562996387482,-33.3215,115.637301
+HOYTS Bunbury,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.999210873812437,-33.3215145,115.63707835
+Bunbury Forum Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8948647379875183,-33.33925,115.65786
+Reading Cinemas Mandurah,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9974232983589172,-32.52714938,115.71940174
+Simply Home Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-32.508903879238055,115.73987123808179
+I Drive Mandurah,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-32.53635331106219,115.73848344880822
+Mandjar Markets Mandurah,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9552454352378845,-32.5116686,115.7363325
+United Cinema Rockingham,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.804164469242096,-32.288694893397,115.74729190028
+Ace Gold Lounge,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.780066192150116,-32.288640719335,115.74736451822
+Ace Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9959681026935577,-32.288648,115.748299
+United Cinemas Rockingham,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9971890240907669,-32.28588382,115.74156071
+Hoyts Rockingham,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9495480513572693,-32.28587693,115.74170908
+The Jazz Cellar Mt Hawthorn,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.5646872520446777,-32.0619,115.7577
+Ace Cinema Rockingham,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.6580254435539246,-32.11064,115.77475
+Hilton Square Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9268332123756409,-32.063029,115.781611
+Stargate Shopping Centres,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.701949954032898,-32.060791,115.793461
+Kwinana Community Arts Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8228892087936401,-32.239997,115.812702
+The Simulation Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-32.09937792041588,115.80972801479717
+Rottnest Movies and Mini Golf,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9952791512012482,-31.997431721857,115.53980874376
+Innaloo Movies!!!,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.7130320072174072,-31.904448092587,115.79737682474
+Greater Union Organisation,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.29046761989593506,-31.904374,115.797031
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9994545648396015,-31.904494,115.797582
+Flinders Square Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8676628470420837,-31.899473,115.849608
+Centro Flinders,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9388316041231155,-31.909838,115.84847
+Bells Rapids,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.5599701404571533,-31.92053,115.83579
+Luna Leederville,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9971771246194839,-31.9362,115.841
+Greater Union Innaloo,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.5273598432540894,-31.9495365,115.8496616
+Warwick Grand Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.702274739742279,-31.952343548033,115.8202917936
+Ace Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-31.94681720405095,115.82284976075697
+Belmont Cinema's,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.6054162979125977,-31.97426,115.81063
+Moonlight Cinema Perth,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9964344810843467,-31.96516945,115.82262093
+Tivoli Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9785698652267456,-32.01123,115.85131
+Windsor Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8821582746505737,-31.97947954,115.80216427
+Film & Television Institute (Training),"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.906235141158104,-32.050726,115.749205
+HOYTS Millennium,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9991316031813622,-32.05610455,115.74729509
+Queensgate Complex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.4527093470096588,-32.054696,115.748597
+Prison Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.7064476609230042,-32.05463934723463,115.75325280084138
+Luna on SX,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9603049755096436,-32.05751833,115.7480774
+Clayton St. Backyard Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.6734145879745483,-32.038595,115.775045
+Stammers Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9769254922866821,-32.03845494089433,115.77728125192932
+Melville Cockburn Chamber of Commerce,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8422578573226929,-32.03292,115.83264
+HOYTS Garden City,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.998967522084713,-32.03243342,115.83425402
+Garden City Booragoon,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9835378527641296,-32.033998,115.835512
+Aussie Outdoor Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.58647221326828,-32.04418,115.8102
+Harvey Town Hall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-33.08033752116068,115.89315256221384
+HOYTS Southlands,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9989874112010002,-32.05664871,115.8793213
+Hayman Theatre Company,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-32.01489358382315,115.92787266529758
+Xtreme Screen Hoyts Carousel,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8900503516197205,-32.01956371044269,115.93881057535513
+Spencer Village,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.998123472571373,-32.045577,115.95271
+Byford Hall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-32.22076868227926,116.00988621078385
+Grand Cinemas Armadale,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-32.15164,116.01496
+Reading Cinemas Armadale,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9951768207550049,-32.15181653,116.01477863
+"Hoytts Cinema, Carasouel","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.6008496284484863,-32.09418,116.01333
+Memorial Hall Kojonup,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-33.83255486726877,117.15880294616156
+Cuballing Agricultural Hall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-32.81893791954161,117.17779177800276
+The 70 Inch Redshaw Theater,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.5364992022514343,-35.02394323905028,117.88369861087543
+Cinema Stage,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.5407582521438599,-35.01662,117.89359
+Film Harvest Great Southern,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9150017499923706,-34.994724258322,117.85796847526
+Orana Cinemas Albany,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9801285821199417,-34.994246,117.85734
+The Revival House Perth,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9155392527580262,-31.99362146,115.85833959
+Gold Class Belmont,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9067113995552063,-31.967910412668,115.93349003314
+Reading Cinemas Belmont,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9961457502841949,-31.96737672,115.93349231
+Movies by Burswood,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9142351365089416,-31.964075,115.891844
+Telethon Community Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9714772963523864,-31.96421638,115.89168193
+Ace Cinemas - Head Office,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Western Australia,0.9910539959967136,-31.9589322,115.8689752
+Girls School Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-31.956332023199955,115.87574717531972
+Hoyts,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9454501867294312,-31.95387,115.861
+Reading Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.5202894806861877,-31.9522,115.859
+Palace Cinemas Raine Square,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9986714555621147,-31.95123221,115.8573863
+State Theatre Centre - Perth,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9576024413108826,-31.949829,115.858969
+Rooftop Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9944897222518921,-31.94867399,115.8570439
+RMAX Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.6833562254905701,-31.948404,115.856687
+The Guild Studio,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.44369474053382874,-31.94766,115.873075
+Palace Cinema Paradiso,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-31.947533447513905,115.85633082798542
+Kookaburra Cinema,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9795924478769302,-31.95314641,116.17624346
+Maylands Town Hall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.6236809492111206,-31.93045,115.894393
+The Roundhouse Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8404178619384766,-31.92047245,115.8684473
+Bassendean Outdoor Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.5976482629776001,-31.90402,115.949434
+Telethon Community Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8077163100242615,-31.90401101,115.94963588
+Ace Cinema Midland,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9062454104423523,-31.9012932,116.1540572
+Mundaring Hall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-31.903452093802947,116.15913785404489
+Mundaring Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.7699447870254517,-31.90161,116.16852
+HOYTS Karrinyup,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Western Australia,0.9841198176443576,-31.8766986,115.7787401
+Greater Union Morley,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.7063154578208923,-31.87039,115.83454
+Warwick 8 Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9888925015926361,-31.845581,115.808254
+Grand Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.5686467885971069,-31.844937,115.808979
+HOYTS Warwick,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9953597605228424,-31.84462769,115.80897138
+HOYTS Karrinyup,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.6327508091926575,-31.8580288,115.7717264
+North Beach Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9619612693786621,-31.860733,115.752856
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9982915430068969,-31.796184,115.748746
+Gold Class,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9287972450256348,-31.796328,115.748084
+Galaxy Drive-In,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9945004838705063,-31.80510554,115.80722545
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9922154152393341,-31.894929,115.897023
+Greater Union Cinemas Morley,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.7271146774291992,-31.896723,115.898533
+Greater Union Cinemas Morley,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Western Australia,0.85,-31.896771,115.898489
+Event Cinema Inalloo,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.5621695518493652,-31.66175,115.71997
+Grand Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9535868799686432,-31.740913735317,115.73923518377
+HOYTS Currambine,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9948647052049637,-31.74071057,115.73935594
+Grand Currambine,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.540201723575592,-31.7615106,115.7471951
+Grand Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-31.7432708928373,115.76744391763005
+HOYTS Joondalup,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9967286169528962,-31.74310162,115.76764015
+Grand Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.693852424621582,-31.73935,115.767659
+Greater Union Organisation,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.5954408049583435,-31.739532,115.767434
+Telethon Community Cinemas - ECU Joondalup Pines,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.8218989372253418,-31.75198596,115.77410241
+Ace Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.999528715133667,-31.889329864201045,116.00867957518614
+ACE HOYTS Midland Gate,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9911390203237533,-31.88918905,116.00871606
+Gold Class Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.7997428774833679,-31.88926510312681,116.0086571786069
+Midland Outdoor Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.49580803513526917,-31.889019014919,116.00744512998
+Ace Midland,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-31.885173917214875,116.02592124357663
+Darlington Theatre Players,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-31.897327228288407,116.05294399472746
+Koorda Drive in,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9982198089361191,-30.832151837854,117.48244745611
+Merredin Cinema and Cafe,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9965020489692687,-31.48184403,118.27527882
+Mukinbudin Memorial Hall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.77,-30.91488442692537,118.20557493621696
+Paraburdoo Drive In,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.981474757194519,-23.20455128,117.66912791
+Tom Price Drive-In,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.7100344896316528,-22.69426613,117.79759402
+Wickham Picture Gardens,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",,0.9558766484260559,-20.67776772,117.13281198
+Moonrise Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.7245354652404785,-20.7376,116.84535
+Pannawonica Drive-In,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9079087376594543,-21.64163799087057,116.32532579171149
+South Hedland Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9532084465026855,-20.410204,118.5998
+Matt Dann Theatre & Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9996654692590237,-20.40014367,118.59546011
+Meekatharra Picture Gardens,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.7000964283943176,-26.58947846,118.49678082
+Reardon Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9912749868631363,-38.383532,142.234838
+Port Fairy Showgrounds,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.6664789915084839,-38.381246,142.22321
+"Pickering Point, Warrnambool. Vic","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6011778712272644,-38.39836,142.469
+Capitol Cinema Centre 3,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9958193922042846,-38.383097603641,142.48135744958
+Village Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-38.38313437256921,142.4813737934699
+Colac Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9982176429033279,-38.34269323,143.58581747
+Lorne Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9630021584033966,-38.53925784,143.97521272
+Cinema Point Lookout Great Ocean Road,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7328749895095825,-38.44593,144.11757
+Reading Cinemas Waurn Ponds,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9947462052106857,-38.20038325,144.32037688
+Geelong Village Cinema's,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6523683071136475,-38.16004,144.55869
+Barefoot Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8691602203249932,-38.316001,144.702056
+Peninsula Cinemas - Sorrento Athenaeum,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9137737154960632,-38.338946,144.74033
+Oatmill Cinema Complex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9879410862922668,-37.82866311,140.78356104
+Starline Outdoor Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.8295926451683044,-37.82843,140.78362
+South Austraila,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.6226134300231934,-37.82850064137982,140.77814166443946
+Reels Film Society,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.5241401195526123,-37.83007,140.78119
+Werribee Plaza Village Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8326056599617004,-37.85934,144.77323
+Geordieplex Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6661995053291321,-37.88052799262392,144.7473083860782
+Village Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9871791011095047,-37.87602571,144.68162062
+Werribee Ten Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.7432311177253723,-37.87555807550543,144.68132084924537
+Cinema dé Heskettorium,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8140823841094971,-38.02018175878225,144.40842763622953
+Village Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.999201463907957,-38.149916,144.360817
+Geelong Classic Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-38.15341673218511,144.36043658928213
+Pivotonian Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9891428351402283,-38.15877453,144.3560391
+Specialty Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.48654529452323914,-37.852685,144.861622
+Sun Cinema Williamstown,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9696483016014099,-37.86286114015351,144.90736574621496
+Peninsula Cinemas - Rosebud,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9910611510276794,-38.35658902823158,144.905941513214
+Barefoot Cinema,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.19406607747077942,-38.3579534,144.94829388
+Peninsula Link,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.543343186378479,-38.33931,144.96676
+Melbourne Movie Market,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.670752227306366,-37.858,144.99186
+The Astor Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9955849260091781,-37.85794424,144.99211621
+"Commercial Rd, Prahran","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.55096834897995,-37.84681,144.99243
+Palace Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9940540754795074,-37.91332,144.99259
+Dendy Street Brighton,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.553923487663269,-37.9202299,144.99824
+Renegade Films,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.85176579124408,144.9964331472499
+Barefoot Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.2821873128414154,-37.87975,144.99895
+Classic Southside,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9967688548564911,-37.88382,145.00082
+Classic Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.88412,145.000577
+JIFF,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.44796380400657654,-37.88382796,145.00068693
+Palace Brighton Bay,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9965105396807193,-37.90553765,145.00197225
+Hawksburn Barbers,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9996470031440258,-37.84825119,145.00373136
+"Kinkuji - Golden Pavillion, Kyoto","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.773674726486206,-37.9568417,145.0156121
+Reading Cinemas Millers Junction,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9956324416399002,-37.84286481,144.84291344
+Hitmaker Studios,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.83513745080348,144.91998306546657
+The Backlot Studio,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.827870055288955,144.95667774697256
+Village Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9991858396828175,-37.82406704,144.95770904
+The God of MMA,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6476410031318665,-37.8243099,144.95685
+Fujitsu Australia,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.933513650894165,-37.820051,144.944093
+Club X Adult Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6443037390708923,-37.817278,144.96466
+Hear My Eyes,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.08467958122491837,-37.81753,144.96715
+Melbourne Filmoteca,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7342560291290283,-37.817666510344,144.96881604195
+The Art Centre Spire,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7918082475662231,-37.821360684701,144.96877452804
+Victoria Gardens Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6369606852531433,-37.8186,145.0019
+Val Morgan,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5208786725997925,-37.83274,144.996238
+Moonlight Cinema Melbourne,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9966970227658749,-37.83048298,144.98148409
+Reading Entertainment,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.83333,144.96667
+Village Roadshow Ltd,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Victoria,0.85,-37.8424706,144.9950174
+Nando's Jam Factory,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Victoria,0.9655,-37.8424706,144.9950174
+Village Roadshow Pictures,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8554076552391052,-37.842532,144.995219
+Longford Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8521261811256409,-37.838425,144.988531
+Threadgold Plummer Hood,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.83735829612098,144.99362434458237
+Warren Miller Ski Films,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.3796389400959015,-37.839052,144.994253
+Trak Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.69678795337677,-37.839447021484,144.9969358501
+Palace Cinema Como,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.932818546295166,-37.839169816223546,144.99691659443846
+Hamilton Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9933884143829346,-37.74223237,142.02465866
+Progress Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9421627521514893,-37.747174,144.950481
+Rosehill Reserve,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7321221232414246,-37.747010073932046,144.8725502351062
+Henkel Street Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9950494086742401,-37.76447777,144.95460056
+Blow Up Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9249230688810348,-37.77216558,144.95386903
+HOYTS Highpoint,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9669204354286194,-37.77407072,144.88899371
+Hoyts Cinemas (Director's Suite),"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.77383560832869,144.88954067230225
+Hoyts Cinemas Ltd,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5366255044937134,-37.777256,144.885238
+Village Sunshine-a,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9444753527641296,-37.782242,144.831125
+Hoyts Bean Bag Cinema Rch,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9611762887239457,-37.79261672003595,144.94912565724698
+Metro West Shopping Centre Management,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8982076048851013,-37.800869,144.898388
+Footscray Hub Arcade,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9123745560646057,-37.8015,144.89857
+Five Cent Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5921263694763184,-37.80459,144.9503
+"Victoria Street, North Melbourne","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5939249992370605,-37.8058384,144.9503933
+Hyotts,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7572419047355652,-37.811629300061625,144.93658365001605
+HOYTS The District Docklands,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9988001775443553,-37.81213852404552,144.9366999239228
+Sun Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9981220769882202,-37.81599685,144.89072899
+Windmill Gardens,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5566580295562744,-37.65528,144.41849
+HOYTS Broadmeadows,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9995107960104942,-37.67870116,144.91898573
+Broadmeadows Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9157955050468445,-37.680187,144.919489
+Melton Twin Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8183989524841309,-37.684836,144.581247
+Reading Cinemas Melton,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9976847714185715,-37.68644116,144.56335941
+Souvereign Hill,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6725539565086365,-37.68967,144.92005
+Village Cinema Sunshine,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5979915261268616,-37.69369,144.7651
+HOYTS Watergardens,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9993723762333393,-37.69876527,144.77537155
+Village Cinemas Ariport West,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9960905980169773,-37.714231,144.88801
+APics Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7152366638183594,-37.733373125119,144.73346695317
+Bioskop Australia,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5741065740585327,-37.8131012,144.9560494
+Gpo,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8658519983291626,-37.813253862,144.962448131
+Palace Kino Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.994746726155281,-37.81431148738095,144.97242851216
+Capitol Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9920765161514282,-37.8149763,144.9661079
+Melbourne Cinematheque,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8974893093109131,-37.81530637,144.9663551
+Forum 1 & 2 Theatres,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8945508599281311,-37.816675599311,144.96956946308
+Chinatown Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.995757372379303,-37.81225206,144.96735814
+Rooftop Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.81199208859806,144.96519847953704
+HOYTS Melbourne Central,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9988719136714935,-37.81020579,144.96288024
+The 60L Green Building,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9657056963443756,-37.80496616842099,144.96068259093863
+IMAX Melbourne (Museums Victoria),"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9974689495563507,-37.80363369,144.97066632
+LateNite Films,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.80219849293457,144.98813625185105
+Eclipse Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9055447936058044,-37.80781768,144.98609777
+Johnston Street,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5246925950050354,-37.79963,144.9925
+LUX - Hoyts Australia Victoria Gardens,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8548484444618225,-37.81386988813504,145.01174911958117
+HOYTS Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9989193909168244,-37.813145,145.011153
+Peter Sardi's School of Acting,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.814675591117656,145.02652854490353
+Monster Fest,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.07566706091165543,-37.76648,144.95866
+Brunswick Picture House,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.766037,144.96252
+Bulleke-Bek Brunswick Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5868753790855408,-37.76428,144.96127
+Greenpine Entertainment,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8411785960197449,-37.766195215237,144.961462784
+Loveyou Bathhouse,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6263920664787292,-37.771397440028,144.96168941259
+Cinema Nova,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9944093322753906,-37.79796518,144.96836409
+Nova Deluxe,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.7510092258453369,-37.7979888067429,144.96819559786618
+Soldier Sailor,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.3056642711162567,-37.797257,144.976956
+Studio 66 Film Nights,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6326172947883606,-37.79408,144.97799
+Deja-View,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.7992272513839,144.985370965942
+Fomo Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",,0.9722161889076233,-37.77176069,144.97888326
+Flowers Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6435610055923462,-37.76628,144.98013
+Village Cinemas Coburg Drive-In,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",Victoria,0.9877799887657166,-37.7243747,144.9750673
+Pentridge Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.73659416354848,144.96894478797913
+Reading Cinemas Epping,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9906388175487518,-37.65282518,145.01990811
+Epping Plaza Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9576952457427979,-37.653908156243546,145.01826854527613
+Thornbury Picture House,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9945811480283737,-37.75395294,145.00162908
+Palace Westgarth Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9668442755937576,-37.77994497,144.9966742
+Mornington Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9677196544408798,-38.21659728,145.03647328
+Barefoot Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.534569263458252,-38.269028448245244,145.04312011806047
+Village Frankston Cinema Complex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9091528654098511,-38.142053,145.121217
+HOYTS Frankston,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9988657034635544,-38.14380919,145.12323639
+Frankston Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7440024018287659,-38.143467951659,145.12327830948
+Unscene Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5287074446678162,-38.34351565912609,145.13946518655874
+Village Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.9972705210745335,-38.15112095372936,145.166487832277
+Gold Class Karingal,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.8650510907173157,-38.15094024257,145.16633708142
+Tarwin Lower Film Society,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7097816467285156,-38.69935,145.86679
+The Paragon Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.9976960128545761,-42.08008073,145.55479213
+Vic Plastics,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-38.05986799471939,145.24987396633807
+Bayside Open Air Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6238495707511902,-38.04813,145.12401
+Lunar Drive-In Theatre,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.77,-38.011395489759366,145.23304980294574
+"Village Fg, Cinema 2 Row E18","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7912895083427429,-38.01825695584,145.3027829764
+Hollywood Cinema Store,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7950701117515564,-38.02067,145.29994
+Village Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9404354691505432,-38.0184067,145.30304739
+Gold Class Fountain Gate,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.9436585903167725,-38.01909958596009,145.30322148664035
+Frankston Oval,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5207209587097168,-38.05548,145.48735
+State Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.9977644759416581,-42.87239033,147.31479169
+Village Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",TAS,0.9978217901289463,-42.86699437954191,147.36965614144611
+Wellington Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.9781275105476379,-42.880465,147.328371
+The Craic Is Back - Hobart,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.42692115902900696,-42.88086,147.32523
+Rewind Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.9577877521514893,-42.88036,147.32461
+Tassie Open Air Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.9245099186897278,-42.88926629,147.49384319
+D'Ferry Flicks,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.5147702097892761,-42.849422811535,147.62383818626
+Metro Cinemas Burnie,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",TAS,0.997721881866455,-41.051036360701,145.90854182818
+Reading Cinemas Devonport,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.9927968168258667,-41.17911233,146.36215618
+Launceston Film Society,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.5543184280395508,-41.43903,147.13681
+Village Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.9979447645843029,-41.43879503754906,147.1368885150202
+Sundown Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.6339678168296814,-41.436,147.13783
+Star Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.77,-41.418270436586575,147.1340851474564
+"The Star Theatre, Launceston","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",TAS,0.9882271885871887,-41.41814625,147.13437329
+Grindelwald Openair Cinema,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",TAS,0.9626298475265503,-41.351608126463,147.00227245702
+The Prom Open Air Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9321302175521851,-39.030766522255114,146.31982421212763
+Stadium 4 Cinema Leongatha,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9969115114212036,-38.4756122725573,145.9441036735605
+Peninsula Cinemas Warragul,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.994888162612915,-38.16212809,145.93112624
+Morwell Village Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8087605237960815,-38.18047546134764,146.25505293676576
+Village Cinemas Morwell,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Victoria,0.85,-38.23416005,146.4342073
+Village Cinemas Morwell,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9934423631429672,-38.236722,146.428597
+Yanakie Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7619338035583496,-38.8117147,146.2057313
+Regent Theatre Yarram,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9959427189826965,-38.56237282,146.67596037
+Reading Cinemas Traralgon,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9984204822778702,-38.1930972,146.53862179
+Films at the Bundy,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5440878868103027,-38.03741,147.0173
+Sale Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9900040030479431,-38.10760218,147.06288063
+RAAF East Sale Roulette Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9750180840492249,-38.10415555979799,147.12882799403386
+V-Max (Southland Westfield),"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7837055325508118,-37.960217256690555,145.05477435880047
+Gold Class Southland,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.9024623036384583,-37.959313525504236,145.0542284871913
+Cinema Nova Carlton,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5341061949729919,-37.8689676,145.0755346
+HOYTS Chadstone,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9994896977543831,-37.8846567,145.08396713
+Cinema World Chadstone,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.887603759765625,-37.884902926102384,145.0833658940475
+Reading Cinemas Burwood,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9986225813627243,-37.848895,145.133173
+Waverley Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9971841299533843,-37.89160557,145.14290638
+Monash Uni Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.91150159994055,145.1260761892631
+Village Cinemas M-City,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Victoria,0.85,-37.9221379,145.1399709
+Clayton theater,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5521566867828369,-37.938237433786,145.13834593104
+Annex Holdings,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8515529632568359,-37.942524,145.123638
+Lido Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9984633779525757,-37.82049555,145.0356029
+Rivoli Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.999088499814272,-37.830526,145.055588
+Stockland Tooronga,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8292887210845947,-37.845942,145.045863
+Palace Cinemas Balwyn,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.996657098531723,-37.81201812,145.07556025
+HOYTS Northland,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.998803862541914,-37.74007899,145.03105831
+100 Million Views,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.36265966296195984,-37.71602,145.0425
+Village Cinemas Westfield Plenty Valley,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.999022747695446,-37.649934,145.069162
+Arcade Greensborough,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6800605058670044,-37.70394597824527,145.1029950725713
+HOYTS Greensborough,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9993901555240154,-37.70359706,145.10256259
+Doreen Community Moonlight Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5957343578338623,-37.61192,145.13732
+Village Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9782603925466538,-37.786161,145.125071
+imaginACTION,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.794822894043776,145.1041178151227
+The Besen Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9937747806310654,-37.84802209,145.11871276
+Emporium Melbourne,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5968374609947205,-37.987011,145.213851
+Reading Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9962411791086196,-37.98674144,145.21771839
+Melbourne Central,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7407387495040894,-37.97272218500305,145.16349850500853
+Glen Waverley Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5878666639328003,-37.952197033334535,145.19096753333133
+The Gardens Outdoor Cinema,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.8218829114735127,-37.90523991,145.23455275
+Cameo Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9984332728385925,-37.90950247,145.35216713
+Village Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8842558649182319,-37.88301,145.277389
+High Street Road Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8608593940734863,-37.877177,145.221059
+Village Cinemas Knox,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.989420753121376,-37.86912448,145.24387081
+Cinema Europa Knox,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7275679111480713,-37.86921763057256,145.24387109322328
+Vjunior Knox,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7520594596862793,-37.869259133953,145.24377995569
+Village Knox Mobile-a,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9780722856521606,-37.868895705758,145.24404400672
+Boronia Junction Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9585942029953003,-37.8620997,145.28518335
+Metro Cinemas Boronia,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9974816989898682,-37.86193651,145.28620837
+Croydon Film Society,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.3778824508190155,-37.861809,145.2863348
+Melbourne Open Air Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.3953539729118347,-37.839967,145.281914
+Ozinnovations,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8337769162654877,-37.835125,145.186582
+HOYTS Forest Hill,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9998022645115853,-37.83500855,145.1655729
+Toorongo Falls,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",,0.7554661631584167,-37.84616507569,146.04855191799
+Sun Cinema Bairnsdale,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9972274231910706,-37.82786256,147.62829003
+Acmi Cinema 2,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5486094951629639,-37.82134,145.20039
+Scale Models,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.81898088971133,145.18768870455023
+Croydon Main Street Committee of Management,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7420770525932312,-37.81365,145.27503
+Hoyts Australia EASTLAND,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.9992808908224106,-37.811818241925,145.22970914841
+OC Croydon Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.8336672505736351,-37.79598,145.2822
+Crave Restaurant - Croydon,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.78898142868135,145.26777290066832
+Twilight Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5343825817108154,-37.79218,145.28204
+Warburton Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7437037825584412,-37.753461917531,145.68976999934
+Upper Yarra Arts Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",,0.77,-37.7533595990667,145.68969208018314
+Reading Cinemas Chirnside Park,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9975040173530578,-37.75996032987011,145.31016343376623
+Village Cinema Knox,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6508957147598267,-37.76597,145.19368
+South Coast Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9974841117858887,-37.1650835,139.76178143
+Victa Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9981564456224441,-35.55421003,138.62296283
+Mundulla Football Ground,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7315070033073425,-36.35721567177409,140.69109956398583
+Nhill Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9821064472198486,-36.33337647,141.65189154
+Quambatook Silo Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6965008974075317,-35.849941,143.52048903
+Rex Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9980811965465546,-36.26846464,143.3492998
+St Arnaud Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9298094511032104,-36.61531,143.25764
+Paramount Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9977389085292816,-37.04857527,143.73931892
+Horsham Centre Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9970431870222092,-36.715828,142.201048
+Umpherston Sinkhole in Mt Gambier,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.6019574403762817,-36.8074754,140.662883
+Landmark Pictures Naracoorte,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9393949508666992,-36.95562033512748,140.74254326931433
+Astor Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9974587637186051,-37.28431458,142.93432556
+Berkshire Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.531387448310852,-37.19137,143.1728599
+Showbiz Cinemas Ballarat,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9960159116983414,-37.59188688,143.8054113
+Regent Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8229900002479553,-37.560275,143.857864
+Palace Regent Cinemas Ballarat,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9808282256126404,-37.56025432,143.85787425
+Showbiz Cinemas Drive-In Ballarat,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8367257118225098,-37.5426419,143.8496985
+Cinemallunga,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9975717401504517,-35.27055909,138.55413868
+Minta Megaplex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7892969250679016,-35.087248928707,138.57108288311
+Palace Nova Adelaide,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.5590931177139282,-35.03238,138.53103
+Windsor Theatres,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.999499233096838,-35.0176265,138.51936611
+Greater Union Organisation,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",SA,0.6600674390792847,-35.01683451257525,138.5463553075974
+Vmax,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.6612662672996521,-35.01680647469703,138.54523292575968
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",SA,0.981591586470604,-35.016589848819365,138.5448368474276
+Hahndorf Memorial Institute,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.77,-35.03242689780803,138.8122698906406
+Lightwise Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.11327406764030457,-35.057823539696,138.53931427002
+Wallis Cinemas Mt Barker,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9985025584697723,-35.06866712,138.85656002
+AMC livestock,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.8549156785011292,-35.0486,139.37217
+Cameo Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9080793535709382,-35.1176021,139.27194409
+Wallis Cinemas Noarlunga,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9936538118124009,-35.13941995,138.4907629
+Horror Movie Campout,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",,0.143920436501503,-35.214877974771,138.70456616354
+Roxy Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6035178899765015,-35.07084949,142.31520594
+Showbiz Cinemas - Swan Hill,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9998126244544983,-35.34121715,143.55817808
+Mallee Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.98173987865448,-35.329373689006566,140.51667493534302
+"A Starry night, Greendale Drive In","{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.5286992192268372,-37.56018648998963,144.29736509000776
+Daylesford Community Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9783070087432861,-37.34269688,144.14263069
+Reading Cinemas Sunbury,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9985443985462189,-37.57945069,144.7272343
+United Cinemas Craigieburn,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9973459517955781,-37.59320355,144.91310263
+United Cinemas Crai,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7030509114265442,-37.5989872,144.9415151
+Guildford Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.6341079473495483,-37.1495,144.16672
+Castlemaine Documentary Festival,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.2892403304576874,-37.06643,144.21975
+Royal Kitchen,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-37.066379893565795,144.2196604803444
+Bendigo Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.997694765329361,-36.76392016,144.27697049
+Star Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9907135963439941,-36.71729845,144.25128222
+Mansfield Armchair Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.996584084033966,-37.0531771,146.09257162
+Euroa Civic Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5736626386642456,-36.7529652,145.5719392
+Euroa Community Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.8877583742141724,-36.75286412,145.57280039
+Hot Tub Cinema Benalla,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7046724557876587,-36.55957074055157,145.98467458495966
+Swanpool Community Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9831942915916443,-36.7462688,146.00066337
+Village 4 Shepparton,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-36.38047,145.39867
+Village Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9970126370489597,-36.38003393861506,145.40114384837887
+Macintosh Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7823408842086792,-36.38131,145.40905
+Congupna Football Ground,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5819570422172546,-36.29915,145.43517
+Kyabram Plaza Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9993424171209335,-36.31342355,145.049198
+Marks' Movie Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7310412526130676,-36.134088788828,144.74533497757
+Echuca Paramount Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9951436585187912,-36.13005561,144.74885193
+Sunday Matinee,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.2732471227645874,-36.1088689,146.8929446
+Star Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.7642988562583923,-36.151087,146.609496
+Cobram Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9902257323265076,-35.92114559,145.64729936
+Melba Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9246018517017365,-35.920085,145.649972
+Golf Club Cinema Yarrawonga / Mulwala,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7606778740882874,-36.004977271002595,145.99371559741644
+Benalla Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9983359575271606,-36.55132487,145.98141007
+Wangaratta Cinema Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9983910077810287,-36.3535812,146.32556505
+The Xanadu Drive-In,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",SA,0.6379500031471252,-34.91874575561404,138.59746283174934
+Union Hall Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.989607909321785,-34.918621,138.603592
+The Mercury,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.99570631980896,-34.92237616,138.59295174
+Red Cinema Adelaide,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7278999090194702,-34.92306,138.60309
+Event Cinemas Marion Megaplex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9361457228660583,-34.92422,138.59741
+Windsor Theatres,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.77,-34.92642270781534,138.53933061182195
+Tiki Tai Bar,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.3872827887535095,-34.928118,138.595915
+Capri Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9949542677402496,-34.95281338,138.58999605
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9987018917500973,-34.980822,138.516895
+GU Film House Glenelg,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9237542748451233,-34.980798,138.516999
+Glenelg Cinema Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9335722923278809,-34.979926,138.519204
+Marion Megaplex V-Max Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7474303841590881,-35.0159822939,138.54542839
+Events Marion,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7315549254417419,-35.01607127234069,138.54533763432917
+Fenwick 3 Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.996540749669075,-33.86320725,121.89078508
+Orana Cinemas Kalgoorlie,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9974771338701248,-30.762757538514,121.48270063331
+Menzies Town Hall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.6686725616455078,-29.69446703999677,121.02915350796981
+Outback Open Air Cinema at Coober Pedy,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.6218356490135193,-29.007009,134.755803
+Coober Pedy Drive In,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",SA,0.996665735244751,-29.00604871,134.75646951
+Outback Cinema Roxby Downs,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9740417003631592,-30.56116160412838,136.8964300594151
+Woomera Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.4197750389575958,-31.19902497,136.8254367
+Cinema Augusta,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9963629430532456,-32.49485197,137.77106345
+Whyalla Twin Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.941156804561615,-33.02878935912325,137.54077324940474
+Lincoln Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.998310604095459,-34.72132222,135.85684609
+Port Pirie Tourism and Arts Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.741391122341156,-33.18083501138277,138.01107957714146
+Jamestown Football Oval,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.6907469630241394,-33.20931767696936,138.6006111016099
+Kadina Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7570644021034241,-33.96343926,137.71462339
+Blyth Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9924886095523834,-33.84653223,138.4896959
+Statewide Cinema Moonta,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9118062049150467,-34.06724069,137.5899154
+Odeon Star Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9973199731111526,-34.83883015,138.48474711
+Adelaide Entertainment Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7053124308586121,-34.81348873,138.59984494
+Adelaide Festival Centre Trust,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.77,-34.83021412023353,138.59285551240288
+Adelaide Festival Centre Trust,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.8523260951042175,-34.841748,138.594828
+Gepps Cross Drive In,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.77,-34.84355861152093,138.6010590583669
+Sefton Plaza Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9818457365036011,-34.876253,138.602906
+HOYTS Arndale,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.997126504778862,-34.87558843,138.55107819
+Event Cinemas Arndale,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9368586087226868,-34.875452,138.55147
+Greater Union Cinemas Arndale,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",South Australia,0.85,-34.8754934,138.5513479
+Greater Union,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.6743250489234924,-34.87688696473301,138.55139133517036
+Reading Cinemas West Lakes,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9898091721534729,-34.87885597,138.49185317
+Murder City Carnivale of Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9297218918800354,-34.87837,138.51596
+South Australian Film Corporation,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.77,-34.87848193589257,138.5160460751864
+Palace Nova Prospect Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9897479885816574,-34.88841301,138.59383654
+Fleetwood Digital,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.77,-34.90655765727275,138.59252728389203
+The Piccadilly,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9988698552548886,-34.9031891,138.59474429
+Mitcham Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",SA,0.9787034392356873,-34.974859,138.610349
+Wallis Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.77,-34.974841065399126,138.61049054138698
+Movie World Kingswood,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.5423424243927002,-34.967095,138.609252
+Wallis Cinema HQ,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.761840283870697,-34.95019922,138.63201195
+Trak CineCentre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.5672705769538879,-34.93887,138.64147
+The Regal Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9987328708171844,-34.92629301,138.65152407
+Nova Cinemas (S.A.) Pty. LTD.,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7581616044044495,-34.922044780756885,138.60943102943244
+Palace Nova Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9961931562423706,-34.92202462,138.60916645
+HOYTS Norwood,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9995251740813256,-34.92038224,138.63688804
+Moonlight Cinema Adelaide,"{'primary': outdoor_movie_space, 'hierarchy': [arts_and_entertainment, movie_theater, outdoor_movie_space], 'alternates': NULL}",South Australia,0.8942530378699303,-34.9143508,138.6108231
+Glynburn Plaza,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9635178446769714,-34.902995,138.657103
+Lobethal Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9731907248497009,-34.90533969,138.87474279
+The Giant Rocking Horse,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7405270934104919,-34.82308,138.86454
+CeyFlix,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.09642132371664047,-34.82713,138.68321
+HOYTS Tea Tree Plaza,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9984162386357784,-34.83114222,138.69023053
+Dean Family Entertainment Complex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.6205921769142151,-34.776006188818,138.72106075287
+HOYTS Salisbury,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.77,-34.76916,138.6122
+Hoyts Salisbury,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",SA,0.9994269911050796,-34.761428,138.643609
+Salisbury 8 Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7995996475219727,-34.76108758701485,138.64351402221706
+Wallis Drive Inn,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7249397039413452,-34.7404545,138.6687408
+Hoyts Salisbury Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.7186455726623535,-34.739173,138.620554
+Reading Cinemas Elizabeth,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9896937143802643,-34.71959629,138.66835507
+Gawler Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.9979197174310684,-34.60378817,138.74957039
+Saddleworth Institute Pictures,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",SA,0.47310885787010193,-34.0815,138.78136
+Groovy Tube Digital Media,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-34.194690495797786,142.17701190733825
+Wallis Entertainment Mildura,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9982403993606568,-34.1867352,142.16013337
+Deakin Twin Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",VIC,0.987201542854309,-34.18694307437919,142.1598695611976
+Mildura Film Society,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.5417171716690063,-34.18679,142.16
+Silver City Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9924417734146118,-31.95634546,141.46701466
+Griffith City Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9910119771957397,-34.30095358,146.04756013
+Cloud 9 Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.77,-36.72661228716146,146.961392840096
+Sun Cinema Bright,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9915510416030884,-36.72663029,146.96141071
+Bandiana Area Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",VIC,0.9937639778852463,-36.14054677,146.91440088
+Regent Cinemas Albury,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9658573269844055,-36.08103787,146.92113126
+Gold Class,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9478513598442078,-36.081083,146.921283
+Village Cinemas Albury,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",New South Wales,0.9655,-36.0813693,146.9213487
+Jindabyne Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6611136794090271,-36.41461123,148.62121253
+Jindabyne Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-36.414772882405614,148.62152640281704
+HOYTS Woden,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.9986723932623863,-35.34741184,149.08737611
+Limelight Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.9984465843439102,-35.416579424235,149.06648581702
+Event Cinema - Manuka,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.4998229742050171,-35.31983698808905,149.13310441903698
+Capitol Cinemas Manuka,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Australian Capital Territory,0.85,-35.3195191,149.1329886
+Cooma Twin Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-36.23608916967453,149.12737224792443
+Forum 6 Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9971071946620941,-35.10281561,147.36701116
+Temora Townhall Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9932555770874023,-34.44654543,147.53544419
+Southern Cross Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9978732025623321,-34.3138354,148.29579001
+YCBC At The Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5460090041160583,-34.83288,148.90681
+Liberty Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9489975571632385,-34.84378466,148.91256076
+Jamison Plaza,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.9985713252127171,-35.253225,149.07098
+Sunset Cinema Canberra,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.9295133310556412,-35.27486713,149.10829799
+ANU Film Group,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.843101441860199,-35.27676384,149.12203314
+Val Morgan Cinema Network,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.6183418035507202,-35.277888817231755,149.13161792915605
+Dendy Cinemas Canberra,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.9983220100402832,-35.27768202,149.13269
+IMAX,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.77,-35.277570043108206,149.13312792778015
+Elsie's Film House,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.3027065098285675,-35.28066,149.13064
+Eye Candy Animation,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.77,-35.281061262161,149.13206889374382
+Nishi New Acton,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.807935357093811,-35.28502354676016,149.12293093119487
+Palace Electric Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.9880212354660034,-35.28499132,149.12307506
+Arc Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",ACT,0.77,-35.282983,149.121159
+Gundaroo Soldiers Memorial Hall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5244096517562866,-35.025449,149.265287
+The Picture Show Man Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9817521572113037,-36.887269392528,149.90840470011
+Narooma Kinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9747934937477112,-36.21634709,150.13063218
+Bega Valley Outdoor Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.779705286026001,-36.76727,149.69691
+Lilac City Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9996201696991921,-34.75334056,149.71783274
+Bay City Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-35.70674218674526,150.17704444124539
+Perry Street Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9780855178833008,-35.70677284,150.1768048
+Arcadia Twin Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9853275269269943,-35.35735736,150.47303052
+Rex Cinema - Bundanoon,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6532365679740906,-34.65648,150.29972
+Empire Cinema Bowral,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9969457018375397,-34.4797466,150.41751675
+Sussex Inlet Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.982026994228363,-35.15665801,150.60037699
+Inlet Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9973607987165451,-35.15665801,150.60037699
+Huskisson Pictures,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9964927542209625,-35.03828328,150.66826777
+Stockland Nowra,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9334840774536133,-34.876733,150.606662
+Roxy Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9976302230358124,-34.87570227,150.60003005
+Greater Union,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-34.56348195634975,150.83540576632183
+Event Cinemas Shellharbour,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9785632759332656,-34.56366021,150.83553134
+Hoyts Warrawong,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.999757228165865,-34.486921,150.888477
+Gala Twin Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9985103452205658,-34.48526445,150.88794342
+eVent Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-34.072781760861425,150.7976436528306
+Event Cinemas Macarthur Square,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7053371071815491,-34.0593806416,150.753086603
+United Cinemas Narellan,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9940582156181336,-34.04306641,150.73687935
+Ed.Square Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",New South Wales,0.9900819915235043,-33.9709099,150.8592379
+Event Cinemas Ed Square,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",New South Wales,0.9911395035684109,-33.9709099,150.8592379
+Dumaresq Street Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9997815220057964,-34.06679119,150.81217789
+Campbelltown Marketplace Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8058496713638306,-34.072379,150.803735
+Imran,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.5814608931541443,-34.09706,150.69576
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.6470586657524109,-34.426164,150.895244
+Greater Union Cinemas Wollongong,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",New South Wales,0.9935903539061546,-34.4261508,150.8953076
+Sunset Cinema Wollongong,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7966733574867249,-34.41129651,150.87809877
+Club Waka Nui,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5728445649147034,-34.46899,150.87261
+Tivoli West Wyalong,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9717080748081207,-33.924823,147.20629
+Ross  pascoe,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5400416851043701,-33.60987,150.74361
+RAAF Richmond Metro Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9195162653923035,-33.600831854777,150.78722476959
+John Hunter Media,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.72012091391888,150.60550768249487
+United Cinemas The Edge,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9986462432146073,-33.70987099,150.31538937
+Hoyts Australia PENRITH,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9904734492301941,-33.75067649809904,150.72507937185392
+Sydney Window Tinting & Frosting,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.75850310329371,150.80664563576406
+Centro Nepean Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9702746868133545,-33.757318,150.692646
+Glenbrook Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9988021701574326,-33.76547114,150.62230369
+Mt Druitt Hoyts Cinema.,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9727997279167175,-33.766576652003,150.81853857917
+Elite cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6217741966247559,-33.78458,150.71129
+Blacktown Drive in Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5616751909255981,-33.7900537,150.8138849
+Bargains R Us,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7368942499160767,-33.9507,150.77231
+Staging Post Trundle,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7479060888290405,-32.92363722,147.71049959
+Forbes Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8976081067323685,-33.385741,148.009271
+Forbes Parkview Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8676793575286865,-33.383574,148.006778
+Illusions Costumes,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-32.246548,148.626934
+Dubbo Westview Drive In,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.8394532799720764,-32.23255,148.57776
+Reading Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9987529957294464,-32.2459534,148.60130991
+Goondiwindi Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9978830319643021,-28.5471199,150.30659646
+The Roxy,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7588828206062317,-29.869068,150.571531
+Royal Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9836545586585999,-31.50789346,150.67924648
+FreeChoice Gunnedah,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5273474454879761,-30.97486,150.24859
+Regent Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9794405102729797,-32.59037344,149.58890936
+Mudgee Town Hall Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9953596723079682,-32.59072735765736,149.58725479303246
+Wellington Showgrounds,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7571183443069458,-32.555058,148.932784
+Odeon 5 Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9124147093296051,-33.28110641,149.1057018
+FanForce,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",,0.0735853984951973,-33.404796098629,149.07019212972
+Metro Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9997668005228043,-33.42039819,149.57454599
+Crystal Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9554651975631714,-33.35360659,149.98103425
+Mount Vic Flicks,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9995242219865322,-33.59035787,150.2567476
+Richmond Regent Twin Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9789421170949936,-33.597816,150.753604
+Moonlight Cinema Western Sydney,"{'primary': outdoor_movie_space, 'hierarchy': [arts_and_entertainment, movie_theater, outdoor_movie_space], 'alternates': NULL}",New South Wales,0.85,-33.8923237,150.8584839
+HOYTS Wetherill Park,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9994429710805416,-33.85811453,150.89923705
+Skyline Drive In Blacktown,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.9983040066063404,-33.805282842399,150.9038619
+Funked up Fridays,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.2674328088760376,-33.896523,150.899452
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.9976447046101093,-33.919509,150.923616
+Greater Union Organisation,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.3365999758243561,-33.91936620929228,150.92413716980923
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.91544,150.909462
+Dean Park Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.90447598695755,-33.732482,150.857627
+Northmead Bowling Club,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5893242955207825,-33.67839,150.88014
+Campbells Corner Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7754486203193665,-32.263752,150.88856
+Muswellbrook Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9967772036790847,-32.2675065,150.88733822
+Forum 6 Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9957262527942657,-31.09028351,150.93110836
+Regent Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8965325951576233,-31.090828,150.928575
+HOYTS Cinema,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.8841648101806641,-33.770229,150.904882
+Greater Union Twin Drive-in Theatre Bass Hill,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.6712640523910522,-33.786587,150.906076
+HOYTS Blacktown,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",New South Wales,0.9655,-33.769792,150.905972
+Reading Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.9952916479110718,-33.69110789991,150.92489855109
+"Vmax, Miranda","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7493757009506226,-34.034675834771,151.1003801852
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.9989282147586346,-34.034448,151.100018
+"Positano, Amalfi Coast. Italy.","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.4729134142398834,-34.01523,151.11135
+HOYTS Cronulla,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9984185606241226,-34.05158567,151.15344334
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9971262468397617,-33.9657118,151.10563019
+Beverly Hills Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8472634553909302,-33.950917,151.081709
+GU Film House Beverly Hills,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",New South Wales,0.9655,-33.9509051,151.0816982
+Mill at Millpera,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5751818418502808,-33.94287,150.99722
+Outdoor Movies Australia,"{'primary': outdoor_movie_space, 'hierarchy': [arts_and_entertainment, movie_theater, outdoor_movie_space], 'alternates': NULL}",New South Wales,0.85,-33.933453,151.147313
+HOYTS Eastgardens,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9988178355097771,-33.94510175,151.22302453
+Eastgardens Seafood,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9877079725265503,-33.944675523700006,151.22329948530003
+Events Cinema Hurstville,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7127184271812439,-33.95692274585974,151.13758165007394
+Penrith Fire Muesem,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5255133509635925,-33.95909,151.11946
+Bankstown Square Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9539528489112854,-33.917321,151.037925
+Cinemas Bankstown,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6694974899291992,-33.915698,151.036504
+HOYTS Bankstown,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9994474991858006,-33.91556349,151.03662434
+V1cfilms ,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.11956799030303955,-33.8891405,151.1255119
+Stars Rock & Movie Posters,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8339505791664124,-33.888254,151.167083
+Mu Meson Archives,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9289395809173584,-33.88716755,151.16988782
+Kismet Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5943236947059631,-33.88684,151.20099
+York Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9688987135887146,-33.888475001,151.193464302
+KLANG Music Sound Ideas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.89404833334832,151.18340459342883
+Smash Cut Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6282926797866821,-33.894235514644876,151.18274851335923
+Participate Film Academy,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.4484555125236511,-33.89450749682383,151.1958237906503
+The Redfern Ritz,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5696856379508972,-33.8939685,151.197987
+Dendy Cinemas Newtown,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9971417963504792,-33.89605449,151.18047085
+Icon Film Distribution Australia,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7900884747505188,-33.8956,151.18018
+Addison Road Picture House,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6978623867034912,-33.90206291,151.16268492
+Pink Flamingo Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.885586678981781,-33.91231,151.16358
+Mentmore House Studios,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.4611622095108032,-33.911918,151.204612
+Chicane Showbags,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6334378123283386,-33.915577,151.191723
+Factory54,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.48035189509391785,-33.883476,151.013017
+Outdoor Movies Australia,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.46383264660835266,-33.86539,151.06114
+Mov'in Bed,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.14647214114665985,-33.86148938,151.20123913
+Mov'in Bed,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.1475357562303543,-33.86148938,151.20123913
+Star City Event Theater,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6995139122009277,-33.867580358824085,151.19514398061352
+Paramount Pictures Australia,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.86893064131701,151.1969480947622
+Buzz Pringle,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.86929670403937,151.19349837828105
+Gondola Darling Harbour,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7299491763114929,-33.871567072442865,151.19948869263723
+Hoyts Cinema Westfield Chatswood,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5653570294380188,-33.8712077,151.1967499
+Mov'In Boat,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.4856056272983551,-33.87310212,151.20036043
+IMAX Sydney,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9968046320974827,-33.873079070558,151.20142064405
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.9770082235336304,-33.873894,151.20245
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9992067837119103,-33.87512903,151.20637231
+Boutique Experience - Events Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8355518579483032,-33.875248539874896,151.20646441545267
+Leichadt Bowling Club,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7617812156677246,-33.8760943195,151.161738699
+Empire Film Services,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.8762252912652,151.1493403498821
+Event Cinemas Burwood,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",New South Wales,0.9869724725484847,-33.875212,151.1049602
+Greater Union Organisation,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8022123575210571,-33.874602,151.10597
+Palace Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.9843048453330994,-33.884561,151.157542
+Timezone Broadway,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7276310324668884,-33.8831624427,151.194224418
+Lux at Hoyts,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9144387245178223,-33.882720413201135,151.19459101303718
+HOYTS Broadway,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9995076867938042,-33.88302621,151.19462062
+Xtremescreen,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.4832778871059418,-33.882533,151.194272
+Open Captions Australia - OCA,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8133208155632019,-33.88461,151.20068
+Palace Central Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.88462395218954,151.2006892849116
+Palace Cinema Moore Park,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.894234,151.22569
+Cyclops,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.890128030771194,151.21378058533216
+FUSE Music Group,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.88837331275635,151.2131551221375
+The Reservoir Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",New South Wales,0.85,-33.8820401,151.2094652
+Civic Tower,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6460431218147278,-33.87786697,151.20802924
+Golden Age Cinema & Bar,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9976137858629227,-33.8793781,151.211092
+Kino Sydney,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9648808836936951,-33.880623685322,151.21295034885
+Palace Verona,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.882514611476886,151.22014394460848
+Open Air Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.41465136408805847,-33.878729,151.224674
+Palace Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9811146855354309,-33.88489627442497,151.2262156557285
+Chauvel Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.88533282437236,151.22599271231084
+Cinematic Intelligence Agency,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.88570841131607,151.22042243276314
+Moonlight Cinema Sydney,"{'primary': outdoor_movie_space, 'hierarchy': [arts_and_entertainment, movie_theater, outdoor_movie_space], 'alternates': NULL}",New South Wales,0.973331868648529,-33.8923055,151.2404351
+HOYTS Entertainment Quarter,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9952612686157226,-33.89464709,151.22728023
+eVent Cinemas Gold Class,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.89112474749981,151.25156159544758
+Eora,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5685343146324158,-33.87878,151.26308
+Westfield Bondi Junction Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5867356061935425,-33.8868,151.27599
+Flying Fox Films,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.902354483852015,151.2620366343531
+Cinema-K - Korean Film Night,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.344448983669281,-33.875697,151.209238
+Future Art,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.46369171142578125,-33.874600755136,151.20776367188
+South Sydney,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5755060911178589,-33.872902458810756,151.20740831270155
+Promenade & Georges Centres,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7221757173538208,-33.876314516980244,151.24304161181715
+Event Hospitality & Entertainment Ltd,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9125311952829361,-33.8716,151.207447
+Centennial Park Moonlight Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7158461809158325,-33.87159,151.20738
+Australian Golden Ratio Film Funders,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.25042057037353516,-33.86462,151.20989
+Westpac OpenAir Sydney,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8269121050834656,-33.8616367,151.22071353
+Cinema Show,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.02714194543659687,-33.85943999931,151.21564865112
+United Cinemas Opera Quays,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9850524544715882,-33.8595313,151.21320462
+"Palace Cinemas, Norton Street Leichhardt","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7264375686645508,-33.86,151.211
+Dendy Opera Quays,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.604873538017273,-33.856529117847,151.21566201638112
+Movie World Gold Coast,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5793067216873169,-33.8504712,151.0318503
+Auburn Shopping Village,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7567560076713562,-33.851754,151.032428
+Reading Cinemas Auburn,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9964556437730789,-33.8475888,151.04560814
+Hoyst Cinema Blacktown,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7302241921424866,-33.82496,151.01257
+Village 6 Cinemas - Suva Citaay,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6572839617729187,-33.8196571,150.9999959
+Hoyts Cinema Parramatta,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.818191647529602,-33.8177851,151.0046118
+Cinema 6,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5725985169410706,-33.817473890446585,151.00437836387147
+Vmax,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.702297031879425,-33.817198,151.003876
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9991620681583882,-33.812244,151.106565
+Reading Cinemas Rhodes,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9952578961849212,-33.83429708,151.08549689
+The Seventh Wave Gems & Minerals,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.7239502231717,150.99646024332333
+Knightsbridge Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.938532292842865,-33.71393,150.99441
+V-max,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8412874341011047,-33.732022422835506,151.0043354643779
+Cinema 3 Castle Hill,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.731722,151.003942
+Gold Class Cinema 5 Seat F4,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7230114340782166,-33.733099731916,151.00535318841
+Quarry Road Track,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7147077322006226,-33.696421440338,151.06983273066
+Hornsby Odeon Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9978870350122452,-33.70361721322183,151.097397213758
+Event Cinema Hornsby,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5514212250709534,-33.72705,151.08007
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.998911171644926,-33.777473,151.118169
+Event Cinemas Hornsby,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",New South Wales,0.9655,-33.7046297,151.0996721
+Philip Mall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.4875362813472748,-33.760966,151.128662
+Greater Union Organisation,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.39375394582748413,-33.776935,151.120827
+FlixSeek,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.84971293156188,151.15397634074247
+Cầu Cảng Sydney,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7666994333267212,-33.845417022705,151.21165466309
+The Forum,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8786965224146843,-33.822611146181,151.19421289053
+Sunset Cinema North Sydney,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9284994357824325,-33.83095688,151.20921104
+Warner Bros Entertainment Australia,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.4808464050292969,-33.829740013434446,151.21827891748438
+Bunties Picture Palace,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8398306965827942,-33.82239980486642,151.18160906158047
+Greenhalgh Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7721468210220337,-33.78975156413706,151.16091985507725
+Australian Film Base,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.7873418073406,151.16019041968224
+Roseville Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9987294846773147,-33.78425737,151.1765169
+Bewafa Shayari,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.08929992467164993,-33.777755162242,151.2186583854
+HOYTS Warringah Mall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9991874230802059,-33.769052,151.265952
+Rialto Square,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9378570401668549,-33.7986057,151.2875758
+Cremorne Orpheum Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9716092348098755,-33.828032216596725,151.22966672711144
+Hayden Orpheum Picture Palace,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9977264881134034,-33.82810131,151.229774
+Sunset Cinema St Ives,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9731935757398605,-33.70487477,151.18521577
+United Cinemas Collaroy,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.982537567615509,-33.73283114,151.30144543
+United Cinemas Warriewood,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9986924976110458,-33.69361804,151.30245332
+Watatah Court,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.672805666923523,-33.677211,151.303069
+Kariong Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7669149041175842,-33.4345207,151.2944183
+Cinema Paradiso Ettalong Beach NSW,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9949247109889984,-33.51436,151.34118
+Gosford Village Twin Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5389426350593567,-33.42421,151.34425
+Avoca Beach Picture Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",,0.77,-33.46998729273079,151.3600221903594
+DCM Cinema Room,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7228190302848816,-33.4988165085,151.3600619
+Hoyts Erina,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9991798659563065,-33.43687759,151.39068845
+Avoca Beach Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9995272304415703,-33.47158719,151.43638202
+United Cinemas Avalon,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9984500938653946,-33.63681568,151.32889124
+Gindurra Park Wedding and Event Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9733576595783233,-33.414320321126,151.29499483871
+Lake Cinema - Boolaroo,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9977699047327042,-32.95424669,151.62283704
+LifeLike Atmospheres,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-32.94548150355232,151.6460140540056
+Event Cinemas Glendale,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.998933620929718,-32.9336482,151.64250662
+Greater Union Organisation,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.4670428931713104,-32.936007,151.644059
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9991892038881779,-32.942049,151.70891
+Hoyts Charlestown,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9989620542228221,-32.96033872,151.69745063
+Reading Cinemas Charlestown,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9890531718730926,-32.96511374,151.69320087
+Metro Cinemas Lake Haven,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-33.241403587277446,151.50609427445667
+The Entrance Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7309077978134155,-33.343976405468,151.49695967859
+Majestic Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9168521016836166,-33.34398508,151.49712908
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.9970114231109619,-33.30908797860263,151.41198463932326
+Greater Union Organisation,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.968149721622467,-33.308930903450616,151.41237651567798
+Event Cinemas Tuggerah,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7135257720947266,-33.2995182,151.4170248
+Lisarow Plaza,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9633262872695922,-33.385263303952044,151.36715864853215
+Cinema Attwood,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7466812133789062,-33.397150147961696,151.35611418621338
+Inverell Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9949014192819595,-29.7714978,151.1139908
+Majestic Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8782452884316445,-29.77161174,151.11397422
+Belgrave Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9977928674221039,-30.51107249,151.66442676
+Cessnock Cinema Centre 3,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8372272849082947,-32.83603,151.35817
+Hunter Valley Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5389057993888855,-32.834947030251,151.35578690825
+Heddon Greta Drive in,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6350672245025635,-32.81618,151.49347
+Reading Cinemas Maitland,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9939753717184067,-32.73575762,151.5580487
+Glandale Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6076501607894897,-32.77242,151.6363
+Regal Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9745973348617554,-32.8958857,151.69425198
+Market Square Hunter Street Mall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8396679759025574,-32.927455,151.781163
+Kensington Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-32.92689587102228,151.7754486660628
+Tower Cinemas Newcastle,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9975372556746006,-32.92709532,151.77661065
+Greater Union Organisation,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.4566429555416107,-32.927256,151.776528
+Scotty's Cinema Centre,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.9981014448404312,-32.762618,151.747807
+James Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9957495993375778,-32.40213631,151.75854809
+Nelson Bay Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9769336581230164,-32.72255341,152.14359008
+Cascade Arcade,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8039146065711975,-32.721163,152.143537
+Blue's Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5670397281646729,-32.6672,152.15965
+Laurieton Plaza Theatres,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9746385812759399,-31.65233667514561,152.79694009121428
+Fay's Twin Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9976591765880585,-31.90168667,152.47701251
+Great Lakes Cinema 3,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9954450112581253,-32.17278215,152.49821603
+Tuncurry Lakes Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.958895742893219,-32.18021,152.49977
+Glen Innes Chapel Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.994681841135025,-29.73934958,151.7381603
+Tenterfield Cinema and Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9872971773147583,-29.05573762,152.01879771
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9602104425430298,-27.561135,151.955708
+BCC Cinemas Toowoomba Strand,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.9655,-27.5610356,151.9558633
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9991695368587971,-27.56064,151.950529
+BCC Cinemas Toowoomba Grand Central,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9391422271728516,-27.56084771841439,151.94850753255747
+"Grand Central Outdoor Cinema, Victoria St Toowoomba","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.796640932559967,-27.560688928345712,151.9483837191814
+Warwick Twin Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9978694325685501,-28.21619665,152.0335046
+Mobile Motion Pictures,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.47837288997016,152.58596276577708
+Give Goodness Centre,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9575482606887817,-27.571729020477,152.78343077255
+Tivoli Drive-in Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.571508915366877,152.78390288920974
+Markets At The Boulevarde,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7153506278991699,-27.61591,152.76383
+Movie HQ Brassall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6857248544692993,-27.589432596082418,152.75200629175345
+Limelight Cinemas Ipswich,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9972041177749634,-27.6103989,152.7608476
+HOYTS Ipswich,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9309671521186829,-27.61376133,152.75843395
+Birch Carroll & Coyle Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.613592607089767,152.75858265500435
+BCC Cinemas Ipswich,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.85,-27.6138627,152.7580613
+Awesome Window Tint,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-31.451816,152.883087
+Majestic Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9831809198856354,-31.08087191,152.84182476
+Henson's Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7418314218521118,-31.43619986126202,152.88804796033023
+Majestic Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9873871499300003,-31.42930253,152.9084495
+STH West Roxy Cinemaso,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.561903715133667,-30.89533,153.0402
+6th toe,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.8303511142730713,-30.88489,153.03902
+South West Roxy Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-30.884893879350436,153.039103786842
+Majestic Cinemas - Sawtell,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9660237431526184,-30.36915751,153.09990885
+Grafton Community & Function Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-29.68903519363393,152.93671485229282
+Kyogle Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9952571558952331,-28.62100321,153.00225508
+Kyle's Drive In,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.8989214301109314,-28.8250497,153.0713581
+Birch Carroll & Coyle Ltd,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9458718001842499,-28.806141,153.280205
+BCC Cinemas Lismore,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",New South Wales,0.9902867577075958,-28.8060243,153.2800351
+Star Court Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9831409454345703,-28.80834676,153.27715822
+Starry Night Cinema Northern Rivers,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.639381468296051,-28.67289,153.27902
+Yamba Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9980784684419632,-29.4360589,153.36160618
+BCC Cinemas Coffs Harbour,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-30.2768,153.13657
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9323892593383789,-30.282294734535974,153.1265247320036
+Birch Carroll & Coyle Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7770417928695679,-30.282507177688,153.12661597767
+BCC Cinemas Coffs Harbour,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.994040310382843,-30.282295933160796,153.12638691067656
+Movie Location,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5249186754226685,-27.950778,153.199512
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9988201674222946,-27.855931,153.316026
+Pete's Gold Lounge Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.773861825466156,-27.817424351307,153.29084157944
+9D cinema,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.6523277759552002,-27.931333656667,153.38840341333
+Reading Cinemas Harbour Town,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9876466214656829,-27.931757283835527,153.38857349585288
+Reading Cinemas Megaplex Harbour Town,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5936001539230347,-27.93429,153.400202
+Lethal Weapon - Warner Bros. Movie World,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.629540205001831,-27.90779556654362,153.31182002286616
+Dive'n'Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8548926240205765,-27.914178,153.317258
+"Movieworld, Goldcoast","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7487494945526123,-28.00107,153.343048
+Nerang Cineplex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9476368427276611,-27.99231128,153.33543009
+Australian Cinemas Nerang,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9224600195884705,-27.992256841515257,153.33530547977827
+Movie World Gold Coast,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5128214955329895,-27.96274,153.39968
+COCO'S Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9481092691421509,-28.030965,153.393131
+Vmax Robina Town Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7166920900344849,-28.075592323367903,153.38465571333714
+Gold Class @ Robina,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.876987636089325,-28.075316563706,153.38470111926
+Birch Carroll & Coyle,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8233567476272583,-28.074976,153.384316
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9989487372338772,-28.075168787373247,153.3842752296807
+Murwillumbah Regent Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-28.327356672565585,153.39558538090765
+The Regent Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9775639176368713,-28.32726902,153.395633
+Sunnyside Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9952358108758926,-28.328215,153.396512
+Ballina Fair Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9937404990196228,-28.859217,153.558287
+Movies Plus/King Of The Pack Ballina,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.7798254489898682,-28.86883,153.56075
+"Federal, Northern NSW","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.64158695936203,-28.6623998,153.4693905
+Dendy Byron Bay,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-28.647073801985833,153.6125051092593
+Palace Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9918243777751923,-28.647074,153.612505
+Paradis Movie Club,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.5789210200309753,-28.644532616975,153.61264467538
+The Byron Lounge Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6568861603736877,-28.64525475005759,153.60525436188982
+Brunswick Picture House,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.9977288734912872,-28.54048286,153.54910299
+Cinemax Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.77,-28.25665873595708,153.5785562623595
+A M C Tweed Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NSW,0.6386088728904724,-28.20201711568115,153.5453034518175
+Hoyts Tweed City,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NSW,0.9997531771361828,-28.201788761052633,153.5452551100263
+BCC Cinemas Coolangatta,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.9839501967132092,-28.1682938,153.5378301
+Cinebar Coolangatta,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9790785312652588,-28.1682844,153.53840245
+Birch Carroll & Coyle Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8932243305444717,-28.167815,153.538453
+The Pines Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9973708200454712,-28.13448135552,153.46909694192
+Burleigh Town Marketplace,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.766312837600708,-28.0976731,153.4432256
+Southport Park,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9585613113641739,-27.986141,153.409895
+Australia Fair 10 Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9073848724365234,-27.969035,153.414869
+Cineplex Southport at Australia Fair,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.31447070837020874,-27.96847,153.41567
+Event Cinemas Australia Fair,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.85,-27.968683,153.415574
+eVent Cinemas - Gold Class,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.967894401799192,153.41618750013052
+Dendy Cinemas Southport,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9980012452602387,-27.97116132,153.40839165
+Movie World Theme Park,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7777108550071716,-27.981895435078,153.4285346648
+Movieworld,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6631046533584595,-28.0230923,153.4310064
+Birch Carroll and Coyle Pacific Fair Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9898666816949845,-28.037509,153.427279
+Gold Class Springfield,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.7536807656288147,-27.678243281062368,152.90189010278212
+Event Cinemas Springfield,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.9937212145030498,-27.6781448,152.9011295
+Reading Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.605587452089424,152.86784289312197
+Cineplex Redbank Plaza,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9483779668807983,-27.60591591,152.86748323
+Centro Monier Village,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9318106770515442,-27.559075,152.95097
+Reading Cinemas Jindalee,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9964462804794312,-27.53120019,152.94743523
+United Cinemas Eldorado,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9983713489770889,-27.50334217,152.97493746
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.996975141376257,-27.500957593069586,152.9722748028471
+Regal Twin Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.998424101471901,-27.522136278251,152.97618393341
+Uq Pod Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.4703984558582306,-27.495861,153.016268
+GreazeFest,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.10889735072851181,-27.5484818514,153.011274394
+Event Cinemas Garden City,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5226946473121643,-27.60943,152.94599
+Indooroopilly Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.545348048210144,-27.6312025,152.9595133
+Movies Under The Wineglass,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5599021315574646,-27.67658,153.02963
+Wagtail Productions,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.44776067337568,152.990019412682
+Australia Independent Film Festival,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.2887560725212097,-27.44696,153.0305
+Red Hill Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.45298531935523,153.00436307577897
+Moonlight Cinema Brisbane,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9844105631113053,-27.46282886,153.01993779
+AINS Movie House,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6058833003044128,-27.45955,153.02336
+Lavazza Italian Film Festival,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.465526096858962,153.0134144279562
+Palace Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9899218678474426,-27.465570723033565,153.01378748702882
+Palace Barracks,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.46566459761159,153.01393575683878
+Goldclass,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9522217512130737,-27.467577,153.027991
+Stage Films,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5902873277664185,-27.46768,153.030212
+Roaring Twenties Cinema Brisbane,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7644587755203247,-27.46846,153.0234199
+Brisbane Outdoor Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.546096920967102,-27.46846,153.0234199
+Elizabeth Picture Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9946186542510986,-27.4697925,153.0270035
+Five Star Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9912184369564057,-27.4697967,153.02698294
+Vmax Cinema Myer Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8369598388671875,-27.470547201822043,153.02489669617194
+Event Cinemas Brisbane City,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9951275387108326,-27.47052306,153.02513534
+Brisbane International Film Festival,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9784168952703476,-27.472639,153.025476
+GOMA Cinema A,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.844680905342102,-27.470649,153.0170464
+Australian Cinematheque,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9874865132570266,-27.47085831,153.01666193
+Blue Room Cinebar,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.465945620963044,152.99769228808282
+Cinebar Rosalie Village,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9812501072883606,-27.46605567,152.99758918
+Waters Edge Movie Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.48440142159824,152.9992990850956
+Cineplex South Bank,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9884707283973694,-27.47877291,153.02153592
+Birch Carroll & Coyle Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.66237612935128,153.0410049703771
+BCC Cinemas Browns Plains,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6466317176818848,-27.66229372857137,153.04055356607145
+Event Cinemas Browns Plains,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.85,-27.6626858,153.0401486
+Browns Plains Cinema Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.861519455909729,-27.662125238412678,153.0407695284965
+Kingston Butter Factory Community Arts Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9295353889465332,-27.658259589883414,153.1204829594139
+Loganholme Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8328608870506287,-27.67221,153.18167
+Star Cinema Lounge,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.20124387741088867,-27.658317,153.170984
+eVent Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.658367080131825,153.17006890622332
+Hyperplex Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8615012168884277,-27.658295,153.170658
+Event Cinemas Loganholme,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9943196535110473,-27.6582665,153.1701382
+Hypodome Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5470311045646667,-27.65059,153.17238
+Market Square Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.883419394493103,-27.57286,153.0652
+Pinelands Plaza Pharmacy,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9246116876602173,-27.589452,153.060996
+BCC Garden City Megaplex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.21820442378520966,-27.56159851034123,153.08023541472383
+Garden City Gold Class,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7277977466583252,-27.561226104682767,153.07965663795517
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9993890841603279,-27.560016,153.081065
+Mount Gravatt Media,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6718213558197021,-27.54378,153.0827
+Events Garden City Gold Class Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6420523524284363,-27.586055,153.3064856
+Cineplex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9963514959812164,-27.585105,153.279464
+BCC Cinemas Capalaba,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.85,-27.5227358,153.1954304
+Birch Carroll & Coyle Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9841301220655442,-27.523882,153.195298
+Greater Union Capalaba,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.38058435916900635,-27.52323,153.19524
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.999024133682251,-27.50372216430454,153.10248528708794
+Angelika Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9932287347316742,-27.49294302,153.04154283
+Dendy Cinemas Coorparoo,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9983937633037567,-27.49434394,153.05899795
+VanCinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5290509462356567,-27.486171197289,153.04730601633
+New Farm Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9995976217091084,-27.464792,153.042545
+Cineplex Deluxe Hawthorne,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9991998565196991,-27.462251405185,153.06040724566
+Palace Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9877931439876556,-27.456908,153.03992302
+Balmoral 6 Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.6839390993118286,-27.451302,153.059773
+Balmoral Cineplex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9556262546777725,-27.45133117,153.05965119
+Sunset Cinema Brisbane,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6892622709274292,-27.443425440651,153.07795112953
+Southern Cross Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5908247232437134,-27.455897869227,153.1562104
+Wynnum Cinema Complex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9106227159500122,-27.441769585545,153.17111659522
+Bay Terrace Shopping Village,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9441198706626892,-27.4436,153.173048
+Sun Pictures,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.9972991901636123,-17.9534986,122.24324349
+Kununurra Picture Gardens,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",WA,0.9764531254768372,-15.77457428,128.73618293
+Wyndham Picture Gardens,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",WA,0.988060712814331,-15.484901246735,128.12107670077
+Darwin International Film Festival,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.10832647234201431,-12.467609476172505,130.84218311758187
+Deckchair Cinema,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",NT,0.9939829117059708,-12.46763724,130.84238859
+BCC Cinemas Darwin,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.93202403485775,-12.4613734,130.8382561
+Harry Chan Arcade,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.8283448815345764,-12.462501,130.842133
+Smith Street Mall,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.9392150044441223,-12.463640756792682,130.84229599370573
+Burrundi Pictures,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.77,-12.449392570137837,130.83941814129045
+Darwin Malayalam Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.6411877870559692,-12.37481,130.88276
+Birch Carroll and Coyle Casuarina Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.9994994757473469,-12.37586994,130.88224894
+Harbour View Plaza,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.9436022639274597,-12.462493118883,130.84622074194
+Arkani Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.9924436628818512,-25.24307872,130.98445962
+Alice Springs Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.9982271021604538,-23.69761006,133.88395958
+Alice Springs Public Library,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Northern Territory,0.85,-23.70187529,133.88335544
+Alice Noir ,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.2355603128671646,-23.706348544281,133.88487811899
+Katherine Cinema 3,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.9692135453224182,-26.745610382199,134.296875
+Flicks,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",,0.07696408778429031,-27.059125784374,136.40625
+Rivoli Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.7228735685348511,-16.33306,131.10912
+Moonlit Cinema Tindal,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.7823626399040222,-14.508385153342612,132.39611962462286
+Katherine Film Society,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.6507632732391357,-14.463711333024,132.26332390978
+Katherine Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.9933439320325852,-14.46400311,132.26351284
+Warradjan Aboriginal Cultural Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.9342461228370667,-12.8998701,132.5272846
+CMax Cinemas Palmerston,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.9472216498851777,-12.480746758229,130.98788721885
+Vmax Cinema - Gateway Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.7953401803970337,-12.471432463241863,130.98275855348766
+Gapuwiyak Culture and Arts Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",NT,0.6622591614723206,-12.503679133663507,135.80595333317964
+Star Cinemas Mount isa,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9964690375328064,-20.72584658,139.49090665
+The Royal Theatre,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.8141980224847793,-22.38980457,143.03766856
+BCC Cinemas Morayfield,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.85,-27.1029337,152.9510272
+Morayfield Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5719730854034424,-27.10352,152.95082
+Limelight Cinemas Morayfield,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9758412837982178,-27.102960025462,152.95063422333
+Limelight Cinemas Morayfield,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.103264255798447,152.95125944782555
+Deception Bay Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9272602200508118,-27.194212,153.02913
+Western Downs Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.188560687896864,151.26913105542158
+Dalby Civic Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9383829474449158,-27.188744,151.269136
+Movie World,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5844481587409973,-27.241161960441186,153.01119921222707
+Cinema 1 Westfield Strathpine,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8604503870010376,-27.30675400516826,152.99115500625106
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9823189377784729,-27.306919,152.993314
+Birch Carroll & Coyle Ltd,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9822754859924316,-27.306865,152.991467
+Birch Carroll & Coyle Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.307226881632868,152.99132030742965
+BCC Cinemas Strathpine,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.9655,-27.3071259,152.9914945
+Twilight Flicks Outdoor Cinemas- Pine Rivers Park,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-27.31272,152.9956
+Cloudland Fortitude Valley,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5261623859405518,-27.38181,153.00807
+V Max Cinemas Chermside,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7190521955490112,-27.3830035,153.0308574
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9980506301224231,-27.383868302753,153.03116908069
+Hoyts Stafford,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9993636305332184,-27.41283584,153.01194149
+Reading Cinemas Newmarket,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9939108020067215,-27.43702796,153.00823554
+At Cinemas Maryborough,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9963206642866135,-25.54295343,152.699588
+Gympie Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.99954688924551,-26.1879298,152.66086316
+The Majestic Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9971881467103958,-26.36571626,152.85744414
+Flicks in the Sticks,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8659476920962333,-26.4706,152.941923
+Nambour Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.894763171672821,-26.62602,152.95823
+Majestic Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.979762613773346,-26.62593,152.958121
+Cinema Works,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.07511787861585617,-26.57978261,152.74955736
+Kingaroy Satellite Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9979375392198563,-26.54211592,151.8405166
+Red Hill Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9800335764884949,-26.6735,150.6653
+Chinchilla Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9947905266284942,-26.7408434229,150.62458293227
+Maleny Film Society,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9701397162675858,-26.7587323,152.85147516
+Caboolture Park Shopping Centre Management,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9846196043491363,-27.08510691563637,152.94950671200002
+Brisbane City Myer Center Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5805167555809021,-27.415,153.04935
+Event Cinema Toombul,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.8943101763725281,-27.408767,153.060498
+BCC Cinemas Toombul,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.85,-27.4094602,153.0616604
+Dendy Cinemas Portside,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9953925740718842,-27.4407239,153.06937001
+Icon Film Distribution Australia,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6103821992874146,-27.4396244,153.0698998
+DFO Brisbane,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9994593935847282,-27.415194025938888,153.07989595743842
+Vmax,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.18210189044475555,-27.385117,153.03171
+Greater Union Chermside Megaplex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7381746172904968,-27.3838166469,153.031855138
+"Seaworld, Gold Coast","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6335355043411255,-27.31912,153.0584
+Hoyts Redcliffe,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9997254121601582,-27.22599001,153.08861827
+Gold Class Chermside,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5481513142585754,-27.2260404,153.0885561
+Bribie Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9947245037555694,-27.07777023,153.18061345
+"Birch Carroll and Coyle Cinema, Sunshine Plaza","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5677099227905273,-26.72785,153.07604
+Birch Carroll & Coyle Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-26.654206591689555,153.08928933050595
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9870883744955062,-26.656927,153.087603
+BCC Cinemas Maroochydore Sunshine Plaza,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-26.66008,153.09953
+"Eumundi Market, Noosa","{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7546555995941162,-26.386797960000003,153.08848749
+BCC Cinemas Noosa,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-26.39762,153.09152
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9990057991743088,-26.7013782,153.1316812
+Gold Class,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8579096794128418,-26.701326811858,153.1314963666
+Stockland Caloundra,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9776582717895508,-26.802198,153.125296
+Caloundra Cultural Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9107896685600281,-26.802757,153.130566
+Central Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-26.80458575208399,153.13450254590646
+Strand Cinema Caloundra,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9885651469230652,-26.80465146,153.13475254
+Big Screen Cinemas Caloundra,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9805665016174316,-26.80458745484161,153.13473931353028
+Jericho Drive-in,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.5799195766448975,-23.60242055,146.12486415
+Star Cinema Longreach,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.922925591468811,-23.442542895858,144.24845080757
+Amalgamated Movies,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.4110564887523651,-20.06539,146.29076
+Charters Towers Tors Drive-In,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9957212626934051,-20.06475807,146.29064029
+Warrina Cineplex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9994168059527874,-19.27473685,146.77020181
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9966932207345962,-19.266781119123305,146.81118219783664
+BCC Cinemas Townsville Central,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9981091294586658,-19.266978355819333,146.81106552900636
+Event Townsville,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9792357861995697,-19.262050184618,146.8134980356
+Birch Carroll & Coyle Townsville City Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.93057781457901,-19.262136228899564,146.81342476164394
+Reading Cinemas Townsville,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9953647446632385,-19.31977843,146.72340863
+Stardust Drive-In Theatre,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9978783708810807,-19.59446365,147.39949898
+Burdekin Delta Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-19.554305064043028,147.35574843070182
+Bowen Summergarden Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.997505031824112,-19.97626455,148.22905861
+Birch Carroll & Coyle,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9873314088582993,-21.121722,149.157909
+Event Cinemas,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9868151938915253,-21.121883,149.157993
+Emerald Twin Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-23.51737715857364,148.15750662687844
+Emerald Cinema Complex,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9641770124435425,-23.5171896,148.15761156
+Centro Emerald Market Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5958828926086426,-23.528107,148.16456
+Majestic Theatre Malanda,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9976104545593262,-17.35348858,145.59289971
+Rodeo Drive In,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-17.048745206409556,145.43327452775281
+Mareeba Drive-In,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.9912860989570618,-17.04889789,145.43272237
+Moonlight Cinema Port Douglas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.9655,-16.509887,145.462137
+Marina Mirage,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8844342827796936,-16.4849023,145.4607233
+Festival Faire Shopping Centre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5564037561416626,-16.925595710330143,145.7403644017892
+BCC Stockland,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6001206040382385,-16.942951433355557,145.74068473339742
+Birch Carroll & Coyle Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7590985298156738,-16.942848,145.740468
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9826952219009399,-16.943155586807958,145.74050805112998
+Event Cinemas Cairns Earlville,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.9655,-16.9430703,145.7410538
+BCC Stockland,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-16.95754245713456,145.7347214792121
+Kuranda Downhill Track,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7712258100509644,-16.8388712,145.6879515
+Event Cinemas Cairns Smithfield,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.9655,-16.8383087,145.6918548
+Vmax Smithfield,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9216293096542358,-16.838351047368,145.69109028071
+Starry Night Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8128306865692139,-16.899489,145.748306
+Cairns Adventure Films,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.85,-16.9235002,145.7775085
+Chicks At The Flicks Cairns,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.34056949615478516,-16.92209800161602,145.77408905188176
+Event Cinemas Cairns City,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",Queensland,0.85,-16.9220026,145.7741014
+Birch Carroll & Coyle,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.6547242999076843,-16.921934,145.774186
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9943286120891571,-16.926208,145.774181
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-16.925096606960235,145.7719685834466
+Screen Culture Club,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9702886378765107,-16.91894243,145.77242919
+Cine Bar Cairns,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9704326391220093,-16.91887567092,145.7723736763
+Babinda Picture Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9864218235015869,-17.34409683,145.92152955
+The Con Theatre Innisfail,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8901389241218567,-17.5339587,146.02998137
+Mystic Moon Movie House & Function Room,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5276884436607361,-17.525883,146.029378
+Paragon Theatre,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9646485763788223,-25.236075,152.276754
+Hervey Bay Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8090595602989197,-25.29411,152.88974
+Boat Club Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.99889918923378,-25.294523,152.909062
+BIGSCREEN Cinemas Hervey Bay,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9966581404209137,-25.28709651,152.83264947
+Reading Cinemas Bundaberg,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9962757533788681,-24.88867242,152.32182312
+Gladstone Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9979107242822647,-23.85531077,151.24888535
+The Gold Room,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9673517346382141,-23.854742,151.248795
+Realf's Diving & Salvage,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-23.85220815842538,151.27544104061548
+1770 Cinema,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.2392294704914093,-24.17543,151.88525
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.5831100344657898,-23.4601,150.45275
+Stockland Shopping Centres Rockhampton,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.7356123924255371,-23.3769949,150.5110946
+BCC Cinema North Rockhampton,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.8182569146156311,-23.355256,150.5201184
+Event Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.973125866651535,-23.35425,150.520305
+Birch Carroll & Coyle Cinemas Rockhampton,"{'primary': drive_in_theater, 'hierarchy': [arts_and_entertainment, movie_theater, drive_in_theater], 'alternates': NULL}",QLD,0.7232290506362915,-23.355008,150.520348
+Stockland Rockhampton,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9994604229986668,-23.354465,150.522472
+Birch Carroll & Coyle Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-21.14316487392695,149.18629796444682
+Mackay City Cinemas,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.9928085237741471,-21.143092748759823,149.1860044849293
+The Grove,"{'primary': movie_theater, 'hierarchy': [arts_and_entertainment, movie_theater], 'alternates': NULL}",QLD,0.77,-21.102717613631878,149.18654515583248
