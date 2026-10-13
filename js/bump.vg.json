@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Horror climbed from 17th to 4th among genres",
+      "subtitle": "Rank of each genre by its share of the decade's films (1 = largest share).",
+      "anchor": "start", "fontSize": 18, "subtitleFontSize": 12, "subtitleColor": "#555555"
+    },
+    "width": 700,
+    "height": 480,
+    "padding": {"right": 120},
+    "data": {"url": "../data/genre_counts_by_decade.csv"},
+    "transform": [
+      {"filter": "toNumber(substring(datum.decade, 0, 4)) >= 1920"},
+      {"fold": ["Action","Adventure","Animation","Comedy","Crime","Documentary","Drama","Family","Fantasy","History","Horror","Music","Mystery","Romance","Science Fiction","TV Movie","Thriller","War","Western"],
+       "as": ["genre", "films"]},
+      {"calculate": "toNumber(datum.films) / toNumber(datum.all_films) * 100", "as": "share"},
+      {"window": [{"op": "rank", "as": "rank"}],
+       "sort": [{"field": "share", "order": "descending"}],
+       "groupby": ["decade"]},
+      {"calculate": "datum.genre === 'Horror' ? 1 : 0", "as": "isHorror"}
+    ],
+    "encoding": {
+      "x": {"field": "decade", "type": "ordinal", "axis": {"title": null, "labelAngle": 0, "orient": "top"}},
+      "y": {"field": "rank", "type": "quantitative",
+            "scale": {"reverse": true, "domain": [1, 19]},
+            "axis": {"title": "Rank by share of films", "values": [1, 5, 10, 15, 19], "grid": false}},
+      "detail": {"field": "genre", "type": "nominal"},
+      "order": {"field": "isHorror", "type": "quantitative"},
+      "color": {"condition": {"test": "datum.genre === 'Horror'", "value": "#b3122a"}, "value": "#cfc9c0"},
+      "tooltip": [
+        {"field": "genre", "title": "Genre"},
+        {"field": "decade", "title": "Decade"},
+        {"field": "rank", "title": "Rank"},
+        {"field": "share", "title": "Share of films (%)", "format": ".1f"}
+      ]
+    },
+    "layer": [
+      {"mark": {"type": "line", "interpolate": "monotone"},
+       "encoding": {"strokeWidth": {"condition": {"test": "datum.genre === 'Horror'", "value": 4}, "value": 1.5}}},
+      {"mark": {"type": "circle", "size": 70},
+       "encoding": {"size": {"condition": {"test": "datum.genre === 'Horror'", "value": 110}, "value": 40}}},
+      {"transform": [{"filter": "datum.decade === '2020s'"}],
+       "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 11},
+       "encoding": {
+         "text": {"field": "genre"},
+         "color": {"condition": {"test": "datum.genre === 'Horror'", "value": "#b3122a"}, "value": "#555555"}
+       }}
+    ],
+    "config": {"view": {"stroke": null}, "font": "EB Garamond, serif", "background": null}
+  }
