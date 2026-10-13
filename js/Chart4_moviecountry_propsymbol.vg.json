@@ -1,104 +1,78 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "background":null,
-    "data": {"url": "data/horror_by_country_year.csv"},
-    "vconcat": [
-      {
-        "width": 760,
-        "height": 400,
-        "projection": {"type": "equalEarth"},
-        "layer": [
-          {
-            "data": {
-              "url": "data/world-110m.json",
-              "format": {"type": "topojson", "feature": "countries"}
-            },
-            "mark": {"type": "geoshape", "fill": "#ece9e4", "stroke": "#ffffff", "strokeWidth": 0.5}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "data/horror_by_country_year.csv"},
+  "vconcat": [
+    {
+      "width": 760,
+      "height": 400,
+      "projection": {"type": "equalEarth"},
+      "layer": [
+        {
+          "data": {
+            "url": "data/world-110m.json",
+            "format": {"type": "topojson", "feature": "countries"}
           },
-          {
-            "transform": [
-              {"filter": {"param": "yearBrush"}},
-              {
-                "aggregate": [{"op": "sum", "field": "films", "as": "total"}],
-                "groupby": ["country", "lat", "lon"]
-              }
-            ],
-            "mark": {
-              "type": "circle",
-              "color": "#b3122a",
-              "opacity": 0.6,
-              "stroke": "#5c0814",
-              "strokeWidth": 0.6
-            },
-            "encoding": {
-              "longitude": {"field": "lon", "type": "quantitative"},
-              "latitude": {"field": "lat", "type": "quantitative"},
-              "size": {
-                "field": "total",
-                "type": "quantitative",
-                "scale": {"zero": true, "range": [0, 3000]},
-                "legend": {"title": "Horror films"}
-              },
-              "tooltip": [
-                {"field": "country", "title": "Country"},
-                {"field": "total", "title": "Horror films", "format": ",.0f"}
-              ]
-            }
-          }
-        ]
-      },
-
-      {
-        "transform": [
-          {"filter": {"param": "yearBrush"}},
-          {"aggregate": [
-            {"op": "min", "field": "year", "as": "y0"},
-            {"op": "max", "field": "year", "as": "y1"}
-          ]},
-          {"calculate": "datum.y0 == datum.y1 ? '' + datum.y0 : datum.y0 + '\u2013' + datum.y1", "as": "label"}
-        ],
-        "mark": {
-          "type": "text",
-          "align": "left",
-          "baseline": "top",
-          "fontSize": 30,
-          "fontWeight": "bold",
-          "color": "#5c0814"
+          "mark": {"type": "geoshape", "fill": "#ece9e4", "stroke": "#ffffff", "strokeWidth": 0.5}
         },
-        "encoding": {
-          "x": {"value": 10},
-          "y": {"value": 8},
-          "text": {"field": "label"}
-        }
-      },
-
-      {
-        "width": 760,
-        "height": 110,
-        "params": [
-          {"name": "yearBrush", "select": {"type": "interval", "encodings": ["x"]}}
-        ],
-        "transform": [
-          {"aggregate": [{"op": "sum", "field": "films", "as": "total"}], "groupby": ["year"]}
-        ],
-        "mark": {"type": "line", "color": "#b3122a", "strokeWidth": 2},
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "quantitative",
-            "axis": {"title": null, "format": "d", "tickCount": 12}
-          },
-          "y": {
-            "field": "total",
-            "type": "quantitative",
-            "axis": {"title": "Films per year", "tickCount": 3}
+        {
+          "transform": [
+            {"filter": {"param": "yearBrush"}},
+            {"aggregate": [{"op": "sum", "field": "films", "as": "total"}],
+             "groupby": ["country", "lat", "lon"]}
+          ],
+          "mark": {"type": "circle", "color": "#b3122a", "opacity": 0.6,
+                   "stroke": "#5c0814", "strokeWidth": 0.6},
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "size": {"field": "total", "type": "quantitative",
+                     "scale": {"zero": true, "range": [0, 3000]},
+                     "legend": {"title": "Horror films"}},
+            "tooltip": [
+              {"field": "country", "title": "Country"},
+              {"field": "total", "title": "Horror films", "format": ",.0f"}
+            ]
+          }
+        },
+        {
+          "transform": [
+            {"filter": {"param": "yearBrush"}},
+            {"aggregate": [{"op": "min", "field": "year", "as": "y0"},
+                           {"op": "max", "field": "year", "as": "y1"}]},
+            {"calculate": "datum.y0 == datum.y1 ? '' + datum.y0 : datum.y0 + '\u2013' + datum.y1",
+             "as": "label"}
+          ],
+          "mark": {"type": "text", "align": "left", "baseline": "top",
+                   "fontSize": 30, "fontWeight": "bold", "color": "#5c0814"},
+          "encoding": {
+            "x": {"value": 10},
+            "y": {"value": 8},
+            "text": {"field": "label"}
           }
         }
+      ]
+    },
+    {
+      "width": 760,
+      "height": 110,
+      "params": [
+        {"name": "yearBrush", "select": {"type": "interval", "encodings": ["x"]}}
+      ],
+      "transform": [
+        {"aggregate": [{"op": "sum", "field": "films", "as": "total"}], "groupby": ["year"]}
+      ],
+      "mark": {"type": "line", "color": "#b3122a", "strokeWidth": 2},
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative",
+              "axis": {"title": null, "format": "d", "tickCount": 12}},
+        "y": {"field": "total", "type": "quantitative",
+              "axis": {"title": "Films per year", "tickCount": 3}}
       }
-    ],
-    "config": {
-      "view": {"stroke": null},
-      "font": "EB Garamond, serif",
-      "background": null
     }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "EB Garamond, serif",
+    "background": null
   }
+}
