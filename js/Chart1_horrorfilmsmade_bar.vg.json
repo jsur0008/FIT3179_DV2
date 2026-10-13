@@ -3,10 +3,10 @@
 
     "background": null,
     
-    "width": 300,
+    "width": 430,
     "height": 420,
     "data": {
-      "url": "../data/genre_counts_by_decade.csv"
+      "url": "data/genre_counts_by_decade.csv"
     },
     "transform": [
       { "filter": "datum.Horror > 0" }

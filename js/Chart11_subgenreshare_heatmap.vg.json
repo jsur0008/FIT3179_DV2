@@ -3,7 +3,7 @@
 
     "background": null,
     
-    "data": {"url": "../data/subgenre_by_period.csv"},
+    "data": {"url": "/data/subgenre_by_period.csv"},
     "transform": [
       {"calculate": "floor(toNumber(datum.period_start) / 10) * 10", "as": "decade"},
       {"filter": "datum.decade >= 1950"},

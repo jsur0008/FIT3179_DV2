@@ -3,7 +3,7 @@
 
     "background": null,
 
-    "data": {"url": "../data/genre_counts_by_decade.csv"},
+    "data": {"url": "data/genre_counts_by_decade.csv"},
 
     "transform": [
       {"filter": "datum.all_films > 0"},
