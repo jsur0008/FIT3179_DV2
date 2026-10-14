@@ -1,0 +1,56 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 700,
+    "height": 420,
+    "data": {"url": "data/highest_grossing_franchise.csv"},
+    "transform": [
+      {"calculate": "datum.average_per_film_usd / 1000000", "as": "avg_m"},
+      {"calculate": "datum.total_worldwide_usd / 1000000", "as": "total_m"}
+    ],
+    "encoding": {
+      "x": {
+        "field": "films", "type": "quantitative",
+        "scale": {"domain": [0, 14]},
+        "axis": {"title": "Films in the franchise", "tickMinStep": 1, "grid": false}
+      },
+      "y": {
+        "field": "avg_m", "type": "quantitative",
+        "scale": {"domain": [0, 650]},
+        "axis": {"title": "Average gross per film ($ millions)", "format": ",.0f"}
+      }
+    },
+    "layer": [
+      {
+        "params": [{"name": "grid", "select": "interval", "bind": "scales"}],
+        "mark": {"type": "circle", "color": "#b3122a", "opacity": 0.55,
+                 "stroke": "#5c0814", "strokeWidth": 0.8},
+        "encoding": {
+          "size": {
+            "field": "total_m", "type": "quantitative",
+            "scale": {"domain": [0, 3000], "range": [0, 4500], "zero": true},
+            "legend": {"title": "Total gross ($ millions)", "values": [500, 1000, 2000, 3000], "format": ",.0f"}
+          },
+          "order": {"field": "total_m", "type": "quantitative", "sort": "descending"},
+          "tooltip": [
+            {"field": "series", "title": "Franchise"},
+            {"field": "films", "title": "Films"},
+            {"field": "avg_m", "title": "Average per film ($M)", "format": ",.0f"},
+            {"field": "total_m", "title": "Total ($M)", "format": ",.0f"}
+          ]
+        }
+      },
+      {
+        "transform": [{"filter": "indexof(['The Ring','Halloween','A Quiet Place'], datum.series) >= 0"}],
+        "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 14,
+                 "fontSize": 12, "color": "#333333"},
+        "encoding": {"text": {"field": "series"}}
+      },
+      {
+        "transform": [{"filter": "indexof(['The Conjuring Universe','It'], datum.series) >= 0"}],
+        "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 40,
+                 "fontSize": 12, "fontWeight": "bold", "color": "#5c0814"},
+        "encoding": {"text": {"field": "series"}}
+      }
+    ],
+    "config": {"view": {"stroke": null, "clip": true}, "font": "EB Garamond, serif", "background": null}
+  }
