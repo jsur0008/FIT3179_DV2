@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background":null,
     "width": 700,
     "height": 420,
     "data": {"url": "data/highest_grossing_franchise.csv"},
