@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  
+  "params": [
+    {
+      "name": "decade_sel",
+      "value": 0,
+      "bind": {
+        "input": "select",
+        "options": [0, 1980, 1990, 2000, 2010, 2020],
+        "labels": ["All decades", "1980s", "1990s", "2000s", "2010s", "2020s"],
+        "name": "Decade  "
+      }
+    }
+  ],
+  "spacing": 14,
+  "vconcat": [
+    {
+      "width": 760,
+      "height": 400,
+      "projection": { "type": "equalEarth" },
+      "layer": [
+        {
+          "data": { "sphere": true },
+          "mark": { "type": "geoshape", "fill": "#faf6f2", "stroke": "#d9cfc7", "strokeWidth": 0.8 }
+        },
+        {
+          "data": { "url": "data/world-110m.json", "format": { "type": "topojson", "feature": "countries" } },
+          "mark": { "type": "geoshape", "fill": "#e6dcd4", "stroke": "#faf6f2", "strokeWidth": 0.5 }
+        },
+        {
+          "data": { "url": "data/horror_filming_bins.json" },
+          "transform": [
+            { "filter": "decade_sel == 0 || datum.decade_start == decade_sel" },
+            {
+              "aggregate": [
+                { "op": "sum", "field": "films", "as": "films" },
+                { "op": "argmax", "field": "films", "as": "best" }
+              ],
+              "groupby": ["lon0", "lat0", "lon1", "lat1"]
+            },
+            { "calculate": "datum.best.top_place", "as": "place" },
+            { "calculate": "(datum.lon0 + datum.lon1) / 2", "as": "lonc" },
+            { "calculate": "(datum.lat0 + datum.lat1) / 2", "as": "latc" },
+            {
+              "calculate": "datum.films < 3 ? '1–2' : datum.films < 10 ? '3–9' : datum.films < 30 ? '10–29' : datum.films < 100 ? '30–99' : datum.films < 300 ? '100–299' : '300+'",
+              "as": "bucket"
+            }
+          ],
+          "params": [
+            {
+              "name": "pick",
+              "select": { "type": "point", "fields": ["lon0", "lat0"], "on": "click", "clear": "dblclick" }
+            }
+          ],
+          "mark": { "type": "square", "size": 105, "opacity": 0.92, "cursor": "pointer" },
+          "encoding": {
+            "longitude": { "field": "lonc", "type": "quantitative" },
+            "latitude": { "field": "latc", "type": "quantitative" },
+            "stroke": { "condition": { "param": "pick", "empty": false, "value": "#1f2a44" }, "value": "#7e583a" },
+            "strokeWidth": { "condition": { "param": "pick", "empty": false, "value": 2.5 }, "value": 0.5 },
+            "color": {
+              "field": "bucket",
+              "type": "ordinal",
+              "scale": {
+                "domain": ["1–2", "3–9", "10–29", "30–99", "100–299", "300+"],
+                "range": ["#fbe3e6", "#f3b8c0", "#e5818f", "#cf4a5f", "#a50f2a", "#5c0814"]
+              },
+              "legend": {
+                "title": "Films shot in the square",
+                "orient": "bottom-left",
+                "symbolType": "square",
+                "symbolSize": 140,
+                "labelFontSize": 12
+              }
+            },
+            "tooltip": [
+              { "field": "place", "title": "Busiest place here" },
+              { "field": "films", "title": "No of Films", "format": ",.0f" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 760,
+      "height": { "step": 22 },
+      "title": {
+        "text": "",
+        "anchor": "start",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "fontStyle": "italic",
+        "color": "#5c0814"
+      },
+      "data": {
+        "url": "data/horror_filming_films.csv",
+        "format": { "type": "csv", "parse": { "lon0": "number", "lat0": "number", "decade_start": "number", "year": "number" } }
+      },
+      "transform": [
+        { "filter": { "param": "pick", "empty": false } },
+        { "filter": "decade_sel == 0 || datum.decade_start == decade_sel" },
+        {
+          "window": [{ "op": "row_number", "as": "rn" }],
+          "sort": [{ "field": "year", "order": "descending" }]
+        },
+        { "window": [{ "op": "count", "as": "n" }], "frame": [null, null] },
+        { "filter": "datum.rn <= 12" },
+        {
+          "calculate": "datum.title + '  (' + datum.year + ', ' + datum.place + ')' + (datum.rn == 12 && datum.n > 12 ? '   … and ' + (datum.n - 12) + ' more' : '')",
+          "as": "line"
+        }
+      ],
+      "mark": { "type": "text", "align": "left", "fontSize": 14, "color": "#222222" },
+      "encoding": {
+        "y": { "field": "rn", "type": "ordinal", "axis": null },
+        "x": { "value": 0 },
+        "text": { "field": "line", "type": "nominal" }
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": null },
+    "font": "EB Garamond, Georgia, serif"
+  }
+}

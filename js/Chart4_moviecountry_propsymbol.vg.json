@@ -3,9 +3,10 @@
   "data": {"url": "data/horror_by_country_year.csv"},
   "vconcat": [
     {
-      "width": 760,
-      "height": 400,
+      "width": 1000,
+      "height": 500,
       "projection": {"type": "equalEarth"},
+
       "layer": [
         {
           "data": {
@@ -13,6 +14,15 @@
             "format": {"type": "topojson", "feature": "countries"}
           },
           "mark": {"type": "geoshape", "fill": "#ece9e4", "stroke": "#ffffff", "strokeWidth": 0.5}
+        },
+
+        {
+          "data": { "sphere": true },
+          "mark": { "type": "geoshape", "fill": "#faf6f2", "stroke": "#d9cfc7", "strokeWidth": 0.8 }
+        },
+        {
+          "data": { "url": "data/world-110m.json", "format": { "type": "topojson", "feature": "countries" } },
+          "mark": { "type": "geoshape", "fill": "#e6dcd4", "stroke": "#faf6f2", "strokeWidth": 0.5 }
         },
         {
           "transform": [
@@ -27,13 +37,14 @@
             "latitude": {"field": "lat", "type": "quantitative"},
             "size": {"field": "total", "type": "quantitative",
                      "scale": {"zero": true, "range": [0, 3000]},
-                     "legend": {"title": "Horror films"}},
+                     "legend": {"title": "Horror films", "orient": "right", "offset": -60}},
             "tooltip": [
               {"field": "country", "title": "Country"},
               {"field": "total", "title": "Horror films", "format": ",.0f"}
             ]
           }
         },
+        
         {
           "transform": [
             {"filter": {"param": "yearBrush"}},
@@ -43,17 +54,19 @@
              "as": "label"}
           ],
           "mark": {"type": "text", "align": "left", "baseline": "top",
-                   "fontSize": 30, "fontWeight": "bold", "color": "#5c0814"},
+                   "fontSize": 25, "fontWeight": "bold", "color": "#5c0814"},
           "encoding": {
-            "x": {"value": 10},
+            "x": {"value": 0},
             "y": {"value": 8},
             "text": {"field": "label"}
           }
         }
       ]
     },
+
+    
     {
-      "width": 760,
+      "width": 1105,
       "height": 110,
       "params": [
         {"name": "yearBrush", "select": {"type": "interval", "encodings": ["x"]}}

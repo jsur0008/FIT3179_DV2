@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": null,
+    "width": 680,
+    "height": {"step": 30},
+    "data": {
+  "url": "../data/franchise_film.csv",
+  "format": {"type": "csv", "parse": {"year": "number", "gross_usd": "number", "sort_order": "number", "start_year": "number", "end_year": "number"}}
+},
+    "transform": [
+      {"calculate": "datum.gross_usd / 1000000", "as": "gross_m"},
+      {"calculate": "datum.end_year + 1", "as": "end_year_end"}
+    ],
+    "encoding": {
+      "y": {"field": "series", "type": "nominal", "title": null,
+            "sort": ["The Conjuring Universe","Alien","Resident Evil","It","Saw","Scream","Final Destination","Predator","Hannibal","Insidious","A Quiet Place","Paranormal Activity","Halloween","Jaws","The Exorcist","The Ring","I Am Legend","The Purge","Five Nights at Freddy's","Beetlejuice"],
+            "axis": {"labelFontSize": 13, "labelLimit": 190, "domain": false, "ticks": false, "grid": true, "gridColor": "#f0e6e2"}}
+    },
+    "layer": [
+      {
+        "transform": [{"filter": "datum.kind == 'group'"}],
+        "mark": {"type": "bar", "height": 10, "cornerRadius": 5, "color": "#c9bfbb"},
+        "encoding": {
+          "x": {"field": "start_year", "type": "quantitative", "scale": {"domain": [1970, 2027]},
+                "axis": {"title": "Release year", "format": "d", "tickMinStep": 5, "grid": false}},
+          "x2": {"field": "end_year_end"},
+          "tooltip": [
+            {"field": "series", "title": "Franchise"},
+            {"field": "film", "title": "Group (no per-film figures)"},
+            {"field": "gross_m", "title": "Gross of the group ($M)", "format": ",.0f"}
+          ]
+        }
+      },
+      {
+        "transform": [{"filter": "datum.kind == 'film'"}],
+        "mark": {"type": "circle", "color": "#b3122a", "opacity": 0.8, "stroke": "#5c0814", "strokeWidth": 0.8},
+        "encoding": {
+          "x": {"field": "year", "type": "quantitative", "scale": {"domain": [1970, 2027]},
+                "axis": {"title": "Release year", "format": "d", "tickMinStep": 5, "grid": false}},
+          "size": {"field": "gross_m", "type": "quantitative",
+                   "scale": {"domain": [0, 720], "range": [12, 1300]},
+                   "legend": {"title": "Gross per film ($M)", "values": [100, 300, 700], "orient": "bottom", "direction": "horizontal"}},
+          "tooltip": [
+            {"field": "series", "title": "Franchise"},
+            {"field": "film", "title": "Film"},
+            {"field": "year", "title": "Year", "format": "d"},
+            {"field": "group", "title": "Sub-series"},
+            {"field": "gross_m", "title": "Gross ($M)", "format": ",.1f"}
+          ]
+        }
+      }
+    ],
+    "config": {
+      "view": {"stroke": null},
+      "font": "EB Garamond, Georgia, serif",
+      "axis": {"labelFont": "EB Garamond, Georgia, serif", "titleFont": "EB Garamond, Georgia, serif"},
+      "legend": {"labelFont": "EB Garamond, Georgia, serif", "titleFont": "EB Garamond, Georgia, serif"}
+    }
+  }

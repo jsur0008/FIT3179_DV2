@@ -1,0 +1,70 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 640,
+    "height": {"step": 26},
+    "data": {"url": "data/companies_budget_revenue.csv"},
+    "transform": [
+      {"calculate": "'\u00d7' + format(datum.multiple, '.1f')", "as": "mult_label"}
+    ],
+    "encoding": {
+      "y": {
+        "field": "company", "type": "nominal",
+        "sort": {"field": "multiple", "order": "descending"},
+        "axis": {
+          "title": null, "domain": false, "ticks": false, "labelFontSize": 13,
+          "labelFontWeight": {"condition": {"test": "datum.value === 'Blumhouse Productions' || datum.value === 'Atomic Monster'", "value": "bold"}, "value": "normal"},
+          "labelColor": {"condition": {"test": "datum.value === 'Blumhouse Productions' || datum.value === 'Atomic Monster'", "value": "#b3122a"}, "value": "#333333"}
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": {"type": "rule", "color": "#c9c4bc", "strokeWidth": 3},
+        "encoding": {
+          "x": {"field": "budget_m", "type": "quantitative",
+                "scale": {"type": "log", "domain": [5, 400]},
+                "axis": {"title": "Typical film, $ millions (log scale)", "values": [5, 10, 20, 50, 100, 200, 400], "format": ",.0f", "grid": true, "gridColor": "#eee"}},
+          "x2": {"field": "revenue_m"}
+        }
+      },
+      {
+        "mark": {"type": "circle", "size": 120, "opacity": 1},
+        "encoding": {
+          "x": {"field": "budget_m", "type": "quantitative", "scale": {"type": "log", "domain": [5, 400]}},
+          "color": {"datum": "Median budget", "type": "nominal",
+                    "scale": {"domain": ["Median budget", "Median revenue"], "range": ["#8f8a82", "#b3122a"]},
+                    "legend": {"title": null, "orient": "top"}},
+          "tooltip": [
+            {"field": "company", "title": "Company"},
+            {"field": "films", "title": "Films with budget and revenue"},
+            {"field": "budget_m", "title": "Median budget ($M)", "format": ",.1f"},
+            {"field": "revenue_m", "title": "Median revenue ($M)", "format": ",.1f"},
+            {"field": "multiple", "title": "Revenue \u00f7 budget", "format": ".1f"}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "circle", "size": 120, "opacity": 1},
+        "encoding": {
+          "x": {"field": "revenue_m", "type": "quantitative", "scale": {"type": "log", "domain": [5, 400]}},
+          "color": {"datum": "Median revenue", "type": "nominal",
+                    "scale": {"domain": ["Median budget", "Median revenue"], "range": ["#8f8a82", "#b3122a"]}},
+          "tooltip": [
+            {"field": "company", "title": "Company"},
+            {"field": "films", "title": "Films with budget and revenue"},
+            {"field": "budget_m", "title": "Median budget ($M)", "format": ",.1f"},
+            {"field": "revenue_m", "title": "Median revenue ($M)", "format": ",.1f"},
+            {"field": "multiple", "title": "Revenue \u00f7 budget", "format": ".1f"}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "text", "align": "left", "dx": 12, "fontSize": 12, "color": "#5c0814"},
+        "encoding": {
+          "x": {"field": "revenue_m", "type": "quantitative", "scale": {"type": "log", "domain": [5, 400]}},
+          "text": {"field": "mult_label"}
+        }
+      }
+    ],
+    "config": {"view": {"stroke": null}, "font": "EB Garamond, serif", "background": null}
+  }

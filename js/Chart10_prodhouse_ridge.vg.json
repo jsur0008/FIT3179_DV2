@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 700,
+    "height": 34,
+    "data": {"url": "../data/companies_by_year.csv"},
+    "transform": [
+      {"calculate": "datum.company + ' (' + datum.total_films + ' films)'", "as": "label"}
+    ],
+    "mark": {
+      "type": "area", "interpolate": "monotone",
+      "fill": "#b3122a", "fillOpacity": 0.8,
+      "line": {"color": "#5c0814", "strokeWidth": 1}
+    },
+    "encoding": {
+      "x": {
+        "field": "year", "type": "quantitative",
+        "scale": {"domain": [1920, 2026]},
+        "axis": {"title": null, "format": "d", "tickCount": 11, "grid": false}
+      },
+      "y": {
+        "field": "films_smooth", "type": "quantitative",
+        "axis": null, "scale": {"range": [34, -22]}
+      },
+      "row": {
+        "field": "label", "type": "nominal", "title": null,
+        "sort": {"field": "median_year", "op": "min"},
+        "header": {"labelAngle": 0, "labelAlign": "left", "labelFontSize": 12}
+      },
+      "tooltip": [
+        {"field": "company", "title": "Company"},
+        {"field": "year", "title": "Year", "format": "d"},
+        {"field": "films", "title": "Films that year"}
+      ]
+    },
+    "resolve": {"scale": {"y": "independent"}},
+    "config": {"facet": {"spacing": 0}, "view": {"stroke": null}, "font": "EB Garamond, serif", "background": null}
+  }

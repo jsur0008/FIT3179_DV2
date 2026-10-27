@@ -3,15 +3,19 @@
 
     "background": null,
     
-    "width": 430,
+    "width": 500,
     "height": 420,
+
     "data": {
       "url": "data/genre_counts_by_decade.csv"
     },
+
     "transform": [
-      { "filter": "datum.Horror > 0" }
+      { "filter": "datum.Horror > 0" } 
     ],
+
     "layer": [
+
       {
         "params": [
           {
@@ -34,7 +38,7 @@
           "x": {
             "field": "decade",
             "type": "ordinal",
-            "title": null,
+            "title": "Decades",
             "axis": {
               "labelAngle": 0,
               "labelFontSize": 11,
@@ -61,10 +65,11 @@
           ]
         }
       },
+
       {
         "mark": {
           "type": "text",
-          "dy": -6,
+          "dy": -7,
           "fontSize": 11,
           "fontWeight": "bold",
           "color": "#333"

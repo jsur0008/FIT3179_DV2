@@ -1,0 +1,174 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Bubble inside bubble: a franchise is a big circle and its films are circles inside it. Area = worldwide gross. Pick a franchise to focus on it, slide to zoom, drag to pan.",
+  "width": 900,
+  "height": 700,
+  "padding": {"left": 5, "right": 5, "top": 5, "bottom": 5},
+  "autosize": "pad",
+  "background": null,
+  "config": {"font": "EB Garamond, Georgia, serif"},
+  "title": {
+    "text": {"signal": "franchise === 'All franchises' ? 'Click a bubble or pick a franchise below to focus on it. Drag to pan, slide to zoom.' : franchise + ': one circle per film, sized by worldwide gross. Choose \"All franchises\" to go back.'"},
+    "anchor": "start", "fontSize": 14, "fontWeight": "normal", "fontStyle": "italic", "color": "#5c0814", "offset": 10
+  },
+  "signals": [
+    {"name": "franchise", "value": "All franchises",
+     "bind": {"input": "select", "name": "Franchise  ",
+              "options": ["All franchises", "The Conjuring Universe", "Alien", "Resident Evil", "It", "Saw", "Scream", "Final Destination", "Predator", "Hannibal", "Insidious", "A Quiet Place", "Paranormal Activity", "Halloween", "Jaws", "The Exorcist", "The Ring", "I Am Legend", "The Purge", "Five Nights at Freddy's", "Beetlejuice"]},
+     "on": [
+       {"events": "@outer:click", "update": "dragged ? franchise : datum.series"},
+       {"events": "@inner:click", "update": "dragged ? franchise : datum.series"}
+     ]},
+    {"name": "zoom", "value": 1,
+     "bind": {"input": "range", "name": "Zoom  ", "min": 1, "max": 8, "step": 0.1},
+     "on": [{"events": {"signal": "franchise"}, "update": "1"}]},
+    {"name": "panX", "value": 0,
+     "on": [
+       {"events": {"signal": "franchise"}, "update": "0"},
+       {"events": "[mousedown, window:mouseup] > window:mousemove", "consume": true, "update": "panX + event.movementX"}
+     ]},
+    {"name": "panY", "value": 0,
+     "on": [
+       {"events": {"signal": "franchise"}, "update": "0"},
+       {"events": "[mousedown, window:mouseup] > window:mousemove", "consume": true, "update": "panY + event.movementY"}
+     ]},
+    {"name": "dragged", "value": false,
+     "on": [
+       {"events": "mousedown", "update": "false"},
+       {"events": "[mousedown, window:mouseup] > window:mousemove", "update": "true"}
+     ]},
+    {"name": "hoverSeries", "value": null,
+     "on": [
+       {"events": "@outer:mouseover", "update": "datum.series"},
+       {"events": "@inner:mouseover", "update": "datum.series"},
+       {"events": "@outer:mouseout, @inner:mouseout", "update": "null"}
+     ]}
+  ],
+  "data": [
+    {
+      "name": "filmsAll",
+      "url": "../data/franchise_film.csv",
+      "format": {"type": "csv", "parse": {"gross_usd": "number", "films_in_item": "number", "sort_order": "number", "year": "number"}}
+    },
+    {
+      "name": "films",
+      "source": "filmsAll",
+      "transform": [
+        {"type": "filter", "expr": "franchise === 'All franchises' || datum.series === franchise"},
+        {"type": "formula", "as": "id", "expr": "datum.series + ' | ' + datum.item"},
+        {"type": "formula", "as": "parent", "expr": "datum.series"},
+        {"type": "formula", "as": "size", "expr": "datum.gross_usd"}
+      ]
+    },
+    {
+      "name": "franchises",
+      "source": "films",
+      "transform": [
+        {"type": "aggregate", "groupby": ["series"], "ops": ["sum"], "fields": ["gross_usd"], "as": ["total_usd"]},
+        {"type": "formula", "as": "id", "expr": "datum.series"},
+        {"type": "formula", "as": "parent", "expr": "'root'"}
+      ]
+    },
+    {"name": "rootRow", "values": [{"id": "root"}]},
+    {
+      "name": "tree",
+      "source": ["rootRow", "franchises", "films"],
+      "transform": [
+        {"type": "stratify", "key": "id", "parentKey": "parent"},
+        {"type": "pack", "field": "size", "sort": {"field": "value", "order": "descending"}, "padding": 14,
+         "size": [{"signal": "width - 20"}, {"signal": "height - 60"}]}
+      ]
+    },
+    {"name": "outerNodes", "source": "tree", "transform": [{"type": "filter", "expr": "datum.depth == 1"}]},
+    {"name": "innerNodes", "source": "tree", "transform": [{"type": "filter", "expr": "datum.depth == 2"}]}
+  ],
+  "scales": [
+    {"name": "yr", "type": "linear", "domain": [1970, 2000, 2026], "range": ["#e8a58f", "#b3122a", "#45050f"], "clamp": true},
+    {"name": "grp", "type": "ordinal", "domain": ["Group of films (combined total)"], "range": ["#9a9a9a"]}
+  ],
+  "legends": [
+    {"fill": "yr", "type": "gradient", "title": "Film release year", "orient": "bottom", "direction": "horizontal",
+     "gradientLength": 260, "gradientThickness": 10, "format": "d", "values": [1975, 1990, 2005, 2020],
+     "titleFont": "EB Garamond, Georgia, serif", "labelFont": "EB Garamond, Georgia, serif", "titleFontSize": 12, "labelFontSize": 11, "offset": 12},
+    {"fill": "grp", "type": "symbol", "orient": "bottom", "direction": "horizontal", "symbolType": "circle", "symbolSize": 110,
+     "labelFont": "EB Garamond, Georgia, serif", "labelFontSize": 11, "offset": 12}
+  ],
+  "marks": [
+    {
+      "type": "group",
+      "name": "view",
+      "encode": {
+        "enter": {"x": {"value": 0}, "y": {"value": 0}, "clip": {"value": true}, "fill": {"value": "transparent"}},
+        "update": {"width": {"signal": "width"}, "height": {"signal": "height"}}
+      },
+      "marks": [
+        {
+          "type": "symbol",
+          "name": "outer",
+          "from": {"data": "outerNodes"},
+          "encode": {
+            "enter": {"shape": {"value": "circle"}, "cursor": {"value": "pointer"}},
+            "update": {
+              "x": {"signal": "(datum.x + 10 - width / 2) * zoom + width / 2 + panX"},
+              "y": {"signal": "(datum.y + 50 - height / 2) * zoom + height / 2 + panY"},
+              "size": {"signal": "4 * datum.r * datum.r * zoom * zoom"},
+              "fill": {"signal": "hoverSeries === datum.series ? '#f6dcd8' : '#f8efe9'"},
+              "stroke": {"signal": "hoverSeries === datum.series ? '#5c0814' : '#d8bdb3'"},
+              "strokeWidth": {"signal": "hoverSeries === datum.series ? 2 : 1.2"},
+              "tooltip": {"signal": "{'Franchise': datum.series, 'Total ($M)': format(datum.total_usd / 1e6, ',.0f'), 'Click to focus': ''}"}
+            }
+          }
+        },
+        {
+          "type": "symbol",
+          "name": "inner",
+          "from": {"data": "innerNodes"},
+          "encode": {
+            "enter": {"shape": {"value": "circle"}, "stroke": {"value": "#ffffff"}, "strokeWidth": {"value": 1}, "cursor": {"value": "pointer"}},
+            "update": {
+              "x": {"signal": "(datum.x + 10 - width / 2) * zoom + width / 2 + panX"},
+              "y": {"signal": "(datum.y + 50 - height / 2) * zoom + height / 2 + panY"},
+              "size": {"signal": "4 * datum.r * datum.r * zoom * zoom"},
+              "fill": {"signal": "datum.kind === 'film' ? scale('yr', datum.year) : '#9a9a9a'"},
+              "opacity": {"signal": "hoverSeries === null || hoverSeries === datum.series ? 1 : 0.35"},
+              "tooltip": {"signal": "{'Franchise': datum.series, 'Film': datum.item, 'Gross ($M)': format(datum.gross_usd / 1e6, ',.1f'), 'Films in this circle': datum.films_in_item}"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "from": {"data": "innerNodes"},
+          "interactive": false,
+          "encode": {
+            "update": {
+              "x": {"signal": "(datum.x + 10 - width / 2) * zoom + width / 2 + panX"},
+              "y": {"signal": "(datum.y + 50 - height / 2) * zoom + height / 2 + panY"},
+              "align": {"value": "center"}, "baseline": {"value": "middle"},
+              "fill": {"signal": "datum.kind === 'film' && datum.year < 1990 ? '#3b0610' : '#ffffff'"},
+              "fontSize": {"signal": "clamp(datum.r * zoom / 3.2, 8, 14)"},
+              "limit": {"signal": "datum.r * zoom * 1.8"},
+              "opacity": {"signal": "hoverSeries === null || hoverSeries === datum.series ? 1 : 0.35"},
+              "text": {"signal": "datum.r * zoom > 22 ? replace(datum.item, / \\(\\d{4}\\)$/, '') : ''"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "from": {"data": "outerNodes"},
+          "interactive": false,
+          "encode": {
+            "update": {
+              "x": {"signal": "(datum.x + 10 - width / 2) * zoom + width / 2 + panX"},
+              "y": {"signal": "(datum.y + 50 - height / 2) * zoom + height / 2 + panY - datum.r * zoom - 5"},
+              "align": {"value": "center"}, "baseline": {"value": "bottom"},
+              "fill": {"value": "#5c0814"},
+              "fontWeight": {"value": "bold"},
+              "fontSize": {"signal": "clamp(datum.r * zoom / 5, 11, 18)"},
+              "text": {"signal": "datum.r * zoom > 16 ? datum.series : ''"}
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

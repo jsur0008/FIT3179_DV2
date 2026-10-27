@@ -1,0 +1,55 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": null,
+    "width": 620,
+    "height": {"step": 26},
+    "data": {"url": "data/franchise_film.csv"},
+    "transform": [
+      {"calculate": "datum.gross_usd / 1000000", "as": "gross_m"},
+      {"calculate": "datum.kind == 'film' ? floor(datum.year / 10) * 10 + 's' : 'Film with no breakdown'", "as": "era"}
+    ],
+    "layer": [
+      {
+        "mark": {"type": "bar", "stroke": "#ffffff", "strokeWidth": 1.5},
+        "encoding": {
+          "y": {"field": "series", "type": "nominal", "title": "Franchise",
+                "sort": ["The Conjuring Universe","Alien","Resident Evil","It","Saw","Scream","Final Destination","Predator","Hannibal","Insidious","A Quiet Place","Paranormal Activity","Halloween","Jaws","The Exorcist","The Ring","I Am Legend","The Purge","Five Nights at Freddy's","Beetlejuice"],
+                "axis": {"labelFontSize": 13, "labelLimit": 190, "domain": false, "ticks": false}},
+          "x": {"field": "gross_m", "type": "quantitative", "stack": "zero",
+                "title": "Worldwide gross ($ millions, not adjusted for inflation)",
+                "axis": {"format": ",.0f", "grid": true, "gridColor": "#eee"}},
+          "order": {"field": "year", "type": "quantitative", "sort": "ascending"},
+          "color": {"field": "era", "type": "nominal",
+                    "scale": {"domain": ["1970s","1980s","1990s","2000s","2010s","2020s","Film with no breakdown"],
+                              "range": ["#f0b8a6","#e48a78","#cf5a55","#b3122a","#80101f","#45050f","#9a9a9a"]},
+                    "legend": {"title": "Film released in", "orient": "bottom", "direction": "horizontal", "symbolType": "square", "symbolSize": 150}},
+          "tooltip": [
+            {"field": "series", "title": "Franchise"},
+            {"field": "film", "title": "Film"},
+            {"field": "year", "title": "Year", "format": "d"},
+            {"field": "group", "title": "Sub-series"},
+            {"field": "gross_m", "title": "Gross ($M)", "format": ",.1f"}
+          ]
+        }
+      },
+      {
+        "transform": [
+          {"aggregate": [{"op": "sum", "field": "gross_m", "as": "total"}], "groupby": ["series"]},
+          {"calculate": "'$' + format(datum.total / 1000, '.2f') + 'B'", "as": "tl"}
+        ],
+        "mark": {"type": "text", "align": "left", "dx": 6, "fontSize": 12, "color": "#5c0814", "fontWeight": "bold"},
+        "encoding": {
+          "y": {"field": "series", "type": "nominal", "title":"Franchise",
+                "sort": ["The Conjuring Universe","Alien","Resident Evil","It","Saw","Scream","Final Destination","Predator","Hannibal","Insidious","A Quiet Place","Paranormal Activity","Halloween","Jaws","The Exorcist","The Ring","I Am Legend","The Purge","Five Nights at Freddy's","Beetlejuice"]},
+          "x": {"field": "total", "type": "quantitative", "title": "Worldwide gross ($ millions, not adjusted for inflation)"},
+          "text": {"field": "tl"}
+        }
+      }
+    ],
+    "config": {
+      "view": {"stroke": null},
+      "font": "EB Garamond, Georgia, serif",
+      "axis": {"labelFont": "EB Garamond, Georgia, serif", "titleFont": "EB Garamond, Georgia, serif"},
+      "legend": {"labelFont": "EB Garamond, Georgia, serif", "titleFont": "EB Garamond, Georgia, serif"}
+    }
+  }

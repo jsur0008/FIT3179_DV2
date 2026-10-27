@@ -1,0 +1,124 @@
+series,group,film,year,gross_usd,kind,start_year,end_year,still_in_cinemas,sort_order
+The Conjuring Universe,The Conjuring series,The Conjuring,2013,320415166,film,,,,1
+The Conjuring Universe,Annabelle series,Annabelle,2014,257589952,film,,,,2
+The Conjuring Universe,,Wolves at the Door,2016,4382,film,,,,3
+The Conjuring Universe,The Conjuring series,The Conjuring 2,2016,322811702,film,,,,4
+The Conjuring Universe,Annabelle series,Creation,2017,306592201,film,,,,5
+The Conjuring Universe,The Nun series,The Nun,2018,366082797,film,,,,6
+The Conjuring Universe,,The Curse of La Llorona,2019,123233739,film,,,,7
+The Conjuring Universe,Annabelle series,Comes Home,2019,231252591,film,,,,8
+The Conjuring Universe,The Conjuring series,The Devil Made Me Do It,2021,206431050,film,,,,9
+The Conjuring Universe,The Nun series,The Nun II,2023,269467073,film,,,,10
+The Conjuring Universe,The Conjuring series,Last Rites,2025,499256445,film,,,,11
+Alien,Main series,Alien,1979,188034787,film,,,,1
+Alien,Main series,Aliens,1986,183316455,film,,,,2
+Alien,Main series,Alien 3,1992,159814498,film,,,,3
+Alien,Main series,Resurrection,1997,161376069,film,,,,4
+Alien,Alien vs. Predator,Alien vs. Predator,2004,177427090,film,,,,5
+Alien,Alien vs. Predator,Requiem,2007,130290885,film,,,,6
+Alien,Main series,Prometheus,2012,403354469,film,,,,7
+Alien,Main series,Covenant,2017,240892187,film,,,,8
+Alien,Main series,Romulus,2024,350865342,film,,,,9
+Resident Evil,Original series,Resident Evil,2002,103787401,film,,,,1
+Resident Evil,Original series,Apocalypse,2004,129342769,film,,,,2
+Resident Evil,Original series,Extinction,2007,149871103,film,,,,3
+Resident Evil,Animated series,Degeneration,2008,538912,film,,,,4
+Resident Evil,Original series,Afterlife,2010,300228084,film,,,,5
+Resident Evil,Original series,Retribution,2012,240647629,film,,,,6
+Resident Evil,Animated series,Damnation,2012,2325035,film,,,,7
+Resident Evil,Original series,The Final Chapter,2017,314101190,film,,,,8
+Resident Evil,Animated series,Vendetta,2017,1623063,film,,,,9
+Resident Evil,,Welcome to Raccoon City,2021,41914915,film,,,,10
+Resident Evil,Animated series,Death Island,2023,43161,film,,,,11
+Resident Evil,,Resident Evil,2026,320438566,film,,,yes,12
+It,,It,2017,704242888,film,,,,1
+It,,Chapter Two,2019,473123154,film,,,,2
+Saw,,Saw,2004,103911669,film,,,,1
+Saw,,Saw II,2005,152925093,film,,,,2
+Saw,,Saw III,2006,164874275,film,,,,3
+Saw,,Saw IV,2007,139352633,film,,,,4
+Saw,,Saw V,2008,118209778,film,,,,5
+Saw,,Saw VI,2009,69752402,film,,,,6
+Saw,,Saw 3D,2010,136151680,film,,,,7
+Saw,,Jigsaw,2017,104223315,film,,,,8
+Saw,,Spiral,2021,40618920,film,,,,9
+Saw,,Saw X,2023,111823047,film,,,,10
+Scream,,Scream,1996,173046663,film,,,,1
+Scream,,Scream 2,1997,172363301,film,,,,2
+Scream,,Scream 3,2000,161838076,film,,,,3
+Scream,,Scream 4,2011,97231420,film,,,,4
+Scream,,Scream,2022,138874789,film,,,,5
+Scream,,Scream VI,2023,169063850,film,,,,6
+Scream,,Scream 7,2026,213835967,film,,,,7
+Final Destination,,Final Destination,2000,112880294,film,,,,1
+Final Destination,,Final Destination 2,2003,90941129,film,,,,2
+Final Destination,,Final Destination 3,2006,118890272,film,,,,3
+Final Destination,,The Final Destination,2009,187384627,film,,,,4
+Final Destination,,Final Destination 5,2011,157887643,film,,,,5
+Final Destination,,Bloodlines,2025,315954739,film,,,,6
+Predator,Main series,Predator,1987,98268458,film,,,,1
+Predator,Main series,Predator 2,1990,57120318,film,,,,2
+Predator,Alien vs. Predator,Alien vs. Predator,2004,177427090,film,,,,3
+Predator,Alien vs. Predator,Requiem,2007,130290885,film,,,,4
+Predator,Main series,Predators,2010,127234389,film,,,,5
+Predator,Main series,The Predator,2018,160542134,film,,,,6
+Predator,Main series,Badlands,2025,184561056,film,,,,7
+Hannibal,,Manhunter,1986,8624009,film,,,,1
+Hannibal,,The Silence of the Lambs,1991,275726716,film,,,,2
+Hannibal,,Hannibal,2001,351692268,film,,,,3
+Hannibal,,Red Dragon,2002,209196298,film,,,,4
+Hannibal,,Hannibal Rising,2007,82169884,film,,,,5
+Insidious,,Insidious,2011,100106454,film,,,,1
+Insidious,,Chapter 2,2013,161921515,film,,,,2
+Insidious,,Chapter 3,2015,120453155,film,,,,3
+Insidious,,The Last Key,2018,172811971,film,,,,4
+Insidious,,The Red Door,2023,189086877,film,,,,5
+Insidious,,Out of the Further,2026,169693532,film,,,yes,6
+A Quiet Place,,A Quiet Place,2018,340955294,film,,,,1
+A Quiet Place,,A Quiet Place Part II,2021,297372261,film,,,,2
+A Quiet Place,,Day One,2024,261907653,film,,,,3
+Paranormal Activity,,Paranormal Activity,2007,194183034,film,,,,1
+Paranormal Activity,,Paranormal Activity 2,2010,177512032,film,,,,2
+Paranormal Activity,,Paranormal Activity 3,2011,207039844,film,,,,3
+Paranormal Activity,,Paranormal Activity 4,2012,142817992,film,,,,4
+Paranormal Activity,,The Marked Ones,2014,90904854,film,,,,5
+Paranormal Activity,,The Ghost Dimension,2015,78903124,film,,,,6
+Halloween,,Halloween,1978,70274000,film,,,,1
+Halloween,,Halloween II,1981,25533818,film,,,,2
+Halloween,,Season of the Witch,1982,14400000,film,,,,3
+Halloween,,The Return of Michael Myers,1988,17768757,film,,,,4
+Halloween,,The Revenge of Michael Myers,1989,11642254,film,,,,5
+Halloween,,The Curse of Michael Myers,1995,15126948,film,,,,6
+Halloween,,20 Years Later,1998,75041738,film,,,,7
+Halloween,,Resurrection,2002,37664855,film,,,,8
+Halloween,,Halloween,2007,80460948,film,,,,9
+Halloween,,Halloween II,2009,39421467,film,,,,10
+Halloween,,Halloween,2018,259939869,film,,,,11
+Halloween,,Kills,2021,133423964,film,,,,12
+Halloween,,Ends,2022,105400796,film,,,,13
+Jaws,,Jaws,1975,495201848,film,,,,1
+Jaws,,Jaws 2,1978,208900376,film,,,,2
+Jaws,,Jaws 3-D,1983,87987055,film,,,,3
+Jaws,,The Revenge,1987,51881013,film,,,,4
+The Exorcist,,The Exorcist,1973,430872776,film,,,,1
+The Exorcist,,The Heretic,1977,30749142,film,,,,2
+The Exorcist,,The Exorcist III,1990,39024251,film,,,,3
+The Exorcist,,The Beginning,2004,78110021,film,,,,4
+The Exorcist,,Dominion,2005,251495,film,,,,5
+The Exorcist,,Believer,2023,136998069,film,,,,6
+The Ring,,The Ring Virus,1999,1689326,film,,,,1
+The Ring,American series (2002–2017),The Ring,2002,249348933,film,,,,2
+The Ring,American series (2002–2017),The Ring Two,2005,163995949,film,,,,3
+The Ring,American series (2002–2017),Rings,2017,83080890,film,,,,4
+The Ring,Japanese series (1998–2019),Japanese series (1998–2019),,156495481,group,1998,2019,,5
+I Am Legend,,The Omega Man,1971,4000000,film,,,,1
+I Am Legend,,I Am Legend,2007,585532684,film,,,,2
+The Purge,,The Purge,2013,89328627,film,,,,1
+The Purge,,Anarchy,2014,111928365,film,,,,2
+The Purge,,Election Year,2016,118587880,film,,,,3
+The Purge,,The First Purge,2018,136211978,film,,,,4
+The Purge,,The Forever Purge,2021,76994245,film,,,,5
+Five Nights at Freddy's,,Five Nights at Freddy's,2023,291589416,film,,,,1
+Five Nights at Freddy's,,Five Nights at Freddy's 2,2025,239502619,film,,,,2
+Beetlejuice,,Beetlejuice,1988,75121737,film,,,,1
+Beetlejuice,,Beetlejuice Beetlejuice,2024,452000435,film,,,,2

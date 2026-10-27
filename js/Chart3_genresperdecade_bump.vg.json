@@ -1,8 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "background":null,
+
     "width": 700,
     "height": 480,
+
     "padding": {"right": 120},
     "data": {"url": "data/genre_counts_by_decade.csv"},
     "transform": [
@@ -15,6 +17,7 @@
        "groupby": ["decade"]},
       {"calculate": "datum.genre === 'Horror' ? 1 : 0", "as": "isHorror"}
     ],
+
     "encoding": {
       "x": {"field": "decade", "type": "ordinal", "axis": {"title": null, "labelAngle": 0, "orient": "top"}},
       "y": {"field": "rank", "type": "quantitative",
@@ -30,17 +33,23 @@
         {"field": "share", "title": "Share of films (%)", "format": ".1f"}
       ]
     },
+
     "layer": [
       {"mark": {"type": "line", "interpolate": "monotone"},
        "encoding": {"strokeWidth": {"condition": {"test": "datum.genre === 'Horror'", "value": 4}, "value": 1.5}}},
+
       {"mark": {"type": "circle", "size": 70},
        "encoding": {"size": {"condition": {"test": "datum.genre === 'Horror'", "value": 110}, "value": 40}}},
+
       {"transform": [{"filter": "datum.decade === '2020s'"}],
+
        "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 11},
+       
        "encoding": {
          "text": {"field": "genre"},
          "color": {"condition": {"test": "datum.genre === 'Horror'", "value": "#b3122a"}, "value": "#555555"}
        }}
     ],
+
     "config": {"view": {"stroke": null}, "font": "EB Garamond, serif", "background": null}
   }
