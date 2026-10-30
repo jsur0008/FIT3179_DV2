@@ -1,107 +1,107 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "background": null,
-
-    "width": 700,
-    "height": 470,
-    "projection": {
-      "type": "conicEqualArea",
-      "parallels": [-18, -36],
-      "rotate": [-134, 0, 0],
-      "center": [0, -27],
-      "scale": 700,
-      "translate": [260, 220]
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "width": 560,
+  "height": 475,
+  "params": [
+    {
+      "name": "cam",
+      "value": {"s": 750, "x": 265, "y": 215},
+      "on": [
+        {
+          "events": {"type": "wheel", "consume": true},
+          "update": "{s: clamp(cam.s * pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), 750, 30000), x: xy()[0] - (xy()[0] - cam.x) * clamp(cam.s * pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), 750, 30000) / cam.s, y: xy()[1] - (xy()[1] - cam.y) * clamp(cam.s * pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), 750, 30000) / cam.s}"
+        },
+        {
+          "events": "[pointerdown, window:pointerup] > window:pointermove",
+          "update": "anchor ? {s: cam.s, x: anchor.cx + xy()[0] - anchor.px, y: anchor.cy + xy()[1] - anchor.py} : cam"
+        },
+        {
+          "events": "dblclick",
+          "update": "{s: 750, x: 265, y: 215}"
+        }
+      ]
     },
-    "layer": [
-      {
-        "description": "Base map: outline of Australia (country shape from the world-atlas TopoJSON)",
-        "data": {
-          "url": "data/world-50m.json",
-          "format": { "type": "topojson", "feature": "countries" }
-        },
-        "transform": [
-          { "filter": "datum.properties.name === 'Australia'" }
-        ],
-        "mark": { "type": "geoshape", "fill": "#ece9e4", "stroke": "#c9c4bb", "strokeWidth": 0.6 }
-      },
-      {
-        "description": "Dots: one circle per cinema. Transparency makes crowded areas look darker.",
-        "data": { "url": "data/cinemas.csv" },
-        "mark": {
-          "type": "circle",
-          "size": 100,
-          "color": "#b91c1c",
-          "opacity": 0.55,
-          "stroke": "white",
-          "strokeWidth": 0.4
-        },
-        "encoding": {
-          "longitude": { "field": "lon", "type": "quantitative" },
-          "latitude": { "field": "lat", "type": "quantitative" },
-          "tooltip": [
-            { "field": "name", "type": "nominal", "title": "Cinema" }
-          ]
-        }
-      },
-      {
-        "description": "Reading note placed over the Great Australian Bight",
-        "data": { "values": [{ "lon": 118, "lat": -36.2 }] },
-        "mark": {
-          "type": "text",
-          "align": "left",
-          "fontSize": 12,
-          "lineHeight": 15,
-          "color": "#555555"
-        },
-        "encoding": {
-          "longitude": { "field": "lon", "type": "quantitative" },
-          "latitude": { "field": "lat", "type": "quantitative" }
-        }
-      },
-      {
-        "description": "City labels placed to the right of the point",
-        "data": {
-          "values": [
-            { "city": "Sydney", "lat": -33.87, "lon": 151.21 },
-            { "city": "Brisbane", "lat": -27.47, "lon": 153.03 },
-            { "city": "Hobart", "lat": -42.88, "lon": 147.33 }
-          ]
-        },
-        "mark": { "type": "text", "align": "left", "dx": 10, "fontSize": 12, "fontWeight": "bold", "color": "#333333" },
-        "encoding": {
-          "longitude": { "field": "lon", "type": "quantitative" },
-          "latitude": { "field": "lat", "type": "quantitative" },
-          "text": { "field": "city" }
-        }
-      },
-      {
-        "description": "City labels placed to the left of the point",
-        "data": {
-          "values": [
-            { "city": "Perth", "lat": -31.95, "lon": 115.86 },
-            { "city": "Adelaide", "lat": -34.93, "lon": 138.6 },
-            { "city": "Darwin", "lat": -12.46, "lon": 130.84 }
-          ]
-        },
-        "mark": { "type": "text", "align": "right", "dx": -10, "fontSize": 12, "fontWeight": "bold", "color": "#333333" },
-        "encoding": {
-          "longitude": { "field": "lon", "type": "quantitative" },
-          "latitude": { "field": "lat", "type": "quantitative" },
-          "text": { "field": "city" }
-        }
-      },
-      {
-        "description": "City label placed below the point",
-        "data": { "values": [{ "city": "Melbourne", "lat": -37.81, "lon": 144.96 }] },
-        "mark": { "type": "text", "align": "center", "dy": 22, "fontSize": 12, "fontWeight": "bold", "color": "#333333" },
-        "encoding": {
-          "longitude": { "field": "lon", "type": "quantitative" },
-          "latitude": { "field": "lat", "type": "quantitative" },
-          "text": { "field": "city" }
-        }
+    {
+      "name": "anchor",
+      "value": null,
+      "on": [
+        {"events": "pointerdown", "update": "{px: xy()[0], py: xy()[1], cx: cam.x, cy: cam.y}"}
+      ]
+    }
+  ],
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [-18, -36],
+    "rotate": [-134, 0, 0],
+    "center": [0, -27],
+    "scale": {"expr": "cam.s"},
+    "translate": {"expr": "[cam.x, cam.y]"}
+  },
+  "layer": [
+    {
+      "data": {"url": "data/world-50m.json", "format": {"type": "topojson", "feature": "countries"}},
+      "transform": [{"filter": "datum.properties.name === 'Australia'"}],
+      "mark": {"type": "geoshape", "fill": "#ece9e4", "stroke": "#c9c4bb", "strokeWidth": 0.6}
+    },
+    {
+      "data": {"url": "data/cinemas.csv"},
+      "mark": {"type": "circle", "size": 80, "color": "#b91c1c", "opacity": 0.55, "stroke": "white", "strokeWidth": 0.4},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "tooltip": [{"field": "name", "type": "nominal", "title": "Cinema"}]
       }
-    ],
-    "config": {"view": {"stroke": null},
-    "font": "Georgia, serif",
-      "facet": {"spacing": 14}}
+    },
+    {
+      "data": {"values": [
+        {"city": "Sydney", "lat": -33.87, "lon": 151.21},
+        {"city": "Brisbane", "lat": -27.47, "lon": 153.03},
+        {"city": "Hobart", "lat": -42.88, "lon": 147.33}
+      ]},
+      "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 12, "fontWeight": "bold", "color": "#333333"},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "city"}
+      }
+    },
+    {
+      "data": {"values": [
+        {"city": "Perth", "lat": -31.95, "lon": 115.86},
+        {"city": "Adelaide", "lat": -34.93, "lon": 138.6},
+        {"city": "Darwin", "lat": -12.46, "lon": 130.84}
+      ]},
+      "mark": {"type": "text", "align": "right", "dx": -10, "fontSize": 12, "fontWeight": "bold", "color": "#333333"},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "city"}
+      }
+    },
+    {
+      "data": {"values": [{"city": "Melbourne", "lat": -37.81, "lon": 144.96}]},
+      "mark": {"type": "text", "align": "center", "dy": 22, "fontSize": 12, "fontWeight": "bold", "color": "#333333"},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "city"}
+      }
+    },
+    {
+      "data": {"values": [{"t": "Scroll to zoom · drag to move · double-click to reset"}]},
+      "mark": {"type": "text", "align": "left", "baseline": "bottom", "fontSize": 11, "color": "#777777"},
+      "encoding": {
+        "x": {"value": 4},
+        "y": {"value": 470},
+        "text": {"field": "t"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null, "clip": true},
+    "axis": {"domain": false, "ticks": false, "labelFontSize": 14, "titleFontSize": 14},
+    "legend": {"labelFontSize": 14},
+    "font": "Georgia, serif"
   }
+}

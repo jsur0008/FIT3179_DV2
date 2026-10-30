@@ -1,37 +1,110 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 979,
-    "height": 34,
-    "data": {"url": "../data/companies_by_year.csv"},
-    "transform": [
-      {"calculate": "datum.company + ' (' + datum.total_films + ' films)'", "as": "label"}
-    ],
-    "mark": {
-      "type": "area", "interpolate": "monotone",
-      "fill": "#b3122a", "fillOpacity": 0.8,
-      "line": {"color": "#5c0814", "strokeWidth": 1}
-    },
-    "encoding": {
-      "x": {
-        "field": "year", "type": "quantitative",
-        "scale": {"domain": [1920, 2026]},
-        "axis": {"title": null, "format": "d", "tickCount": 11, "grid": false}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "data": { "url": "data/companies_by_year.csv" },
+  "transform": [
+    { "calculate": "datum.company + ' · ' + ' (' + datum.total_films + ' films)'", "as": "label" }
+  ],
+  "facet": {
+    "row": {
+      "field": "label",
+      "type": "nominal",
+      "title": null,
+      "sort": { "field": "median_year", "op": "min" },
+      "header": { "labelAngle": 0, "labelAlign": "left", "labelFontSize": 13, "labelLimit": 330, "labelPadding": 8 }
+    }
+  },
+  "spec": {
+    "width": 970,
+    "height": 10,
+    "layer": [
+      {
+        "mark": {
+          "type": "area",
+          "interpolate": "monotone",
+          "fillOpacity": 0.85,
+          "line": { "color": "#3d2f2d", "strokeWidth": 1 }
+        },
+        "encoding": {
+          "x": {
+            "field": "year", "type": "quantitative",
+            "scale": { "domain": [1920, 2030] },
+            "axis": { "title": null, "format": "d", "tickCount": 11, "grid": true, "gridColor": "#eadfd8", "labelFontSize": 13 }
+          },
+          "y": { "field": "films_smooth", "type": "quantitative", "axis": null, "scale": { "domain": [0, 20], "range": [28, -16] } },
+          "color": {
+            "field": "country_name",
+            "type": "nominal",
+            "title": "Company's home country",
+            "scale": {
+              "domain": ["United States", "Japan", "United Kingdom", "Philippines"],
+              "range": ["#b3122a", "#2f6f8f", "#c98a1b", "#4f8a5b"]
+            },
+            "legend": { "orient": "top", "direction": "horizontal", "symbolType": "square", "labelFontSize": 13, "titleFontSize": 14 }
+          },
+          "tooltip": [
+            { "field": "company", "title": "Company" },
+            { "field": "country_name", "title": "Country" },
+            { "field": "year", "title": "Year", "format": "d" },
+            { "field": "films", "title": "Films that year" },
+            { "field": "films_smooth", "title": "Five-year average", "format": ".1f" }
+          ]
+        }
       },
-      "y": {
-        "field": "films_smooth", "type": "quantitative",
-        "axis": null, "scale": {"range": [34, -22]}
+      {
+        "transform": [
+          { "joinaggregate": [{ "op": "max", "field": "films", "as": "peak" }], "groupby": ["company"] },
+          { "filter": "datum.films == datum.peak && datum.peak > 0" },
+          { "window": [{ "op": "row_number", "as": "rn" }], "groupby": ["company"], "sort": [{ "field": "year", "order": "ascending" }] },
+          { "filter": "datum.rn == 1" }
+        ],
+        "mark": { "type": "point", "filled": true, "size": 50, "color": "#1f2a44", "stroke": "white", "strokeWidth": 1 },
+        "encoding": {
+          "x": { "field": "year", "type": "quantitative", "scale": { "domain": [1920, 2026] } },
+          "y": { "field": "films_smooth", "type": "quantitative", "axis": null, "scale": { "domain": [0, 20], "range": [28, -16] } }
+        }
       },
-      "row": {
-        "field": "label", "type": "nominal", "title": null,
-        "sort": {"field": "median_year", "op": "min"},
-        "header": {"labelAngle": 0, "labelAlign": "left", "labelFontSize": 12}
+      {
+        "transform": [
+          { "joinaggregate": [{ "op": "max", "field": "films", "as": "peak" }], "groupby": ["company"] },
+          { "filter": "datum.films == datum.peak && datum.peak > 0" },
+          { "window": [{ "op": "row_number", "as": "rn" }], "groupby": ["company"], "sort": [{ "field": "year", "order": "ascending" }] },
+          { "filter": "datum.rn == 1 && datum.year <= 2000" },
+          { "calculate": "'Busiest year: ' + datum.year + ' (' + datum.peak + ' films)'", "as": "note" }
+        ],
+        "mark": { "type": "text", "align": "left", "dx": 8, "dy": -9, "fontSize": 11, "fontStyle": "italic", "color": "#1f2a44" },
+        "encoding": {
+          "x": { "field": "year", "type": "quantitative", "scale": { "domain": [1920, 2026] } },
+          "y": { "field": "films_smooth", "type": "quantitative", "axis": null, "scale": { "domain": [0, 20], "range": [28, -16] } },
+          "text": { "field": "note" }
+        }
       },
-      "tooltip": [
-        {"field": "company", "title": "Company"},
-        {"field": "year", "title": "Year", "format": "d"},
-        {"field": "films", "title": "Films that year"}
-      ]
-    },
-    "resolve": {"scale": {"y": "independent"}},
-    "config": {"facet": {"spacing": 0}, "view": {"stroke": null}, "font": "EB Garamond, serif", "background": null}
+      {
+        "transform": [
+          { "joinaggregate": [{ "op": "max", "field": "films", "as": "peak" }], "groupby": ["company"] },
+          { "filter": "datum.films == datum.peak && datum.peak > 0" },
+          { "window": [{ "op": "row_number", "as": "rn" }], "groupby": ["company"], "sort": [{ "field": "year", "order": "ascending" }] },
+          { "filter": "datum.rn == 1 && datum.year > 2000" },
+          { "calculate": "'Busiest year: ' + datum.year + ' (' + datum.peak + ' films)'", "as": "note" }
+        ],
+        "mark": { "type": "text", "align": "right", "dx": -8, "dy": -9, "fontSize": 13, "fontStyle": "italic", "color": "#1f2a44" },
+        "encoding": {
+          "x": { "field": "year", "type": "quantitative", "scale": { "domain": [1920, 2026] } },
+          "y": { "field": "films_smooth", "type": "quantitative", "axis": null, "scale": { "domain": [0, 20], "range": [28, -16] } },
+          "text": { "field": "note" }
+        }
+      }
+    ]
+  },
+  "config": {
+    "facet": { "spacing": 0 },
+    "view": { "stroke": null },
+    "font": "EB Garamond, serif",
+    "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 13,
+        "titleFontSize": 14
+      }
   }
+}

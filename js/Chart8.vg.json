@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "background": null,
-    "width": 760,
-    "height": 400,
+    "width": 800,
+    "height": 410,
     "params": [
       {
         "name": "decade_sel",
@@ -17,10 +17,38 @@
       {
         "name": "min_films",
         "value": 2,
-        "bind": { "input": "range", "min": 1, "max": 10, "step": 1, "name": "Routes with at least this many films  " }
+        "bind": { "input": "range", "min": 1, "max": 5, "step": 1, "name": "Routes with at least this many films  " }
+      },{
+        "name": "cam",
+        "value": {"s": 140.4, "x": 380, "y": 200},
+        "on": [
+          {
+            "events": {"type": "wheel", "consume": true},
+            "update": "{s: clamp(cam.s * pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), 140.4, 2000), x: xy()[0] - (xy()[0] - cam.x) * clamp(cam.s * pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), 140.4, 2000) / cam.s, y: xy()[1] - (xy()[1] - cam.y) * clamp(cam.s * pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), 140.4, 2000) / cam.s}"
+          },
+          {
+            "events": "[pointerdown, window:pointerup] > window:pointermove",
+            "update": "anchor ? {s: cam.s, x: anchor.cx + xy()[0] - anchor.px, y: anchor.cy + xy()[1] - anchor.py} : cam"
+          },
+          {
+            "events": "dblclick",
+            "update": "{s: 140.4, x: 380, y: 200}"
+          }
+        ]
+      },
+      {
+        "name": "anchor",
+        "value": null,
+        "on": [
+          {"events": "pointerdown", "update": "{px: xy()[0], py: xy()[1], cx: cam.x, cy: cam.y}"}
+        ]
       }
     ],
-    "projection": { "type": "equalEarth" },
+    "projection": {
+  "type": "equalEarth",
+  "scale": {"expr": "cam.s"},
+  "translate": {"expr": "[cam.x, cam.y]"}
+},
     "layer": [
       {
         "data": { "sphere": true },
@@ -50,6 +78,15 @@
             { "field": "films", "title": "Films" },
             { "field": "example", "title": "For example" }
           ]
+        }
+      },
+      {
+        "data": {"values": [{"t": "Scroll to zoom · drag to move · double-click to reset"}]},
+        "mark": {"type": "text", "align": "center", "baseline": "top", "fontSize": 11, "color": "#777777"},
+        "encoding": {
+          "x": {"value": 370},
+          "y": {"value": 390},
+          "text": {"field": "t"}
         }
       },
       {
@@ -156,44 +193,22 @@
         ],
         "mark": {
           "type": "text",
-          "align": "left",
-          "baseline": "bottom",
+          "align": "center",
+          "baseline": "top",
           "fontStyle": "italic",
           "fontSize": 13,
           "color": "#1f2a44",
           "dx": 12
         },
         "encoding": {
-          "x": { "value": 0 },
-          "y": { "value": 366 },
-          "text": { "field": "label", "type": "nominal" }
-        }
-      },
-      {
-        "data": { "url": "data/horror_connections.json" },
-        "transform": [
-          { "filter": "(decade_sel == 0 || datum.decade_start == decade_sel) && datum.films >= min_films" },
-          {
-            "aggregate": [{ "op": "sum", "field": "films", "as": "films" }],
-            "groupby": ["set_in_country", "filmed_in_country"]
-          },
-          { "joinaggregate": [{ "op": "max", "field": "films", "as": "top" }] },
-          { "filter": "datum.films == datum.top" },
-          {
-            "calculate": "'Most common route: set in ' + datum.set_in_country + ', filmed in ' + datum.filmed_in_country + ' (' + datum.films + ' films)'",
-            "as": "label"
-          }
-        ],
-        "mark": { "type": "text", "align": "left", "baseline": "bottom", "fontStyle": "italic", "fontSize": 13, "color": "#1f2a44", "dx": 4 },
-        "encoding": {
-          "x": { "value": 0 },
-          "y": { "value": -6 },
+          "x": { "value": 370 },
+          "y": { "value": 0},
           "text": { "field": "label", "type": "nominal" }
         }
       }
     ],
     "config": {
-      "view": { "stroke": null },
+      "view": { "stroke": null, "clip": true },
       "axis": {
         "domain": false,
         "ticks": false,
@@ -201,5 +216,6 @@
         "titleFontSize": 14
       },
       "font": "Georgia, serif"
+      }
     }
-  }
+  

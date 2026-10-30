@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "background": null,
-    "width": 620,
-    "height": {"step": 26},
+    "width": 990,
+    "height": {"step": 15},
     "data": {"url": "data/franchise_film.csv"},
     "transform": [
       {"calculate": "datum.gross_usd / 1000000", "as": "gross_m"},

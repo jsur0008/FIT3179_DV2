@@ -3,8 +3,8 @@
 
     "background": null,
     
-    "width": 400,
-    "height": {"step": 34},
+    "width": 450,
+    "height": {"step": 25},
     "data": {"url": "data/oscars_horror_by_decade.csv"},
     "layer": [
       {
@@ -19,7 +19,7 @@
         "transform": [
           {"fold": ["films_pct", "noms_pct"], "as": ["measure", "pct"]},
           {
-            "calculate": "datum.measure === 'films_pct' ? 'Share of all films' : 'Share of Oscar nominations'",
+            "calculate": "datum.measure === 'films_pct' ? 'Share of all films' : 'Share of Oscar noms'",
             "as": "label"
           }
         ],
@@ -39,7 +39,7 @@
             "type": "nominal",
             "title": null,
             "scale": {
-              "domain": ["Share of all films", "Share of Oscar nominations"],
+              "domain": ["Share of all films", "Share of Oscar noms"],
               "range": ["#8c8c8c", "#b3122a"]
             },
             "legend": {"orient": "top", "symbolType": "circle"}
@@ -58,8 +58,15 @@
       }
     ],
     "config": {
-      "view": {"stroke": null},
-      "axis": {"labelFontSize": 12, "titleFontSize": 12, "domain": false, "ticks": false},
+      "view": { "stroke": null },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 13,
+        "titleFontSize": 14,
+        "titlePadding":15
+      },
+      "legend": {"labelFontSize":14},
       "font": "Georgia, serif"
     }
   }

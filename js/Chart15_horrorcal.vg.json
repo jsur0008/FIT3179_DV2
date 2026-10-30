@@ -1,43 +1,51 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-    "background": null,
-    
-    "width": 420,
-    "height": 500,
-    "data": {"url": "data/release_months.csv"},
-    "transform": [
-      {"calculate": "(datum.month - 1) * PI / 6", "as": "a0"},
-      {"calculate": "datum.month * PI / 6", "as": "a1"},
-      {"calculate": "(datum.month - 0.5) * PI / 6", "as": "am"}
-    ],
-    "layer": [
-      {
-        "mark": {"type": "arc", "innerRadius": 20, "stroke": "white"},
-        "encoding": {
-          "theta": {"field": "a0", "type": "quantitative", "scale": {"domain": [0, 6.283185], "range": [0, 6.283185]}},
-          "theta2": {"field": "a1"},
-          "radius": {"field": "share", "type": "quantitative", "stack": false, "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
-          "color": {"field": "share", "type": "quantitative", "scale": {"scheme": "reds"}, "legend": {"title": "% of releases"}},
-          "tooltip": [
-            {"field": "month_name", "title": "Month"},
-            {"field": "films", "title": "Films"},
-            {"field": "share", "title": "% of releases"}
-          ]
-        }
-      },
-      {
-        "mark": {"type": "text", "radiusOffset": 12, "fontSize": 11},
-        "encoding": {
-          "theta": {"field": "am", "type": "quantitative", "scale": {"domain": [0, 6.283185], "range": [0, 6.283185]}},
-          "radius": {"field": "share", "type": "quantitative", "stack": false, "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
-          "text": {"field": "month_name"}
-        }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "width": 400,
+  "height": 400,
+  "padding": {"left": 30, "right": 30, "top": 10, "bottom": 10},
+  "data": {"url": "data/release_months.csv"},
+  "transform": [
+    {"calculate": "(datum.month - 1) * PI / 6", "as": "a0"},
+    {"calculate": "datum.month * PI / 6", "as": "a1"},
+    {"calculate": "(datum.month - 0.5) * PI / 6", "as": "am"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 20, "stroke": "white"},
+      "encoding": {
+        "theta": {"field": "a0", "type": "quantitative", "scale": {"domain": [0, 6.283185], "range": [0, 6.283185]}},
+        "theta2": {"field": "a1"},
+        "radius": {"field": "share", "type": "quantitative", "stack": false, "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+        "color": {"field": "share", "type": "quantitative", "scale": {"scheme": "reds"},
+                  "legend": {"title": "% of releases", "orient": "bottom", "direction": "horizontal", "gradientLength": 220}},
+        "tooltip": [
+          {"field": "month_name", "title": "Month"},
+          {"field": "films", "title": "Films"},
+          {"field": "share", "title": "% of releases"}
+        ]
       }
-    ],
-    "view": {"stroke": null},
-
-    "config": {"view": {"stroke": null},
-    "font": "Georgia, serif",
-      "facet": {"spacing": 14}}
-  }
+    },
+    {
+      "mark": {"type": "text", "radiusOffset": 12, "fontSize": 11},
+      "encoding": {
+        "theta": {"field": "am", "type": "quantitative", "scale": {"domain": [0, 6.283185], "range": [0, 6.283185]}},
+        "radius": {"field": "share", "type": "quantitative", "stack": false, "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+        "text": {"field": "month_name"}
+      }
+    }
+  ],
+  "view": {"stroke": null},
+  "config": {
+      "view": { "stroke": null },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 13,
+        "titleFontSize": 14,
+        "titlePadding":15
+      },
+      "legend": {"labelFontSize":14, "titleFontSize":14},
+      "font": "Georgia, serif"
+    }
+}

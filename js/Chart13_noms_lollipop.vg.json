@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "background": null,
     "width": 560,
-    "height": 384,
+    "height": 360,
     "data": {"url": "data/oscars_horror_milestones.csv"},
     "transform": [
       {"calculate": "datum.wins > 0 ? 'Won at least one Oscar' : 'Nominated only'", "as": "outcome"}
@@ -49,9 +49,14 @@
       }
     ],
     "config": {
-      "view": {"stroke": null},
-      "axis": {"labelFontSize": 12, "titleFontSize": 12, "domain": false, "ticks": false},
-      "font": "Georgia, serif",
-      "facet": {"spacing": 14}
+      "view": { "stroke": null },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 13,
+        "titleFontSize": 14
+      },
+      "legend": {"labelFontSize":14},
+      "font": "Georgia, serif"
     }
   }

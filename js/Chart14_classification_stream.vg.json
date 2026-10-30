@@ -1,62 +1,84 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-    "background": null,
-    
-    "width": 1180,
-    "height": 300,
-    "data": {
-      "url": "data/horror_ratings.csv",
-      "format": {"parse": {"period_date": "date"}}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "width": 1180,
+  "height": 200,
+  "data": {
+    "url": "data/horror_ratings.csv",
+    "format": {"parse": {"period_date": "date"}}
+  },
+  "params": [
+    {
+      "name": "cls",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "name": "Show: ",
+        "options": ["All", "G", "PG", "M", "MA15+", "R18+", "RC (refused)"],
+        "labels": ["All classifications", "G", "PG", "M", "MA15+", "R18+", "RC (refused)"]
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "indexof(['G','PG','M','MA15+','R18+','RC (refused)'], datum.rating)",
+      "as": "severity"
     },
-    "transform": [
-      {
-        "calculate": "indexof(['G','PG','M','MA15+','R18+','RC (refused)'], datum.rating)",
-        "as": "severity"
-      }
-    ],
-    "layer": [
-      {
-        "mark": {"type": "area", "interpolate": "monotone"},
-        "encoding": {
-          "x": {
-            "field": "period_date", "type": "temporal",
-            "axis": {"title": "Start of five-year period", "format": "%Y", "tickCount": 9}
-          },
-          "y": {"field": "films", "type": "quantitative", "stack": "center", "axis": null},
-          "color": {
-            "field": "rating", "type": "nominal",
-            "scale": {
-              "domain": ["G", "PG", "M", "MA15+", "R18+", "RC (refused)"],
-              "range": ["#fde0d2", "#fcbba1", "#fb6a4a", "#de2d26", "#99000d", "#222222"]
-            },
-            "legend": {"title": "Classification",
-          "direction": "horizontal", "orient": "bottom-left", 
-          "titleFontSize":14, "labelFontSize":14
-        }
-          },
-          "order": {"field": "severity", "type": "quantitative"},
-          "tooltip": [
-            {"field": "period_date", "type": "temporal", "format": "%Y", "title": "Period starting"},
-            {"field": "rating", "title": "Classification"},
-            {"field": "films", "title": "Films"}
-          ]
-        }
-      },
-      {
-        "data": {"values": [{"note": "go"}]},
-        "mark": {
-          "type": "text", "align": "left", "baseline": "top",
-          "fontSize": 14, "lineHeight": 15, "color": "#222222"
+    {"filter": "cls == 'All' || datum.rating == cls"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "area", "interpolate": "monotone"},
+      "encoding": {
+        "x": {
+          "field": "period_date", "type": "temporal",
+          "axis": {"title": "Start of five-year period", "format": "%Y", "tickCount": {"interval": "year", "step": 5}}
         },
-        "encoding": {
-          "x": {"value": 73},
-          "y": {"value": 100},
-          "text": {"value": ["17 films were refused classification (RC) and", "cannot legally be sold or shown in Australia (black band)."]}
-        }
+        "y": {
+          "field": "films", "type": "quantitative", "stack": "center", "axis": null,
+          "scale": {"domain": [-250, 250]}
+        },
+        "color": {
+          "field": "rating", "type": "nominal",
+          "scale": {
+            "domain": ["G", "PG", "M", "MA15+", "R18+", "RC (refused)"],
+            "range": ["#fde0d2", "#fcbba1", "#fb6a4a", "#de2d26", "#99000d", "#222222"]
+          },
+          "legend": {
+            "title": "Classification",
+            "direction": "horizontal", "orient": "bottom-left",
+            "titleFontSize": 14, "labelFontSize": 14
+          }
+        },
+        "order": {"field": "severity", "type": "quantitative"},
+        "tooltip": [
+          {"field": "period_date", "type": "temporal", "format": "%Y", "title": "Period starting"},
+          {"field": "rating", "title": "Classification"},
+          {"field": "films", "title": "Films"}
+        ]
       }
-    ],
-    "config": {"view": {"stroke": null},
-    "font": "Georgia, serif",
-      "facet": {"spacing": 14}}
-  }
+    },
+    {
+      "data": {"values": [{"note": "go"}]},
+      "transform": [{"filter": "cls == 'All'"}],
+      "mark": {"type": "text", "align": "left", "baseline": "top", "fontSize": 14, "lineHeight": 15, "color": "#222222"},
+      "encoding": {
+        "x": {"value": 73},
+        "y": {"value": 50},
+        "text": {"value": ["17 films were refused classification (RC) and", "cannot legally be sold or shown in Australia (black band)."]}
+      }
+    }
+  ],
+"config": {
+      "view": { "stroke": null },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 13,
+        "titleFontSize": 14,
+        "titlePadding":15
+      },
+      "legend": {"labelFontSize":14, "titleFontSize":14},
+      "font": "Georgia, serif",
+      "facet": {"spacing": 14}
+    }}

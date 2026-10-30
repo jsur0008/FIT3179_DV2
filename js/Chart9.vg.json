@@ -1,7 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "background": null,
-  
   "params": [
     {
       "name": "decade_sel",
@@ -12,6 +11,46 @@
         "labels": ["All decades", "1980s", "1990s", "2000s", "2010s", "2020s"],
         "name": "Decade  "
       }
+    },
+    {
+      "name": "region",
+      "value": "World",
+      "bind": {
+        "input": "select",
+        "options": ["World", "North America", "South America", "Europe", "Africa", "Asia", "Oceania"],
+        "name": "Region  "
+      }
+    },
+    {
+      "name": "box",
+      "expr": "({'World':[-180,-90,180,90],'North America':[-170,7,-50,84],'South America':[-82,-56,-34,13],'Europe':[-25,34,45,72],'Africa':[-20,-36,52,37],'Asia':[45,-11,180,78],'Oceania':[110,-50,180,0]})[region]"
+    },
+    {
+      "name": "cam",
+      "value": { "s": 140.4, "x": 380, "y": 200 },
+      "on": [
+        {
+          "events": { "signal": "region" },
+          "update": "({'World':{'s':140.4,'x':380,'y':200},'North America':{'s':302.1,'x':833,'y':419},'South America':{'s':271.9,'x':602,'y':95},'Europe':{'s':628.5,'x':293,'y':795},'Africa':{'s':247.0,'x':321,'y':202},'Asia':{'s':235.0,'x':12,'y':324},'Oceania':{'s':373.9,'x':-381,'y':24}})[region]"
+        },
+        {
+          "events": { "type": "wheel", "consume": true, "filter": "y() >= 0 && y() <= 400" },
+          "update": "{s: clamp(cam.s * pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), 140.4, 2000), x: xy()[0] - (xy()[0] - cam.x) * clamp(cam.s * pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), 140.4, 2000) / cam.s, y: xy()[1] - (xy()[1] - cam.y) * clamp(cam.s * pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), 140.4, 2000) / cam.s}"
+        },
+        {
+          "events": "[pointerdown[y() <= 400], window:pointerup] > window:pointermove",
+          "update": "anchor ? {s: cam.s, x: anchor.cx + xy()[0] - anchor.px, y: anchor.cy + xy()[1] - anchor.py} : cam"
+        },
+        {
+          "events": "dblclick",
+          "update": "({'World':{'s':140.4,'x':380,'y':200},'North America':{'s':302.1,'x':833,'y':419},'South America':{'s':271.9,'x':602,'y':95},'Europe':{'s':628.5,'x':293,'y':795},'Africa':{'s':247.0,'x':321,'y':202},'Asia':{'s':235.0,'x':12,'y':324},'Oceania':{'s':373.9,'x':-381,'y':24}})[region]"
+        }
+      ]
+    },
+    {
+      "name": "anchor",
+      "value": null,
+      "on": [{ "events": "pointerdown", "update": "{px: xy()[0], py: xy()[1], cx: cam.x, cy: cam.y}" }]
     }
   ],
   "spacing": 14,
@@ -19,7 +58,7 @@
     {
       "width": 760,
       "height": 400,
-      "projection": { "type": "equalEarth" },
+      "projection": { "type": "equalEarth", "scale": { "expr": "cam.s" }, "translate": { "expr": "[cam.x, cam.y]" } },
       "layer": [
         {
           "data": { "sphere": true },
@@ -30,9 +69,18 @@
           "mark": { "type": "geoshape", "fill": "#e6dcd4", "stroke": "#faf6f2", "strokeWidth": 0.5 }
         },
         {
+          "data": {"values": [{"t": "Scroll to zoom · drag to move · double-click to reset"}]},
+          "mark": {"type": "text", "align": "center", "baseline": "top", "fontSize": 11, "color": "#777777"},
+          "encoding": {
+            "x": {"value": 370},
+            "y": {"value": 390},
+            "text": {"field": "t"}
+          }
+        },
+        {
           "data": { "url": "data/horror_filming_bins.json" },
           "transform": [
-            { "filter": "decade_sel == 0 || datum.decade_start == decade_sel" },
+            { "filter": "(decade_sel == 0 || datum.decade_start == decade_sel) && (region == 'World' || ((datum.lon0 + datum.lon1) / 2 >= box[0] && (datum.lon0 + datum.lon1) / 2 <= box[2] && (datum.lat0 + datum.lat1) / 2 >= box[1] && (datum.lat0 + datum.lat1) / 2 <= box[3]))" },
             {
               "aggregate": [
                 { "op": "sum", "field": "films", "as": "films" },
@@ -41,24 +89,16 @@
               "groupby": ["lon0", "lat0", "lon1", "lat1"]
             },
             { "calculate": "datum.best.top_place", "as": "place" },
-            { "calculate": "(datum.lon0 + datum.lon1) / 2", "as": "lonc" },
-            { "calculate": "(datum.lat0 + datum.lat1) / 2", "as": "latc" },
-            {
-              "calculate": "datum.films < 3 ? '1–2' : datum.films < 10 ? '3–9' : datum.films < 30 ? '10–29' : datum.films < 100 ? '30–99' : datum.films < 300 ? '100–299' : '300+'",
-              "as": "bucket"
-            }
+            { "calculate": "{type:'Polygon',coordinates:[[[datum.lon0,datum.lat0],[datum.lon0,datum.lat1],[datum.lon1,datum.lat1],[datum.lon1,datum.lat0],[datum.lon0,datum.lat0]]]}", "as": "cell" },
+            { "calculate": "datum.films < 3 ? '1–2' : datum.films < 10 ? '3–9' : datum.films < 30 ? '10–29' : datum.films < 100 ? '30–99' : datum.films < 300 ? '100–299' : '300+'", "as": "bucket" }
           ],
           "params": [
-            {
-              "name": "pick",
-              "select": { "type": "point", "fields": ["lon0", "lat0"], "on": "click", "clear": "dblclick" }
-            }
+            { "name": "pick", "select": { "type": "point", "fields": ["lon0", "lat0"], "on": "click", "clear": "dblclick" } }
           ],
-          "mark": { "type": "square", "size": 105, "opacity": 0.92, "cursor": "pointer" },
+          "mark": { "type": "geoshape", "opacity": 0.95, "cursor": "pointer" },
           "encoding": {
-            "longitude": { "field": "lonc", "type": "quantitative" },
-            "latitude": { "field": "latc", "type": "quantitative" },
-            "stroke": { "condition": { "param": "pick", "empty": false, "value": "#1f2a44" }, "value": "#7e583a" },
+            "shape": { "field": "cell", "type": "geojson" },
+            "stroke": { "condition": { "param": "pick", "empty": false, "value": "#1f2a44" }, "value": "#704212" },
             "strokeWidth": { "condition": { "param": "pick", "empty": false, "value": 2.5 }, "value": 0.5 },
             "color": {
               "field": "bucket",
@@ -69,15 +109,18 @@
               },
               "legend": {
                 "title": "Films shot in the square",
-                "orient": "bottom-left",
+                "orient": "none",
+                "legendX": 6,
+                "legendY": 262,
                 "symbolType": "square",
                 "symbolSize": 140,
-                "labelFontSize": 12
+                "labelFontSize": 12,
+                "titleFontSize": 12
               }
             },
             "tooltip": [
               { "field": "place", "title": "Busiest place here" },
-              { "field": "films", "title": "No of Films", "format": ",.0f" }
+              { "field": "films", "title": "Number of films", "format": ",.0f" }
             ]
           }
         }
@@ -86,14 +129,6 @@
     {
       "width": 760,
       "height": { "step": 22 },
-      "title": {
-        "text": "",
-        "anchor": "start",
-        "fontSize": 14,
-        "fontWeight": "normal",
-        "fontStyle": "italic",
-        "color": "#5c0814"
-      },
       "data": {
         "url": "data/horror_filming_films.csv",
         "format": { "type": "csv", "parse": { "lon0": "number", "lat0": "number", "decade_start": "number", "year": "number" } }
@@ -101,10 +136,7 @@
       "transform": [
         { "filter": { "param": "pick", "empty": false } },
         { "filter": "decade_sel == 0 || datum.decade_start == decade_sel" },
-        {
-          "window": [{ "op": "row_number", "as": "rn" }],
-          "sort": [{ "field": "year", "order": "descending" }]
-        },
+        { "window": [{ "op": "row_number", "as": "rn" }], "sort": [{ "field": "year", "order": "descending" }] },
         { "window": [{ "op": "count", "as": "n" }], "frame": [null, null] },
         { "filter": "datum.rn <= 12" },
         {
@@ -121,7 +153,7 @@
     }
   ],
   "config": {
-    "view": { "stroke": null },
+    "view": { "stroke": null, "clip": true },
     "font": "EB Garamond, Georgia, serif"
   }
 }

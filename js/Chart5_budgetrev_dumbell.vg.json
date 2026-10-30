@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 640,
-    "height": {"step": 26},
+    "height": {"step": 15},
     "data": {"url": "data/companies_budget_revenue.csv"},
     "transform": [
       {"calculate": "'\u00d7' + format(datum.multiple, '.1f')", "as": "mult_label"}
