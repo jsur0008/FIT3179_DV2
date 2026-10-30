@@ -4,42 +4,73 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Rise of Horror</title>
-  <meta name="description" content="How horror grew from a niche genre into one of cinema's biggest, told in 16 charts.">
+  <meta name="description" content="How horror grew from a niche genre into one of cinema's biggest, told in 15 charts.">
+
+  <!-- EB Garamond is the font used inside the charts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
   <style>
-    /* Digits 0-9 come from EB Garamond */
+    /* ================= Fonts ================= */
+    /* "Title" combines two fonts: digits come from Chomsky, everything else from Arexa */
     @font-face {
       font-family: "Title";
-      src: url("font/Chomsky.otf") format("truetype");
-      font-weight: 400 800;
+      src: url("font/Chomsky.otf") format("opentype");
       unicode-range: U+0030-0039;
     }
-    /* Everything else in titles comes from Arexa */
     @font-face {
       font-family: "Title";
       src: url("font/ArexaDemo-Regular.otf") format("opentype");
       unicode-range: U+0000-002F, U+003A-10FFFF;
     }
-    @font-face { font-family: "Editorial New"; src: url("font/EditorialNew-Regular.ttf") format("truetype"); font-weight: 400 800; font-style: regular; }
-    @font-face { font-family: "Editorial New"; src: url("font/EditorialNew-Regular.ttf") format("truetype"); font-weight: 400 800; font-style: regular; }
 
-    /* ---------- Layout rules: change these numbers to change the spacing everywhere ---------- */
+    /* Body text: one face per weight */
+    @font-face {
+      font-family: "Editorial New";
+      src: url("font/EditorialNew-Regular.ttf") format("truetype");
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: "Editorial New";
+      src: url("font/EditorialNew-Medium.ttf") format("truetype");
+      font-weight: 500; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: "Editorial New";
+      src: url("font/EditorialNew-Bold.ttf") format("truetype");
+      font-weight: 700; font-style: normal; font-display: swap;
+    }
+
+    /* ================= Layout rules: change these numbers to change the spacing everywhere ================= */
     :root {
       --max: 1200px;                         /* width of the content column */
-      --gutter: clamp(16px, 4vw, 32px);      /* space at the left and right edge */
+      --gutter: clamp(16px, 4vw, 32px);      /* space at the left and right edge of the page */
       --gap: 28px;                           /* space between items inside an act */
+      --col-gap: 72px;                       /* space between two charts side by side */
       --section-pad: 56px;                   /* space below the content inside each box */
       --box-pad: clamp(18px, 4vw, 44px);     /* space between a box's edge and its content */
 
-      --ink: #1c1c1c; --muted: #5b5b5b; --red: #b3122a; --deep: #5c0814; --paper: #faf7f4; --line: #e4ddd6;
+      --ink: #1c1c1c;
+      --muted: #5b5b5b;
+      --red: #b3122a;
+      --deep: #5c0814;
+      --paper: #faf7f4;
+      --card: #fffbf9;
+      --line: #e4ddd6;
     }
+    /* ================= Base ================= */
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Editorial New", Georgia, serif; font-size: 19px; line-height: 1.65; }
-    header.hero { background: var(--deep); color: #fff; text-align: center; padding: 88px var(--gutter) 72px; }
-    header.hero h1 { font-family: "Title", serif; font-variant-numeric: lining-nums; font-weight: normal; font-size: clamp(3.5rem, 12vw, 10rem); margin: 0 0 12px; line-height: 1.1; }
-    header.hero p { max-width: 1000px; margin: 0 auto; font-size: 2.3rem; color: #f3d9dd; }
-
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: "Editorial New", Georgia, serif; font-size: 19px; line-height: 1.65;
+    }
+    h1, h2, h3 { font-family: "Title", serif; font-variant-numeric: lining-nums; font-weight: normal; }
+    h3.chart-title { font-family: "Title", serif; font-variant-numeric: lining-nums; font-weight: normal; font-size: 2.4rem; line-height: 1.2; margin: 0 0 6px; }
+    h3.chart-title .num { color: var(--red); margin-right: 8px; }
+    .act-inner > .takeaway { color: var(--act-muted); font-size: 1.3rem; line-height: 1.5; margin: calc(4px - var(--gap)) 0 0; text-align: justify; hyphens: auto; }
+    
     /* ---------- Acts: each one sits on the same page background ---------- */
     main { max-width: calc(var(--max) + 2 * var(--box-pad) + 2 * var(--gutter)); margin: 0 auto; padding: 80px var(--gutter) 56px;
            display: flex; flex-direction: column; gap: 100px; }
@@ -100,8 +131,29 @@
     .lead { color: var(--act-muted); margin: 0; }
 
     .prose { max-width: 1300px; margin: 0px; text-align: justify; hyphens: auto; line-height: 1.55; font-size: 1.5rem;}
-    .side-note { margin: 0; padding-left: 20px; border-left: 3px solid var(--act-accent); text-align: left; font-size: 1.05rem; line-height: 1.55; }
+    .side-note { margin: 0; padding-left: 20px; border-left: 3px solid var(--act-accent); text-align: left; font-size: 1.1rem; line-height: 1.55; }
+    .prose strong,
+    .side-note strong,
+    .takeaway strong {
+      font-weight: 800;
+      color: #000000;  
+    }
+    strong,
+b {
+  font-family: "Editorial New", Georgia, serif;
+  font-weight: 700;
+  color: #b3122a;            /* red */
+}
 
+/* the opening paragraph stays black; only its bold phrases are red */
+.prose.lead,
+.lead {
+  color: #111;
+}
+.prose.lead strong,
+.lead strong {
+  color: #b3122a;
+}
     /* ---------- Chart rows and cards ---------- */
     .chart-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); align-items: stretch; }
     .chart-row.split { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); align-items: center; }
@@ -116,7 +168,7 @@
     }
     figure.chart-card h3 { font-family: "Title", serif; font-variant-numeric: lining-nums; font-weight: normal; font-size: 2.4rem; line-height: 1.2; margin: 0 0 6px; }
     figure.chart-card .num { color: var(--red); font-weight: normal; margin-right: 8px; }
-    .takeaway { margin: 0 0 12px; color: var(--act-muted); font-size: 1.3rem; line-height: 1.5; }
+    .takeaway { margin: 0 0 12px; color: var(--act-muted); font-size: 1.3rem; line-height: 1.5; text-align: justify; }
     figcaption { font-size: .85rem; line-height: 1.5; color: var(--act-muted); margin-top: 12px; border-top: 1px solid var(--act-muted); padding-top: 8px; }
     figcaption a { color: var(--act-accent); }
     .chart { overflow-x: auto; min-height: 120px; flex: 1; }
@@ -173,20 +225,19 @@
       </div>
       <div class="act-inner">
         <div class="act-head">
-          <p class="act-label">Act 1</p>
           <h2>HORROR IS GROWING</h2>
         </div>
-        <p class="prose">Horror movies is a genre that often explores dark subject matter and seeks to elicit physical or psychological fear 
+        <p class="prose lead">Horror movies is a genre that often explores dark subject matter and seeks to elicit physical or psychological fear 
           in its viewers. Horror films have existed since the early 20th century where elements of horror can be found in media predating film, 
           including folklore, mythology, and literature leading up to its birth.
         </p>
-        <p class="prose">Even though, due to their subject matter, horror has always had some stigma attached to it, in recent years there seems 
-          to be a surge of horror movies in mainstream media.</p>
+        <p class="prose lead">Even though, due to their subject matter, horror has always had some stigma attached to it, in recent years there seems 
+          to be <strong>a surge of horror movies in mainstream media.</strong></p>
 
         <div class="chart-row">
+          <p class="takeaway">Number of horror movies listed on TMDB for each decade. Hover a bar for exact figures.</p>
           <figure class="chart-card">
-            <h3><span class="num">1</span>Horror Movies Released per Decade</h3>
-            <p class="takeaway">Number of horror movies listed on TMDB for each decade. Hover a bar for exact figures.</p>
+            <h3><span class="num">1</span>Horror movies released per decade</h3>
             <div class="chart" id="c1"></div>
             <figcaption>Source: TMDB. Years up to 2026.</figcaption>
           </figure>
@@ -207,9 +258,9 @@
             <figcaption>Source: TMDB. Years up to 2026.</a>.</figcaption>
           </figure>
           <div class="side-note">
-            <p>The number of horror films listed on TMDB has grown from a handful in the early 1900s to about 28,000 in the 2020s so far. The rise is steepest from 2000: about 8,200 films in the 2000s, 19,500 in the 2010s and 28,000 in the 2020s, with years still to run.</p>
-            <p>This is not only because more films are made overall. Horror’s share of all films has risen too, from about 1 in every 100 in the 1890s to 5 in every 100 in the 1980s and 9 in every 100 in the 2020s.</p>
-            <p>Among genres, horror ranked 17th in the 1940s, rose to 8th in the 1980s and reached 4th in the 2010s. It holds that place in the 2020s, behind only Drama, Documentary and Comedy.</p>
+            <p>The number of horror films listed on TMDB has grown from a handful in the early 1900s to <strong>about 28,000 in the 2020s so far</strong>. The rise is steepest from 2000: about 8,200 films in the 2000s, 19,500 in the 2010s and 28,000 in the 2020s, with years still to run.</p>
+            <p>This is not only because more films are made overall. Horror's share of all films has risen too, from about 1 in every 100 in the 1890s to 5 in every 100 in the 1980s and <strong>9 in every 100 in the 2020s</strong>.</p>
+            <p>Among genres, horror ranked <strong>17th in the 1940s</strong>, rose to 8th in the 1980s and reached <strong>4th in the 2010s</strong>. It holds that place in the 2020s, behind only Drama, Documentary and Comedy.</p>
           </div>
         </div>
 
@@ -219,18 +270,14 @@
           <div class="chart" id="c4"></div>
           <figcaption>Source: TMDB. A film with several origin countries counts for each.</figcaption>
         </figure>
-      <div class="side-note">
-        <p>
-          Horror is made all over the world, but it is concentrated in a few countries. 
-          The United States has by far the largest circle, with more than 30,000 horror films listed, 
-          followed by countries such as the United Kingdom, Japan, Canada and France. 
-          Smaller circles appear across Europe, Asia, Latin America and Australia. 
-        </p>
-        <p>
-          However, early horror belonged to Japan. In the 1910s, Japanese studios were listed with 102 horror films, ahead of the United States with 70. Japan was still leading in some single years as late as 1938. 
-          By the 1920s, though, Hollywood had taken over, and the United States has topped every decade since.
-        </p>
-      </div>
+        <div class="side-note">
+          <p>Horror is made all over the world, but it is <strong>concentrated in a few countries</strong>.
+            The United States has by far the largest circle, with more than 30,000 horror films listed,
+            followed by countries such as the United Kingdom, Japan, Canada and France.
+            Smaller circles appear across Europe, Asia, Latin America and Australia.</p>
+          <p>However, early horror belonged to Japan. In the 1910s, <strong>Japanese studios were listed with 102 horror films, ahead of the United States with 70</strong>. Japan was still leading in some single years as late as 1938.
+            By the 1920s, though, Hollywood had taken over, and the United States has topped every decade since.</p>
+        </div>
       </div>
     </section>
 
@@ -240,41 +287,48 @@
       <div class="slate-fields">
         <div><span class="k">Production</span><span class="v">The Rise of Horror</span></div>
         <div><span class="k">Scene</span><span class="v">2 of 6</span></div>
-        <div><span class="k">Charts</span><span class="v">5–7</span></div>
+        <div><span class="k">Charts</span><span class="v">5–6</span></div>
       </div>
       <div class="act-inner">
         <div class="act-head">
-          <p class="act-label">Act 2</p>
           <h2>CHEAP TO MAKE, BIG PAYOFF</h2>
         </div>
-        <p class="prose lead">[Why so many horror films are low budget, and how a few of them earn far more than they cost.]</p>
-
-        <figure class="chart-card">
-          <h3><span class="num">5</span>Budget against revenue</h3>
-          <p class="takeaway">[Takeaway: films above the line earned more than they cost.]</p>
-          <div class="chart" id="c5"></div>
-          <figcaption>Source: TMDB. Only films with both a budget and revenue recorded; US dollars, not adjusted for inflation.</figcaption>
-        </figure>
-
-        <figure class="chart-card">
-          <h3><span class="num">6</span>Production House</h3>
-          <p class="takeaway">[Takeaway: where horror sits among genres.]</p>
-          <div class="chart" id="c6"></div>
-          <figcaption>Source: TMDB. Return = revenue divided by budget, for films with both recorded.</figcaption>
-        </figure>
-
-        <figure class="chart-card">
-          <h3><span class="num">7</span>The biggest horror franchises</h3>
-          <p class="takeaway">Three franchises (The Conjuring Universe, Alien and Resident Evil) earn nearly a third of the $20.8 billion made by the 20 biggest horror series.</p>
-          <div class="chart" id="c7"></div>
-          <figcaption>
-            Each segment is one film, oldest on the left. Worldwide box office in US dollars, not adjusted for inflation.
-            Alien vs. Predator is counted in both the Alien and Predator totals, as in the source, and recent releases
-            (such as Resident Evil 2026) may still be earning.
-            Source: <a href="https://en.wikipedia.org/wiki/List_of_highest-grossing_films" target="_blank" rel="noopener">Wikipedia, highest-grossing film franchises (horror)</a>,
-            accessed 19 October 2026, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>; reformatted by the author.
-          </figcaption>
-        </figure>
+        <p class="prose lead">Horror is one of the cheapest genres to make. A scary film needs a few actors,
+          a dark house and a good idea, not <strong>expensive stars or special effects</strong>.
+          That keeps the risk low, and it is why studios keep making them. Most horror films
+          earn modest amounts, but a few earn <strong>many times what they cost</strong>.
+        </p>
+        <h3 class="chart-title"><span class="num">5</span>Budget against revenue</h3>
+        <p class="takeaway">Each row is a production company. The grey dot is the budget of its typical horror film and the red dot is the revenue. The scale is logarithmic, so equal steps along the axis mean the same multiple, not the same number of dollars. The longer the line, the more a typical film earns back; the number at the end is that multiple.</p>
+        <div class="chart-row split wide">
+          <figure class="chart-card">
+            <div class="chart fluid" id="c5"></div>
+            <figcaption>Source: TMDB. Companies with at least 15 horror films that have both a budget and revenue recorded. "Typical" is the median film. The multiple is median revenue divided by median budget. Revenue is worldwide box office in US dollars, not adjusted for inflation; it is not the studio's profit, because cinemas take a share and marketing costs are not included in the budget.</figcaption>
+          </figure>
+          <div class="side-note">
+            <p>The big payoffs belong to <strong>two specialists</strong>. A typical Blumhouse film cost about $9 million and took about $91 million, <strong>a multiple of 10</strong>. Atomic Monster, the company behind The Conjuring films, goes further, turning about $18 million into about $206 million (<strong>a multiple of 11.5</strong>).</p>
+            <p>The major studios, such as Universal, Paramount, Warner Bros. and Columbia, sit at <strong>roughly 2 to 3 times</strong>, and some of the old names (Miramax, MGM) barely clear <strong>1.1</strong>.</p>
+          </div>
+        </div>
+        <h3 class="chart-title"><span class="num">6</span>The biggest horror franchises</h3>
+        <p class="takeaway">Each bar is one franchise, and its length is the total worldwide box office. Each segment is one film, oldest on the left, coloured by the decade it was released.</p>
+            
+        <div class="chart-row split wide">
+          <figure class="chart-card">
+            <div class="chart fluid" id="c7"></div>
+            <figcaption>
+              Worldwide box office in US dollars, not adjusted for inflation.
+              Alien vs. Predator is counted in both the Alien and Predator totals, as in the source, and recent releases
+              (such as Resident Evil 2026) may still be earning.
+              Source: <a href="https://en.wikipedia.org/wiki/List_of_highest-grossing_films" target="_blank" rel="noopener">Wikipedia, highest-grossing film franchises (horror)</a>,
+              accessed 19 October 2026, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>; reformatted by the author.
+            </figcaption>
+          </figure>
+          <div class="side-note">
+            <p><strong>Three franchises</strong> (The Conjuring Universe, Alien and Resident Evil) earn <strong>nearly a third of the $20.8 billion</strong> made by the 20 biggest horror series.</p>
+            <p>The money is mostly recent. The Conjuring Universe, It, A Quiet Place and Five Nights at Freddy's are made up almost entirely of <strong>films from the 2010s and 2020s</strong>. Because the figures are not adjusted for inflation, older hits like Jaws and The Exorcist look smaller than they were at the time.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -288,27 +342,26 @@
       </div>
       <div class="act-inner">
         <div class="act-head">
-          <p class="act-label">Act 3</p>
           <h2>Where it's filmed and who makes it</h2>
         </div>
         <p class="prose lead">[Stories are often set in one place and shot in another. Behind the camera, a small group of companies make most of the films.]</p>
 
         <figure class="chart-card">
-          <h3><span class="num">8</span>Set here, shot there</h3>
+          <h3><span class="num">7</span>Set here, shot there</h3>
           <p class="takeaway">[Takeaway: e.g. "Stories set in [place] are often filmed in [place]."]</p>
           <div class="chart" id="c8"></div>
           <figcaption>Source: Wikidata (narrative location and filming location). Some places are whole countries, so their points sit at the middle of the country.</figcaption>
         </figure>
 
         <figure class="chart-card">
-          <h3><span class="num">9</span>Where horror is filmed</h3>
+          <h3><span class="num">8</span>Where horror is filmed</h3>
           <p class="takeaway">[Takeaway: the hotspots.]</p>
           <div class="chart" id="c9"></div>
           <figcaption>Source: Wikidata. Films documented on Wikidata only.</figcaption>
         </figure>
 
         <figure class="chart-card">
-          <h3><span class="num">10</span>Production companies</h3>
+          <h3><span class="num">9</span>Production companies</h3>
           <p class="takeaway">[Takeaway: who makes the most horror, and where they are based.]</p>
           <div class="chart" id="c10"></div>
           <figcaption>Source: TMDB. A film counts for every company credited on it.</figcaption>
@@ -326,7 +379,6 @@
       </div>
       <div class="act-inner">
         <div class="act-head">
-          <p class="act-label">Act 4</p>
           <h2>Subgenres</h2>
         </div>
         <p class="prose">Horror is not just one thing. 
@@ -335,15 +387,19 @@
       
           <div class="chart-row split wide">
             <figure class="chart-card">
-              <h3><span class="num">11</span>What kind of horror led each decade?</h3>
+              <h3><span class="num">10</span>What kind of horror led each decade?</h3>
               <p class="takeaway">Each cell is that subgenre's share of all subgenre-tagged horror films in the decade. A film can count in more than one subgenre.</p>
               <div class="chart" id="c11"></div>
               <figcaption>Source: TMDB, Subgenre categories: <a href="https://www.blumhouse.com/horror-subgenres" target="_blank" rel="noopener">Blumhouse</a>.</figcaption>
             </figure>
             <div class="side-note">
-              <p>xx</p>
-              <p>xx</p>
-              <p>xx</p>
+              <p>Horror’s most common subgenre has changed over time. Sci-fi horror made up 39% of tagged films in the 1950s, the biggest 
+                share of any cell on the chart, with creature features close behind at 29%. Both have faded, to 13% and 11% in the 2020s. 
+                Supernatural horror is the steady one, 
+                holding between 16% and 24% in every decade. Horror comedy has gone the other way, from 6% in the 1950s to around 19% today.</p>
+              <p>Some subgenres belong to one era. Slashers peak in the 1980s at 14%. Found footage was almost absent until the 2000s,
+                 because it had to wait for cheap, portable cameras, with The Blair Witch Project (1999), 
+                jumpstarting its popularity. It then jumps to 19% in the 2010s and falls back to 11% in the 2020s.</p>
             </div>
           </div>
       </div>
@@ -359,7 +415,6 @@
       </div>
       <div class="act-inner">
         <div class="act-head">
-          <p class="act-label">Act 5</p>
           <h2>Overlooked from the spotlight</h2>
         </div>
         <p class="prose">[How horror movies are often sidelined from awards.]</p>
@@ -367,14 +422,14 @@
 
         <div class="chart-row">
           <figure class="chart-card">
-            <h3><span class="num">12</span>Horror: share of films against share of nominations, per decade</h3>
+            <h3><span class="num">11</span>Horror: share of films against share of nominations, per decade</h3>
             <p class="takeaway">xxxxxxx</p>
             <div class="chart" id="c12"></div>
             <figcaption>Source: Academy Awards database; horror films identified from TMDB horror lists.</figcaption>
           </figure>
 
           <figure class="chart-card">
-            <h3><span class="num">13</span>Horror films the Academy has nominated</h3>
+            <h3><span class="num">12</span>Horror films the Academy has nominated</h3>
             <p class="takeaway">Each lollipop is one film; the height is how many Oscar nominations it received.</p>
             <div class="chart" id="c13"></div>
             <figcaption>Source: Academy Awards database; TMDB horror lists.</figcaption>
@@ -395,36 +450,58 @@
       </div>
       <div class="act-inner">
         <div class="act-head">
-          <p class="act-label">Act 6</p>
-          <h2>Horror in Australia</h2>
+          <h2>HORROR IN AUSTRALIA</h2>
         </div>
         <p class="prose">[How Australia rates horror, when horror arrives, and where you can see it on a big screen.]</p>
 
-        <div class="chart-row split">
-          <figure class="chart-card">
-            <h3><span class="num">14</span>Four in five classified horror films are M or MA15+</h3>
-            <p class="takeaway">Horror films with an Australian classification and a release date, by five-year period</p>
-            <div class="chart" id="c14"></div>
-            <figcaption>Source: TMDB. Only films with an Australian classification recorded.</figcaption>
-          </figure>
-          <p class="side-note">[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]</p>
-        </div>
+        <figure class="chart-card">
+          <h3><span class="num">13</span>Four in Five Classified Horror Films are M or MA15+</h3>
+          <p class="takeaway">Horror films with an Australian classification and a release date, by five-year period</p>
+          <div class="chart" id="c14"></div>
+          <figcaption>Source: TMDB. Only films with an Australian classification recorded.</figcaption>
+          <div class="side-note">
+            <p>
+              Of the 1,424 horror films in this chart that have an Australian classification, 78% are rated M or MA15+, and 
+              that rises to 82% from 2000 on. In comparison, in the late 1970s and 1980s 40% of classified movies were R18+ 
+              or refused classification (RC). 
+            </p>
+            <p>
+              MA15+ was a small band 
+              until the mid-1990s, then took over, going from 12% of films in 1990–94 to 52% in 1995–99, and has stayed above half ever 
+              since. The chart also widens sharply from the mid-2000s, with 467 films in 2020–24 against 80 in 2000–04. 
+              Almost no horror films are rated G or PG (5% combined), and the 17 refused classification, mostly in the late 1970s and 1980s, 
+              cannot legally be sold or shown in Australia.
+            </p>
+        </figure>
 
-        <div class="chart-row">
+        <div class="chart-row wide">
           <figure class="chart-card">
-            <h3><span class="num">15</span>Horror movies are timed for Halloween</h3>
+            <h3><span class="num">14</span>Horror movies are timed for Halloween</h3>
             <p class="takeaway">Share of horror releases by month</p>
             <div class="chart" id="c15"></div>
             <figcaption>Source: TMDB. Earliest cinema release date in Australia.</figcaption>
           </figure>
 
           <figure class="chart-card">
-            <h3><span class="num">16</span>Where to get scared?</h3>
+            <h3><span class="num">15</span>Where to get scared?</h3>
             <p class="takeaway">Each dot represents a cinema currently open in Australia</p>
             <div class="chart" id="c16"></div>
-            <figcaption>Source: OpenStreetMap contributors. Cinemas mapped in OpenStreetMap, which may miss some or include closed ones.</figcaption>
+            <figcaption>Source: OpenStreetMap</figcaption>
           </figure>
         </div>
+        <div class="side-note">
+          <p>
+            October is the busiest month for horror releases in Australia, with 176 of the 1,396 films (12.6%), 
+            almost double the quietest months of March (6.4%) and December (6.7%). 
+            Releases build through the second half of the year, with September at 9.2% and November at 10.4%, 
+            so October and November together account for 23% of the year’s horror releases. If horror films were spread evenly, 
+            every month would have about 8.3%. 
+          </p>
+          <p>
+            Cinemas are concentrated along the east and south-east coast, where most Australians live, with dense clusters around Brisbane, 
+            Sydney, Melbourne and Adelaide, and a smaller cluster around Perth. Across the interior and the north there are only scattered dots, 
+            so a big-screen horror film is a long drive away for much of the country.
+          </p>
       </div>
     </section>
   </main>
@@ -459,7 +536,6 @@
       { id: "c3",  file: "js/Chart3_genresperdecade_bump.vg.json" },
       { id: "c4",  file: "js/Chart4_moviecountry_propsymbol.vg.json" },
       { id: "c5",  file: "js/Chart5_budgetrev_dumbell.vg.json" },
-      { id: "c6",  file: "js/Chart6_prodhouse_ridge.vg.json" },
       { id: "c7",  file: "js/Chart7_horrorfranchise_stackedbar.vg.json" },
       { id: "c8",  file: "js/Chart8.vg.json" },
       { id: "c9",  file: "js/Chart9.vg.json" },

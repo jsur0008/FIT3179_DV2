@@ -3,8 +3,8 @@
 
     "background": null,
     
-    "width": 500,
-    "height": 420,
+    "width": 450,
+    "height": 390,
 
     "data": {
       "url": "data/genre_counts_by_decade.csv"
@@ -70,7 +70,7 @@
         "mark": {
           "type": "text",
           "dy": -7,
-          "fontSize": 11,
+          "fontSize": 12,
           "fontWeight": "bold",
           "color": "#333"
         },
@@ -98,8 +98,8 @@
       "axis": {
         "domain": false,
         "ticks": false,
-        "labelFontSize": 12,
-        "titleFontSize": 12
+        "labelFontSize": 13,
+        "titleFontSize": 14
       },
       "font": "Georgia, serif"
     }

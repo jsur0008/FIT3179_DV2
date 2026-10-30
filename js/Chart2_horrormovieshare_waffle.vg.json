@@ -26,17 +26,17 @@
         "labelFontSize": 12, 
         "labelFontWeight": "bold", 
         "labelAnchor": "start", 
-        "labelPadding": 4}
+        "labelPadding": 3}
     },
 
     "columns": 5,
     
     "spec": {
-      "width": 97,
-      "height": 97,
+      "width": 92,
+      "height": 92,
       "mark": {
         "type": "square", 
-        "size": 68, 
+        "size": 60, 
         "opacity": 1},
       "encoding": {
         "x": {"field": "col", "type": "ordinal", "axis": null, "scale": {"paddingOuter": 0.1}},
@@ -60,6 +60,6 @@
     "config": {
       "view": {"stroke": null},
       "font": "Georgia, serif",
-      "facet": {"spacing": 14}
+      "facet": {"spacing": 12}
     }
   }

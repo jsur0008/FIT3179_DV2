@@ -47,9 +47,14 @@
       }
     ],
     "config": {
-      "view": {"stroke": null},
-      "font": "EB Garamond, Georgia, serif",
-      "axis": {"labelFont": "EB Garamond, Georgia, serif", "titleFont": "EB Garamond, Georgia, serif"},
-      "legend": {"labelFont": "EB Garamond, Georgia, serif", "titleFont": "EB Garamond, Georgia, serif"}
+      "view": { "stroke": null },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 13,
+        "titleFontSize": 14
+      },
+      "legend": {"labelFontSize":14},
+      "font": "Georgia, serif"
     }
   }

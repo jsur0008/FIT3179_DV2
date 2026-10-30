@@ -66,5 +66,14 @@
         }
       }
     ],
-    "config": {"view": {"stroke": null}, "font": "EB Garamond, serif", "background": null}
-  }
+    "config": {
+      "view": { "stroke": null },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 13,
+        "titleFontSize": 14
+      },
+      "legend": {"labelFontSize":14},
+      "font": "Georgia, serif", "background":null
+    }}

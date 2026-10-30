@@ -4,7 +4,7 @@
   "vconcat": [
     {
       "width": 1000,
-      "height": 500,
+      "height": 400,
       "projection": {"type": "equalEarth"},
 
       "layer": [
@@ -44,7 +44,22 @@
             ]
           }
         },
-        
+        {
+          "transform": [
+            {"filter": {"param": "yearBrush"}},
+            {"joinaggregate": [{"op": "min", "field": "year", "as": "y0"}]},
+            {"filter": "datum.country === 'Japan' && datum.y0 < 1920"},
+            {"aggregate": [{"op": "count", "as": "n"}], "groupby": ["country", "lat", "lon"]},
+            {"calculate": "['Japan led in the 1910s:', '102 films to the US 70']", "as": "note"}
+          ],
+          "mark": {"type": "text", "align": "right", "baseline": "bottom", "dx": 130, "dy": -20,
+                   "fontSize": 13, "fontStyle": "normal", "color": "#000000", "lineHeight": 16},
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "text": {"field": "note"}
+          }
+        },
         {
           "transform": [
             {"filter": {"param": "yearBrush"}},
@@ -63,8 +78,6 @@
         }
       ]
     },
-
-    
     {
       "width": 1105,
       "height": 110,

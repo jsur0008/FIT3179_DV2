@@ -3,8 +3,8 @@
 
     "background": null,
     
-    "width": 700,
-    "height": 340,
+    "width": 1180,
+    "height": 300,
     "data": {
       "url": "data/horror_ratings.csv",
       "format": {"parse": {"period_date": "date"}}
@@ -30,7 +30,10 @@
               "domain": ["G", "PG", "M", "MA15+", "R18+", "RC (refused)"],
               "range": ["#fde0d2", "#fcbba1", "#fb6a4a", "#de2d26", "#99000d", "#222222"]
             },
-            "legend": {"title": "Classification"}
+            "legend": {"title": "Classification",
+          "direction": "horizontal", "orient": "bottom-left", 
+          "titleFontSize":14, "labelFontSize":14
+        }
           },
           "order": {"field": "severity", "type": "quantitative"},
           "tooltip": [
@@ -44,12 +47,12 @@
         "data": {"values": [{"note": "go"}]},
         "mark": {
           "type": "text", "align": "left", "baseline": "top",
-          "fontSize": 12, "lineHeight": 15, "color": "#222222"
+          "fontSize": 14, "lineHeight": 15, "color": "#222222"
         },
         "encoding": {
-          "x": {"value": 17},
-          "y": {"value": 8},
-          "text": {"value": ["17 films were refused", "classification (RC) and", "cannot legally be sold or shown", "in Australia (black band)."]}
+          "x": {"value": 73},
+          "y": {"value": 100},
+          "text": {"value": ["17 films were refused classification (RC) and", "cannot legally be sold or shown in Australia (black band)."]}
         }
       }
     ],

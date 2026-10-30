@@ -43,7 +43,7 @@
 
       {"transform": [{"filter": "datum.decade === '2020s'"}],
 
-       "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 11},
+       "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 12},
        
        "encoding": {
          "text": {"field": "genre"},
@@ -51,5 +51,12 @@
        }}
     ],
 
-    "config": {"view": {"stroke": null}, "font": "EB Garamond, serif", "background": null}
-  }
+    "config": {"view": {"stroke": null}, "font": "EB Garamond, serif", "background": null,
+  "axis": {
+    "labelFontSize": 13,
+    "titleFontSize": 14
+  },
+  "legend": {
+    "labelFontSize": 13,
+    "titleFontSize": 13
+  }}}

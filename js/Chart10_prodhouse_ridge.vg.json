@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 700,
+    "width": 979,
     "height": 34,
     "data": {"url": "../data/companies_by_year.csv"},
     "transform": [

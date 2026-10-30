@@ -139,29 +139,34 @@
           { "filter": "(decade_sel == 0 || datum.decade_start == decade_sel) && datum.films >= min_films" },
           {
             "aggregate": [{ "op": "sum", "field": "films", "as": "films" }],
-            "groupby": ["filmed_in", "shot_lon", "shot_lat"]
+            "groupby": ["set_in_country", "filmed_in_country"]
           },
           {
-            "window": [{ "op": "rank", "as": "rk" }],
-            "sort": [{ "field": "films", "order": "descending" }]
+            "window": [{ "op": "row_number", "as": "rn" }],
+            "sort": [
+              { "field": "films", "order": "descending" },
+              { "field": "set_in_country", "order": "ascending" }
+            ]
           },
-          { "filter": "datum.rk <= 6" }
+          { "filter": "datum.rn == 1" },
+          {
+            "calculate": "'Most common route: set in ' + datum.set_in_country + ', filmed in ' + datum.filmed_in_country + ' (' + datum.films + ' films)'",
+            "as": "label"
+          }
         ],
         "mark": {
           "type": "text",
           "align": "left",
-          "dx": 8,
-          "dy": -6,
-          "fontSize": 0,
-          "fontWeight": "bold",
-          "color": "#5c0814",
-          "stroke": "#faf6f2",
-          "strokeWidth": 3
+          "baseline": "bottom",
+          "fontStyle": "italic",
+          "fontSize": 13,
+          "color": "#1f2a44",
+          "dx": 12
         },
         "encoding": {
-          "longitude": { "field": "shot_lon", "type": "quantitative" },
-          "latitude": { "field": "shot_lat", "type": "quantitative" },
-          "text": { "field": "filmed_in", "type": "nominal" }
+          "x": { "value": 0 },
+          "y": { "value": 366 },
+          "text": { "field": "label", "type": "nominal" }
         }
       },
       {
@@ -189,6 +194,12 @@
     ],
     "config": {
       "view": { "stroke": null },
-      "font": "EB Garamond, Georgia, serif"
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 13,
+        "titleFontSize": 14
+      },
+      "font": "Georgia, serif"
     }
   }

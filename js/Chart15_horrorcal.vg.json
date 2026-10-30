@@ -4,7 +4,7 @@
     "background": null,
     
     "width": 420,
-    "height": 470,
+    "height": 500,
     "data": {"url": "data/release_months.csv"},
     "transform": [
       {"calculate": "(datum.month - 1) * PI / 6", "as": "a0"},
