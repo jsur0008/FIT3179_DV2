@@ -16,7 +16,7 @@
       },
       {
         "name": "min_films",
-        "value": 2,
+        "value": 1,
         "bind": { "input": "range", "min": 1, "max": 5, "step": 1, "name": "Routes with at least this many films  " }
       },{
         "name": "cam",
